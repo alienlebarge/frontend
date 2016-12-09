@@ -11,3 +11,6 @@ fractal.components.set('path', __dirname + '/src/components');
 
 /* Tell Fractal where the documentation pages will live */
 fractal.docs.set('path', __dirname + '/src/docs');
+
+/* Destination for the static export */
+fractal.web.set('builder.dest', 'build');
