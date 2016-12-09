@@ -1,6 +1,12 @@
 'use strict';
 
 const gulp = require('gulp');
+const postcss = require('gulp-postcss');
+
+const paths = {
+  dest: __dirname + '/tmp',
+  src: __dirname + '/src',
+};
 
 /*
  * Configure a Fractal instance.
@@ -48,3 +54,25 @@ gulp.task('fractal:build', function(){
         logger.success('Fractal build completed!');
     });
 });
+
+/**
+ * Styles
+ */
+function styles() {
+  const processors = [
+    require('postcss-custom-properties')
+  ];
+
+  return gulp.src(paths.src + '/assets/styles/*.css')
+    //.pipe(sourcemaps.init())
+    .pipe(postcss(processors))
+    //.pipe(sourcemaps.write('./'))
+    .pipe(gulp.dest(paths.dest + '/assets/styles'));
+}
+
+/**
+ * Task set
+ */
+const compile = gulp.series(styles);
+
+gulp.task('dev', gulp.series(compile));

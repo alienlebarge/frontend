@@ -25,7 +25,8 @@
   },
   "homepage": "https://github.com/alienlebarge/alb-frontend#readme",
   "dependencies": {
-    "gulp": "gulpjs/gulp#4.0"
+    "gulp": "gulpjs/gulp#4.0",
+    "postcss-custom-properties": "^5.0.1"
   },
   "devDependencies": {
     "@frctl/fractal": "^1.0.11",
