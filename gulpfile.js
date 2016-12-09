@@ -13,7 +13,6 @@ const paths = {
  */
 
 const fractal = require('./fractal.js');
-
 const logger = fractal.cli.console; // keep a reference to the fractal CLI console utility
 
 /*
@@ -25,7 +24,6 @@ const logger = fractal.cli.console; // keep a reference to the fractal CLI conso
  *
  * This task will also log any errors to the console.
  */
-
 function serve() {
   const server = fractal.web.server({
     sync: true
@@ -47,7 +45,6 @@ function serve() {
  * The build destination will be the directory specified in the 'builder.dest'
  * configuration option set above.
  */
-
 gulp.task('fractal:build', function(){
     const builder = fractal.web.builder();
     builder.on('progress', (completed, total) => logger.update(`Exported ${completed} of ${total} items`, 'info'));
