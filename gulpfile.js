@@ -1,6 +1,7 @@
 'use strict';
 
 const gulp = require('gulp');
+const del = require('del');
 const postcss = require('gulp-postcss');
 const stylelint = require('gulp-stylelint');
 const sourcemaps = require('gulp-sourcemaps');
@@ -57,6 +58,13 @@ gulp.task('fractal:build', function(){
 });
 
 /**
+ * Clean
+ */
+ function clean() {
+   return del(paths.dest + '/assets/');
+ };
+
+/**
  * Styles
  */
 function styles() {
@@ -98,7 +106,7 @@ function watch(done) {
 /**
  * Task set
  */
-const compile = gulp.series(styles);
+const compile = gulp.series(clean, gulp.parallel(styles));
 
 gulp.task('lint', gulp.series(lintstyles));
 gulp.task('dev', gulp.series(compile, watch));
