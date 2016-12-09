@@ -60,7 +60,8 @@ gulp.task('fractal:build', function(){
  */
 function styles() {
   const processors = [
-    require('postcss-custom-properties')
+    require('postcss-custom-properties'),
+    require('cssnano')
   ];
 
   return gulp.src(paths.src + '/assets/styles/*.css')
