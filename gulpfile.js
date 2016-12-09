@@ -71,6 +71,7 @@ function styles() {
   const processors = [
     require('postcss-import'),
     require('postcss-custom-properties'),
+    require('postcss-nested'),
     require('autoprefixer'),
     require('cssnano')
   ];
