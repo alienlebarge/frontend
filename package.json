@@ -25,10 +25,12 @@
   },
   "homepage": "https://github.com/alienlebarge/alb-frontend#readme",
   "dependencies": {
+    "@alienlebarge/stylelint-config": "^2.0.5",
     "autoprefixer": "^6.5.3",
     "cssnano": "^3.8.2",
     "gulp": "gulpjs/gulp#4.0",
     "gulp-sourcemaps": "^1.9.1",
+    "gulp-stylelint": "^3.5.0",
     "postcss-custom-properties": "^5.0.1"
   },
   "devDependencies": {

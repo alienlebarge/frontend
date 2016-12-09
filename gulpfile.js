@@ -2,6 +2,7 @@
 
 const gulp = require('gulp');
 const postcss = require('gulp-postcss');
+const stylelint = require('gulp-stylelint');
 const sourcemaps = require('gulp-sourcemaps');
 
 const paths = {
@@ -73,6 +74,19 @@ function styles() {
 }
 
 /**
+ * Style linting
+ */
+function lintstyles() {
+  return gulp.src(paths.src + '/**/*.css')
+    .pipe(stylelint({
+      reporters: [{
+        formatter: 'string',
+        console: true
+      }]
+    }));
+};
+
+/**
  * Watch
  */
 function watch(done) {
@@ -85,4 +99,5 @@ function watch(done) {
  */
 const compile = gulp.series(styles);
 
+gulp.task('lint', gulp.series(lintstyles));
 gulp.task('dev', gulp.series(compile, watch));
