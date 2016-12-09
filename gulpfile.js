@@ -26,15 +26,17 @@ const logger = fractal.cli.console; // keep a reference to the fractal CLI conso
  * This task will also log any errors to the console.
  */
 
-gulp.task('fractal:start', function(){
-    const server = fractal.web.server({
-        sync: true
-    });
-    server.on('error', err => logger.error(err.message));
-    return server.start().then(() => {
-        logger.success(`Fractal server is now running at ${server.url}`);
-    });
-});
+function serve() {
+  const server = fractal.web.server({
+    sync: true
+  });
+
+  server.on('error', err => logger.error(err.message));
+
+  return server.start().then(() => {
+    logger.success(`Fractal server is now running at ${server.url}`);
+  });
+};
 
 /*
  * Run a static export of the project web UI.
@@ -71,8 +73,16 @@ function styles() {
 }
 
 /**
+ * Watch
+ */
+function watch(done) {
+  serve();
+  gulp.watch(paths.src + '/**/*.css', styles);
+};
+
+/**
  * Task set
  */
 const compile = gulp.series(styles);
 
-gulp.task('dev', gulp.series(compile));
+gulp.task('dev', gulp.series(compile, watch));
