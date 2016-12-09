@@ -14,3 +14,9 @@ fractal.docs.set('path', __dirname + '/src/docs');
 
 /* Destination for the static export */
 fractal.web.set('builder.dest', 'build');
+
+/* Tell Fractal where static assets are */
+fractal.web.set('static.path', __dirname + '/tmp');
+
+/* Tell Fractal what is the default preview */
+fractal.components.set('default.preview', '@preview');
