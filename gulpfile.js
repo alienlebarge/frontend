@@ -2,6 +2,7 @@
 
 const gulp = require('gulp');
 const postcss = require('gulp-postcss');
+const sourcemaps = require('gulp-sourcemaps');
 
 const paths = {
   dest: __dirname + '/tmp',
@@ -63,9 +64,9 @@ function styles() {
   ];
 
   return gulp.src(paths.src + '/assets/styles/*.css')
-    //.pipe(sourcemaps.init())
+    .pipe(sourcemaps.init())
     .pipe(postcss(processors))
-    //.pipe(sourcemaps.write('./'))
+    .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest(paths.dest + '/assets/styles'));
 }
 
