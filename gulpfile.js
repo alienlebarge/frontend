@@ -61,6 +61,7 @@ gulp.task('fractal:build', function(){
 function styles() {
   const processors = [
     require('postcss-custom-properties'),
+    require('autoprefixer'),
     require('cssnano')
   ];
 
