@@ -21,7 +21,7 @@ figure,
 hr,
 table,
 fieldset {
-    margin-bottom: 1rem;
+    margin-bottom: var(--global-spacing-unit);
 }
 
 
@@ -30,7 +30,7 @@ fieldset {
  */
 
 dd, ol, ul {
-    margin-left: 1rem;
+    margin-left: var(--global-spacing-unit);
 }
 
 /* stylelint-enable selector-list-comma-newline-after */
