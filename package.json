@@ -1,0 +1,31 @@
+{
+  "name": "alb-frontend",
+  "version": "0.0.1",
+  "description": "Frontend of www.alienlebarge.ch",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alienlebarge/alb-frontend.git"
+  },
+  "keywords": [
+    "frontend",
+    "fractal",
+    "pattern",
+    "html",
+    "css",
+    "components"
+  ],
+  "author": "Cédric Aellen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alienlebarge/alb-frontend/issues"
+  },
+  "homepage": "https://github.com/alienlebarge/alb-frontend#readme",
+  "dependencies": {
+    "@frctl/fractal": "^1.0.11",
+    "faker": "^3.1.0"
+  }
+}
