@@ -31,7 +31,9 @@
     "gulp": "gulpjs/gulp#4.0",
     "gulp-sourcemaps": "^1.9.1",
     "gulp-stylelint": "^3.5.0",
-    "postcss-custom-properties": "^5.0.1"
+    "normalize.css": "^5.0.0",
+    "postcss-custom-properties": "^5.0.1",
+    "postcss-import": "^9.0.0"
   },
   "devDependencies": {
     "@frctl/fractal": "^1.0.11",

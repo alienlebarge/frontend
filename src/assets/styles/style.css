@@ -1,3 +1,4 @@
-body {
-    color: rgba(255, 0, 0, 1);
-}
+/**
+ * Generic
+ */
+@import "normalize.css";
