@@ -20,3 +20,8 @@ html {
     line-height: var(--global-line-height); /* [2] */
     overflow-y: scroll; /* [3] */
 }
+
+html.wf-active {
+    font-family: "ff-meta-serif-web-pro";
+    font-weight: 500;
+}
