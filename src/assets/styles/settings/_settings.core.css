@@ -3,7 +3,7 @@
    ======================================================================== */
 
 :root {
-    --global-font-size: 1.2em;
+    --global-font-size: calc(1em + 1vw);
     --global-line-height: 1.5;
     --global-spacing-unit: calc(
         var(--global-font-size)
