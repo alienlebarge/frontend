@@ -17,7 +17,7 @@
 html {
     min-height: 100%; /* [1] */
     font-size: var(--global-base-font-size); /* [2] */
-    line-height: var(--global-line-height); /* [2] */
+    line-height: var(--global-base-line-height); /* [2] */
     overflow-y: scroll; /* [3] */
 }
 
