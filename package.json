@@ -26,10 +26,13 @@
   "homepage": "https://github.com/alienlebarge/alb-frontend#readme",
   "dependencies": {
     "@alienlebarge/stylelint-config": "^2.0.5",
+    "@frctl/fractal": "^1.0.11",
     "autoprefixer": "^6.5.3",
     "cssnano": "^3.8.2",
     "del": "^2.2.2",
+    "faker": "^3.1.0",
     "gulp": "gulpjs/gulp#4.0",
+    "gulp-postcss": "^6.2.0",
     "gulp-sourcemaps": "^1.9.1",
     "gulp-stylelint": "^3.5.0",
     "normalize.css": "^5.0.0",
@@ -37,9 +40,5 @@
     "postcss-import": "^9.0.0",
     "postcss-nested": "^1.0.0"
   },
-  "devDependencies": {
-    "@frctl/fractal": "^1.0.11",
-    "faker": "^3.1.0",
-    "gulp-postcss": "^6.2.0"
-  }
+  "devDependencies": {}
 }
