@@ -33,8 +33,11 @@ fractal.web.set('builder.dest', paths.build);
 /* Tell Fractal where static assets are */
 fractal.web.set('static.path', paths.static);
 
-/* Tell Fractal what is the default preview */
-fractal.components.set('default.preview', '@preview');
+/* Tell fractal to not use file extension when rewriting URLs */
+fractal.web.set('builder.urls.ext', null);
 
 /* Tell fractal wich theme to use */
 fractal.web.theme(mandelbrot);
+
+/* Tell Fractal what is the default preview */
+fractal.components.set('default.preview', '@preview');
