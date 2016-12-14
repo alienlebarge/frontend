@@ -34,7 +34,10 @@
     --enhance-base-font-weight-bold: 700;
 
     /* Typography size */
-    --global-base-font-size: calc(1em + 1vw);
+    --global-base-font-size: calc(
+        16px + (32 - 16) * (
+            (100vw - 320px) / ( 1200 - 320) )
+        );
     --global-base-line-height: 1.5;
 
     /* Spacing */
