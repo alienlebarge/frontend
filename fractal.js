@@ -6,6 +6,15 @@ const paths = {
   static: __dirname + '/tmp'
 };
 
+const mandelbrot = require('@frctl/mandelbrot')({
+  favicon: '/assets/icons/icon.ico',
+  lang: 'en-gb',
+  static: {
+    mount: 'fractal'
+  },
+  skin: 'grey'
+});
+
 /* Create a new Fractal instance and export it for use elsewhere if required */
 const fractal = module.exports = require('@frctl/fractal').create();
 
@@ -26,3 +35,6 @@ fractal.web.set('static.path', paths.static);
 
 /* Tell Fractal what is the default preview */
 fractal.components.set('default.preview', '@preview');
+
+/* Tell fractal wich theme to use */
+fractal.web.theme(mandelbrot);
