@@ -23,7 +23,7 @@
   "bugs": {
     "url": "https://github.com/alienlebarge/alb-frontend/issues"
   },
-  "homepage": "https://github.com/alienlebarge/alb-frontend#readme",
+  "homepage": "http://www.alienlebarge.ch/alb-frontend",
   "dependencies": {
     "@alienlebarge/stylelint-config": "^2.0.5",
     "@frctl/fractal": "^1.0.11",
@@ -31,7 +31,9 @@
     "cssnano": "^3.8.2",
     "del": "^2.2.2",
     "faker": "^3.1.0",
+    "fs": "^0.0.1-security",
     "gulp": "gulpjs/gulp#4.0",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-postcss": "^6.2.0",
     "gulp-sourcemaps": "^1.9.1",
     "gulp-stylelint": "^3.5.0",

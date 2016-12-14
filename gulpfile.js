@@ -1,12 +1,16 @@
 'use strict';
 
+const pkg = require('./package.json');
 const gulp = require('gulp');
 const del = require('del');
+const fs = require('fs');
+const ghPages = require('gulp-gh-pages');
 const postcss = require('gulp-postcss');
 const stylelint = require('gulp-stylelint');
 const sourcemaps = require('gulp-sourcemaps');
 
 const paths = {
+  build: __dirname + '/www',
   dest: __dirname + '/tmp',
   src: __dirname + '/src',
 };
@@ -48,14 +52,15 @@ function serve() {
  * The build destination will be the directory specified in the 'builder.dest'
  * configuration option set above.
  */
-gulp.task('fractal:build', function(){
+function build() {
     const builder = fractal.web.builder();
+
     builder.on('progress', (completed, total) => logger.update(`Exported ${completed} of ${total} items`, 'info'));
     builder.on('error', err => logger.error(err.message));
     return builder.build().then(() => {
         logger.success('Fractal build completed!');
     });
-});
+};
 
 /**
  * Clean
@@ -63,6 +68,18 @@ gulp.task('fractal:build', function(){
  function clean() {
    return del(paths.dest + '/assets/');
  };
+
+/**
+ * Deploy
+ */
+function deploy() {
+  // Push contents of build folder to `gh-pages` branch
+  return gulp.src(paths.build + '/**/*')
+    .pipe(ghPages({
+      force: true
+    }));
+    done();
+}
 
 /**
  * Styles
@@ -110,4 +127,6 @@ function watch(done) {
 const compile = gulp.series(clean, gulp.parallel(styles));
 
 gulp.task('lint', gulp.series(lintstyles));
+gulp.task('build', gulp.series(compile, build));
 gulp.task('dev', gulp.series(compile, watch));
+gulp.task('publish', gulp.series(build, deploy));
