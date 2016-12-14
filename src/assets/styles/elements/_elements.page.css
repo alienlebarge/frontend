@@ -16,12 +16,12 @@
 
 html {
     min-height: 100%; /* [1] */
-    font-size: var(--global-font-size); /* [2] */
-    line-height: var(--global-line-height); /* [2] */
+    font-size: var(--global-base-font-size); /* [2] */
+    line-height: var(--global-base-line-height); /* [2] */
     overflow-y: scroll; /* [3] */
 }
 
 html.wf-active {
-    font-family: "ff-meta-serif-web-pro";
-    font-weight: 500;
+    font-weight: var(--enhance-base-font-weight-normal);
+    font-family: var(--enhance-base-font-family);
 }
