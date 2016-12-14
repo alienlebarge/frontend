@@ -3,7 +3,6 @@
 const pkg = require('./package.json');
 const gulp = require('gulp');
 const del = require('del');
-const fs = require('fs');
 const ghPages = require('gulp-gh-pages');
 const postcss = require('gulp-postcss');
 const stylelint = require('gulp-stylelint');
