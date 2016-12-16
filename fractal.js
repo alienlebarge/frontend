@@ -7,7 +7,6 @@ const paths = {
 };
 
 const mandelbrot = require('@frctl/mandelbrot')({
-  favicon: '/assets/icons/icon.ico',
   lang: 'en-gb',
   static: {
     mount: 'fractal'
