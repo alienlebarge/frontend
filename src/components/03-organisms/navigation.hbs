@@ -1,3 +1,8 @@
 <nav>
-    {{render '@ordered-list'}}
+    <h2>{{ title }}</h2>
+    <ol>
+    {{#each items}}
+        <li><a href="{{ url }}">{{ name }}</a></li>
+    {{/each}}
+    </ol>
 </nav>
