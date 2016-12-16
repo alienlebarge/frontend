@@ -28,10 +28,10 @@
     --global-headings-font-weight-bold: 700;
 
     /* Enhance headings font */
-    --enhance-headings-font-family: "ff-enzo-web",
+    --enhance-headings-font-family: "ff-meta-serif-sc-web-pro",
         var(--global-headings-font-family);
-    --enhance-base-font-weight-normal: 300;
-    --enhance-base-font-weight-bold: 700;
+    --enhance-headings-font-weight-normal: 500;
+    --enhance-headings-font-weight-bold: 700;
 
     /* Typography size */
     --global-base-font-size: calc(
