@@ -1,0 +1,54 @@
+{
+    "title": "Headings",
+    "default": "h1",
+    "variants": [
+        {
+            "name": "h1",
+            "label": "Heading level 1",
+            "context": {
+                "modifier": "h1",
+                "text": "Heading level 1"
+            }
+        },
+        {
+            "name": "h2",
+            "label": "Heading level 2",
+            "context": {
+                "modifier": "h2",
+                "text": "Heading level 2"
+            }
+        },
+        {
+            "name": "h3",
+            "label": "Heading level 3",
+            "context": {
+                "modifier": "h3",
+                "text": "Heading level 3"
+            }
+        },
+        {
+            "name": "h4",
+            "label": "Heading level 4",
+            "context": {
+                "modifier": "h4",
+                "text": "Heading level 4"
+            }
+        },
+        {
+            "name": "h5",
+            "label": "Heading level 5",
+            "context": {
+                "modifier": "h5",
+                "text": "Heading level 5"
+            }
+        },
+        {
+            "name": "h6",
+            "label": "Heading level 6",
+            "context": {
+                "modifier": "h6",
+                "text": "Heading level 6"
+            }
+        }
+    ]
+}
