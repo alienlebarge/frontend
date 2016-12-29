@@ -28,9 +28,9 @@
     --global-headings-font-weight-bold: 700;
 
     /* Enhance headings font */
-    --enhance-headings-font-family: "ff-meta-serif-sc-web-pro",
+    --enhance-headings-font-family: "gooddog-new",
         var(--global-headings-font-family);
-    --enhance-headings-font-weight-normal: 500;
+    --enhance-headings-font-weight-normal: 400;
     --enhance-headings-font-weight-bold: 700;
 
     /* Typography size */
