@@ -1,7 +1,7 @@
 'use strict';
 
  const faker = require('faker'); // require the faker module
- const paragraphCount = 3; // how many paragraphs we should generate data for
+ const paragraphCount = 1; // how many paragraphs we should generate data for
  const paragraphData = [];
 
  for (var i = 0; i < paragraphCount; i++) {
