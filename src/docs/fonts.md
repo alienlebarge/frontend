@@ -1,6 +1,6 @@
 The fonts use the website are:
 - FF Meta Serif Web Pro Book for long text
-- ?
+- FF Meta Serif SC Web Pro
 
 Include the following code to use these fonts:
 
