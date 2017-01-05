@@ -4,45 +4,60 @@
 
 :root {
 
-    /* Base font */
+    /**
+     * Base Font
+     *
+     * 1. Default font settings
+     * 2. Enhance font settings
+     */
     --global-base-font-family: -apple-system, BlinkMacSystemFont,
         "Palatino Linotype", Palatino, Palladio, "URW Palladio L",
         "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter",
         "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow",
         "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L",
-        Georgia, serif;
-    --global-base-font-weight-normal: 400;
-    --global-base-font-weight-bold: 700;
-
-    /* Enhance base font */
+        Georgia, serif; /* [1] */
+    --global-base-font-weight-normal: 400; /* [1] */
+    --global-base-font-weight-bold: 700; /* [1] */
     --enhance-base-font-family: "ff-meta-serif-web-pro",
-        var(--global-base-font-family);
-    --enhance-base-font-weight-normal: 500;
-    --enhance-base-font-weight-bold: 700;
+        var(--global-base-font-family); /* [2] */
+    --enhance-base-font-weight-normal: 500; /* [2] */
+    --enhance-base-font-weight-bold: 700; /* [2] */
 
-    /* Headings font */
+    /**
+     * Headings font
+     *
+     * 1. Default font settings
+     * 2. Enhance font settongs
+     */
     --global-headings-font-family: -apple-system, BlinkMacSystemFont,
         "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans",
-        "Droid Sans", "Helvetica Neue", sans-serif;
-    --global-headings-font-weight-normal: 400;
-    --global-headings-font-weight-bold: 700;
-
-    /* Enhance headings font */
+        "Droid Sans", "Helvetica Neue", sans-serif; /* [1] */
+    --global-headings-font-weight-normal: 400; /* [1] */
+    --global-headings-font-weight-bold: 700; /* [1] */
     --enhance-headings-font-family: "gooddog-new",
-        var(--global-headings-font-family);
-    --enhance-headings-font-weight-normal: 400;
-    --enhance-headings-font-weight-bold: 700;
+        var(--global-headings-font-family); /* [2] */
+    --enhance-headings-font-weight-normal: 400; /* [2] */
+    --enhance-headings-font-weight-bold: 700; /* [3] */
 
-    /* Typography size */
-    --global-base-font-size: calc(
-        16px + (32 - 16) * (
-            (100vw - 320px) / ( 1200 - 320) )
-        );
-    --global-base-line-height: 1.5;
+    /**
+     * Font sizing
+     *
+     * 1. Min and max font size in the range
+     * 2. Min and max line height in the range
+     * 3. Range
+     */
+    --global-base-min-font-size: 1em; /* [1] */
+    --global-base-max-font-size: 1.3em; /* [1] */
+    --global-base-min-line-height: 1.5em; /* [2] */
+    --global-base-max-line-height: 1.3em; /* [2] */
+    --global-base-lower-typography-range: 30em; /* [3] */
+    --global-base-upper-typography-range: 60em; /* [3] */
 
-    /* Spacing */
+    /**
+     * Spacing
+     */
     --global-spacing-unit: calc(
-        var(--global-base-font-size)
-        * var(--global-base-line-height)
+        var(--global-base-min-line-height)
+        * var(--global-base-min-line-height)
     );
 }
