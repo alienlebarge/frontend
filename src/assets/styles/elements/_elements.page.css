@@ -16,19 +16,10 @@
 
 html {
     min-height: 100%; /* [1] */
-
-    font-size: responsive; /* [2] */
-    min-font-size: var(--global-base-min-font-size); /* [2] */
-    max-font-size: var(--global-base-max-font-size); /* [2] */
-    lower-font-range: var(--global-base-lower-typography-range); /* [2] */
-    upper-font-range: var(--global-base-upper-typography-range); /* [2] */
-
-    line-height: responsive; /* [2] */
-    min-line-height: var(--global-base-min-line-height); /* [2] */
-    max-line-height: var(--global-base-max-line-height); /* [2] */
-    lower-line-height-range: var(--global-base-lower-typography-range); /* [2] */
-    upper-line-height-range: var(--global-base-upper-typography-range); /* [2] */
-
+    font-size: responsive var(--global-base-min-font-size) var(--global-base-max-font-size); /* [2] */
+    font-range: var(--global-base-lower-typography-range) var(--global-base-upper-typography-range); /* [2] */
+    line-height: responsive var(--global-base-min-line-height) var(--global-base-max-line-height); /* [2] */
+    line-height-range:  var(--global-base-lower-typography-range) var(--global-base-upper-typography-range); /* [2] */
     overflow-y: scroll; /* [3] */
 }
 
