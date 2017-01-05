@@ -46,7 +46,7 @@
      * 2. Min and max line height in the range
      * 3. Range
      */
-    --global-base-min-font-size: 1em; /* [1] */
+    --global-base-min-font-size: 1.2em; /* [1] */
     --global-base-max-font-size: 1.3em; /* [1] */
     --global-base-min-line-height: 1.5em; /* [2] */
     --global-base-max-line-height: 1.3em; /* [2] */
@@ -56,8 +56,5 @@
     /**
      * Spacing
      */
-    --global-spacing-unit: calc(
-        var(--global-base-min-line-height)
-        * var(--global-base-min-line-height)
-    );
+    --global-spacing-unit: 1.5em;
 }
