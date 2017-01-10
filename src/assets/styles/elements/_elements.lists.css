@@ -30,7 +30,7 @@
 
     ul > li::before {
         font-size: .8em; /* [3] */
-        margin-right: calc(var(--global-spacing-unit) / 2);
+        margin-right: calc(var(--global-spacing-unit) / 4);
         content: "\2022"; /* [2] */
     }
 
@@ -39,7 +39,7 @@
     }
 
     ol > li::before {
-        margin-right: calc(var(--global-spacing-unit) / 2);
+        margin-right: calc(var(--global-spacing-unit) / 4);
         counter-increment: section; /* [4] */
         content: counters(section, ".") "."; /* [4] */
     }
