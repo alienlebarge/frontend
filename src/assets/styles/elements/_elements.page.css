@@ -16,10 +16,14 @@
 
 html {
     min-height: 100%; /* [1] */
-    font-size: responsive var(--global-base-min-font-size) var(--global-base-max-font-size); /* [2] */
-    font-range: var(--global-base-lower-typography-range) var(--global-base-upper-typography-range); /* [2] */
-    line-height: responsive var(--global-base-min-line-height) var(--global-base-max-line-height); /* [2] */
-    line-height-range:  var(--global-base-lower-typography-range) var(--global-base-upper-typography-range); /* [2] */
+    font-range: var(--global-base-lower-typography-range)
+        var(--global-base-upper-typography-range); /* [2] */
+    font-size: responsive var(--global-base-min-font-size)
+        var(--global-base-max-font-size); /* [2] */
+    line-height: responsive var(--global-base-min-line-height)
+        var(--global-base-max-line-height); /* [2] */
+    line-height-range:  var(--global-base-lower-typography-range)
+        var(--global-base-upper-typography-range); /* [2] */
     overflow-y: scroll; /* [3] */
 }
 

@@ -120,7 +120,7 @@ function lintstyles() {
  */
 function watch(done) {
   serve();
-  gulp.watch(paths.src + '/**/*.css', styles);
+  gulp.watch(paths.src + '/**/*.css', gulp.parallel(lintstyles, styles));
 };
 
 /**
