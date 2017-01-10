@@ -107,6 +107,7 @@ function styles() {
 function lintstyles() {
   return gulp.src(paths.src + '/**/*.css')
     .pipe(stylelint({
+      failAfterError: false,
       reporters: [{
         formatter: 'string',
         console: true
@@ -125,9 +126,8 @@ function watch(done) {
 /**
  * Task set
  */
-const compile = gulp.series(clean, gulp.parallel(styles));
+const compile = gulp.series(clean, gulp.parallel(lintstyles, styles));
 
-gulp.task('lint', gulp.series(lintstyles));
 gulp.task('build', gulp.series(compile, build));
 gulp.task('dev', gulp.series(compile, watch));
 gulp.task('publish', gulp.series(build, deploy));
