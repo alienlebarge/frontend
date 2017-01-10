@@ -86,6 +86,7 @@ function deploy() {
 function styles() {
   const processors = [
     require('postcss-import'),
+    require('postcss-custom-media'),
     require('postcss-custom-properties'),
     require('postcss-nested'),
     require('postcss-responsive-type'),
