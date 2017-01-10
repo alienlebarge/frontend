@@ -6,8 +6,8 @@
  * Lists
  *
  * 1. Add margin on sublists.
- * 2. Add bullet via unicode.
- * 3. Make bullet smaller to fit the default list bullet size.
+ * 2. Make bullet smaller to fit the default list bullet size.
+ * 3. Add bullet via unicode.
  * 4. Set a counter to display it as the li are no more list-items.
  */
 
@@ -29,9 +29,9 @@
     }
 
     ul > li::before {
-        font-size: .8em; /* [3] */
+        font-size: .8em; /* [2] */
         margin-right: calc(var(--global-spacing-unit) / 4);
-        content: "\2022"; /* [2] */
+        content: "\2022"; /* [3] */
     }
 
     ol {
