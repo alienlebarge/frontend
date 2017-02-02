@@ -46,5 +46,7 @@
     "postcss-nested": "^1.0.0",
     "postcss-responsive-type": "^0.5.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "stylelint": "^7.8.0"
+  }
 }
