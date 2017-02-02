@@ -29,7 +29,7 @@
   "homepage": "http://www.alienlebarge.ch/alb-frontend",
   "dependencies": {
     "@alienlebarge/stylelint-config": "^2.0.5",
-    "@frctl/fractal": "^1.0.11",
+    "@frctl/fractal": "^1.1.0",
     "autoprefixer": "^6.5.3",
     "cssnano": "^3.8.2",
     "del": "^2.2.2",
