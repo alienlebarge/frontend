@@ -24,6 +24,7 @@ html {
         var(--global-base-max-line-height); /* [2] */
     line-height-range:  var(--global-base-lower-typography-range)
         var(--global-base-upper-typography-range); /* [2] */
+    color: rgba(51, 51, 51, 1);
     overflow-y: scroll; /* [3] */
 }
 

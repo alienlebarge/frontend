@@ -34,10 +34,10 @@
         "Droid Sans", "Helvetica Neue", sans-serif; /* [1] */
     --global-headings-font-weight-normal: 400; /* [1] */
     --global-headings-font-weight-bold: 700; /* [1] */
-    --enhance-headings-font-family: "gooddog-new",
+    --enhance-headings-font-family: "reklame-script",
         var(--global-headings-font-family); /* [2] */
     --enhance-headings-font-weight-normal: 400; /* [2] */
-    --enhance-headings-font-weight-bold: 700; /* [3] */
+    --enhance-headings-font-weight-bold: 500; /* [2] */
 
     /**
      * Font sizing
