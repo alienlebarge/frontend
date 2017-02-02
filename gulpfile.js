@@ -88,6 +88,7 @@ function styles() {
     require('postcss-import'),
     require('postcss-custom-media'),
     require('postcss-custom-properties'),
+    require('postcss-apply'),
     require('postcss-nested'),
     require('postcss-responsive-type'),
     require('autoprefixer'),

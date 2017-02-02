@@ -8,4 +8,5 @@
 
 table {
     width: 100%; /* [1] */
+    @apply --font-data;
 }

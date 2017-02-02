@@ -19,6 +19,12 @@
 @import "generic/_generic.shared.css";
 
 /**
+ * TOOLS
+ */
+
+@import "tools/_tools.typography.css";
+
+/**
  * ELEMENTS
  */
 @import "elements/_elements.page.css";
