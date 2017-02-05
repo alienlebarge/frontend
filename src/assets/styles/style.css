@@ -3,7 +3,7 @@
  */
 
 @import "settings/_settings.core.css";
-@import "settings/_breakpoints.core.css";
+@import "settings/_settings.breakpoints.css";
 
 /**
  * TOOLS
