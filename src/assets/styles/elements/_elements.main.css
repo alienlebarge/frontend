@@ -6,10 +6,22 @@
  * Main
  *
  * 1. Center content
+ * 2. Figure in main will touch the border
+ * 3. Figcaption in main won't touch the border
  */
 main {
     max-width: 25em;
     margin-right: auto; /* [1] */
     margin-left: auto; /* [1] */
-    padding: 1em;
+    padding: var(--global-spacing-unit);
+}
+
+main figure {
+    margin-right: -var(--global-spacing-unit); /* [2] */
+    margin-left: -var(--global-spacing-unit); /* [2] */
+}
+
+main figure figcaption {
+    margin-right: var(--global-spacing-unit); /* [3] */
+    margin-left: var(--global-spacing-unit); /* [3] */
 }
