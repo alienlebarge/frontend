@@ -1,0 +1,24 @@
+/* ========================================================================
+   #TYPOGRAPHY
+   ======================================================================== */
+
+/**
+ * Visually hidden
+ *
+ * Hide elements (e.g., a form label), but you still want to be read by a
+ * screen reader.
+ * https://developer.yahoo.com/blogs/ydn/
+ * clip-hidden-content-better-accessibility-53456.html
+ */
+.u-visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    border: 0 !important;
+    padding: 0 !important;
+    /* stylelint-disable */
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    /* stylelint-enable */
+    overflow: hidden;
+}
