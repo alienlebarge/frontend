@@ -153,12 +153,12 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-3b3432001e24764a7e90c766a466ff2d-panel-html">
     <code class="Code Code--lang-html">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">nav</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"nav"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Navigation<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">ol</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>page 1<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>page 2<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>page 3<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"homepage"</span>&gt;</span>Homepage<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"articles"</span>&gt;</span>Articles<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"resume"</span>&gt;</span>Resume<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span></pre>
         
@@ -168,7 +168,7 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-3b3432001e24764a7e90c766a466ff2d-panel-view">
     <code class="Code Code--lang-handlebars">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">nav</span>&gt;</span>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"nav"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span></span><span class="hljs-template-variable">{{ title }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">ol</span>&gt;</span>
     </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">each</span></span> items}}</span><span class="xml">
@@ -188,16 +188,16 @@
   <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Navigation"</span>,
   <span class="hljs-attr">"items"</span>: [
     {
-      <span class="hljs-attr">"name"</span>: <span class="hljs-string">"page 1"</span>,
-      <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>
+      <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Homepage"</span>,
+      <span class="hljs-attr">"url"</span>: <span class="hljs-string">"homepage"</span>
     },
     {
-      <span class="hljs-attr">"name"</span>: <span class="hljs-string">"page 2"</span>,
-      <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>
+      <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Articles"</span>,
+      <span class="hljs-attr">"url"</span>: <span class="hljs-string">"articles"</span>
     },
     {
-      <span class="hljs-attr">"name"</span>: <span class="hljs-string">"page 3"</span>,
-      <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>
+      <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Resume"</span>,
+      <span class="hljs-attr">"url"</span>: <span class="hljs-string">"resume"</span>
     }
   ]
 }</pre>
