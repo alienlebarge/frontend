@@ -2,14 +2,14 @@
     "context": {
         "title": "Navigation",
         "items": [{
-            "name": "page 1",
-            "url": "#"
+            "name": "Homepage",
+            "url": "homepage"
         },{
-            "name": "page 2",
-            "url": "#"
+            "name": "Articles",
+            "url": "articles"
         },{
-            "name": "page 3",
-            "url": "#"
+            "name": "Resume",
+            "url": "resume"
         }]
     }
 }
