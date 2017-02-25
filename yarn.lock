@@ -2,17 +2,19 @@
 # yarn lockfile v1
 
 
-"@alienlebarge/stylelint-config@^2.0.5":
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/@alienlebarge/stylelint-config/-/stylelint-config-2.0.5.tgz#30441a49ec8f04569aedeacc99c61b29307af9b2"
+"@alienlebarge/stylelint-config@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@alienlebarge/stylelint-config/-/stylelint-config-2.1.0.tgz#5a8972fdb7a389a365d769a932ba1b4fe45247f8"
+  dependencies:
+    stylelint-order "^0.3.0"
 
 "@allmarkedup/fang@^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@allmarkedup/fang/-/fang-1.0.0.tgz#20aa2ea365c57b0a28e6b563613270f5630d6883"
 
-"@frctl/fractal@^1.0.0", "@frctl/fractal@^1.1.0", "@frctl/fractal@^1.1.0-alpha.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@frctl/fractal/-/fractal-1.1.0.tgz#a5e3f0fb996abc3cc6f45dd68460d621f76d6b49"
+"@frctl/fractal@^1.0.0", "@frctl/fractal@^1.1.0-alpha.0", "@frctl/fractal@^1.1.3":
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/@frctl/fractal/-/fractal-1.1.3.tgz#be116c1b55a02746847d5b4cf1e76d36cf6ff458"
   dependencies:
     "@allmarkedup/fang" "^1.0.0"
     "@frctl/handlebars" "^1.1.3"
@@ -299,15 +301,15 @@ atob@~1.1.0:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/atob/-/atob-1.1.3.tgz#95f13629b12c3a51a5d215abdce2aa9f32f80773"
 
-autoprefixer@^6.0.0, autoprefixer@^6.3.1, autoprefixer@^6.5.3:
-  version "6.7.2"
-  resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-6.7.2.tgz#172ab07b998ae9b957530928a59a40be54a45023"
+autoprefixer@^6.0.0, autoprefixer@^6.3.1, autoprefixer@^6.7.5:
+  version "6.7.5"
+  resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-6.7.5.tgz#50848f39dc08730091d9495023487e7cc21f518d"
   dependencies:
-    browserslist "^1.7.1"
-    caniuse-db "^1.0.30000618"
+    browserslist "^1.7.5"
+    caniuse-db "^1.0.30000624"
     normalize-range "^0.1.2"
     num2fraction "^1.2.2"
-    postcss "^5.2.11"
+    postcss "^5.2.15"
     postcss-value-parser "^3.2.3"
 
 aws-sign2@~0.6.0:
@@ -489,12 +491,12 @@ browser-sync@^2.14.0:
     ua-parser-js "0.7.12"
     yargs "6.4.0"
 
-browserslist@^1.0.1, browserslist@^1.1.1, browserslist@^1.1.3, browserslist@^1.5.2, browserslist@^1.7.1:
-  version "1.7.1"
-  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-1.7.1.tgz#cc9bd193979a2a4b09fdb3df6003fefe48ccefe1"
+browserslist@^1.0.1, browserslist@^1.1.1, browserslist@^1.1.3, browserslist@^1.5.2, browserslist@^1.7.5:
+  version "1.7.5"
+  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-1.7.5.tgz#eca4713897b51e444283241facf3985de49a9e2b"
   dependencies:
-    caniuse-db "^1.0.30000617"
-    electron-to-chromium "^1.2.1"
+    caniuse-db "^1.0.30000624"
+    electron-to-chromium "^1.2.3"
 
 bs-recipes@1.3.4:
   version "1.3.4"
@@ -559,9 +561,9 @@ caniuse-api@^1.5.2:
     lodash.memoize "^4.1.0"
     lodash.uniq "^4.3.0"
 
-caniuse-db@^1.0.30000187, caniuse-db@^1.0.30000346, caniuse-db@^1.0.30000617, caniuse-db@^1.0.30000618:
-  version "1.0.30000618"
-  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000618.tgz#821258ff484f662864f28ffbcf849a6247acf1fa"
+caniuse-db@^1.0.30000187, caniuse-db@^1.0.30000346, caniuse-db@^1.0.30000624:
+  version "1.0.30000626"
+  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000626.tgz#44363dc86857efaf758fea9faef6a15ed93d8f33"
 
 capture-stack-trace@^1.0.0:
   version "1.0.0"
@@ -1152,9 +1154,9 @@ ee-first@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
 
-electron-to-chromium@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.2.1.tgz#63ac7579a1c5bedb296c8607621f2efc9a54b968"
+electron-to-chromium@^1.2.3:
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.2.4.tgz#9751cbea89fa120bf88c226ba41eb8d0b6f1b597"
 
 emitter-steward@^1.0.0:
   version "1.0.0"
@@ -1372,9 +1374,9 @@ extsprintf@1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/extsprintf/-/extsprintf-1.0.2.tgz#e1080e0658e300b06294990cc70e1502235fd550"
 
-faker@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/faker/-/faker-3.1.0.tgz#0f908faf4e6ec02524e54a57e432c5c013e08c9f"
+faker@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/faker/-/faker-4.1.0.tgz#1e45bbbecc6774b3c195fad2835109c6d748cc3f"
 
 fancy-log@^1.1.0:
   version "1.3.0"
@@ -1813,9 +1815,9 @@ gulp-sourcemaps@1.6.0:
     through2 "^2.0.0"
     vinyl "^1.0.0"
 
-gulp-sourcemaps@^2.4.0:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/gulp-sourcemaps/-/gulp-sourcemaps-2.4.0.tgz#9ce8fcf9ab29769819dff04ca781976072838979"
+gulp-sourcemaps@^2.4.1:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/gulp-sourcemaps/-/gulp-sourcemaps-2.4.1.tgz#8f65dc5c0d07b2fd5c88bc60ec7f13e56716bf74"
   dependencies:
     acorn "4.X"
     convert-source-map "1.X"
@@ -1828,16 +1830,16 @@ gulp-sourcemaps@^2.4.0:
     through2 "2.X"
     vinyl "1.X"
 
-gulp-stylelint@^3.5.0:
-  version "3.7.0"
-  resolved "https://registry.yarnpkg.com/gulp-stylelint/-/gulp-stylelint-3.7.0.tgz#199bd968fbe6447088a584dc7d665543f9fa97b4"
+gulp-stylelint@^3.9.0:
+  version "3.9.0"
+  resolved "https://registry.yarnpkg.com/gulp-stylelint/-/gulp-stylelint-3.9.0.tgz#a09a67af490b1fb28eb910b4cbfb5412c7f0bb71"
   dependencies:
     chalk "^1.1.3"
     deep-extend "^0.4.1"
-    gulp-util "^3.0.7"
+    gulp-util "^3.0.8"
     mkdirp "^0.5.1"
     promise "^7.1.1"
-    stylelint "^7.7.0"
+    stylelint "^7.9.0"
     through2 "^2.0.3"
 
 gulp-util@^3.0.7, gulp-util@^3.0.8:
@@ -2676,7 +2678,7 @@ lodash@^3.10.1, lodash@^3.3.1:
   version "3.10.1"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-3.10.1.tgz#5bf45e8e49ba4189e17d482789dfd15bd140b7b6"
 
-lodash@^4.0.0, lodash@^4.1.0, lodash@^4.12.0, lodash@^4.14.1, lodash@^4.3.0, lodash@^4.5.1:
+lodash@^4.0.0, lodash@^4.1.0, lodash@^4.12.0, lodash@^4.14.1, lodash@^4.17.4, lodash@^4.3.0, lodash@^4.5.1:
   version "4.17.4"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
 
@@ -3245,12 +3247,12 @@ portscanner@^1.0.0:
   dependencies:
     async "1.5.2"
 
-postcss-apply@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/postcss-apply/-/postcss-apply-0.4.0.tgz#1097020f17c2bcbaebfe3c4586be124212bd2468"
+postcss-apply@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/postcss-apply/-/postcss-apply-0.5.0.tgz#0c619e4eea3ef762ab957d02a2984cb97a689f10"
   dependencies:
     balanced-match "^0.4.2"
-    postcss "^5.2.0"
+    postcss "^5.2.11"
 
 postcss-calc@^5.2.0:
   version "5.3.1"
@@ -3502,9 +3504,9 @@ postcss-resolve-nested-selector@^0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/postcss-resolve-nested-selector/-/postcss-resolve-nested-selector-0.1.1.tgz#29ccbc7c37dedfac304e9fff0bf1596b3f6a0e4e"
 
-postcss-responsive-type@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/postcss-responsive-type/-/postcss-responsive-type-0.5.0.tgz#ad24006ea69127cf81831663ac8958b5a911bf11"
+postcss-responsive-type@^0.5.1:
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/postcss-responsive-type/-/postcss-responsive-type-0.5.1.tgz#274133bc046359e542a58bbc621847d040fd10e6"
   dependencies:
     postcss "^5.0.0"
 
@@ -3551,9 +3553,9 @@ postcss-zindex@^2.0.1:
     postcss "^5.0.4"
     uniqs "^2.0.0"
 
-postcss@^5.0.0, postcss@^5.0.10, postcss@^5.0.11, postcss@^5.0.12, postcss@^5.0.13, postcss@^5.0.14, postcss@^5.0.16, postcss@^5.0.18, postcss@^5.0.2, postcss@^5.0.20, postcss@^5.0.21, postcss@^5.0.4, postcss@^5.0.5, postcss@^5.0.8, postcss@^5.2.0, postcss@^5.2.10, postcss@^5.2.11, postcss@^5.2.4, postcss@^5.2.5:
-  version "5.2.11"
-  resolved "https://registry.yarnpkg.com/postcss/-/postcss-5.2.11.tgz#ff29bcd6d2efb98bfe08a022055ec599bbe7b761"
+postcss@^5.0.0, postcss@^5.0.10, postcss@^5.0.11, postcss@^5.0.12, postcss@^5.0.13, postcss@^5.0.14, postcss@^5.0.16, postcss@^5.0.18, postcss@^5.0.2, postcss@^5.0.20, postcss@^5.0.21, postcss@^5.0.4, postcss@^5.0.5, postcss@^5.0.8, postcss@^5.2.10, postcss@^5.2.11, postcss@^5.2.14, postcss@^5.2.15, postcss@^5.2.4, postcss@^5.2.5:
+  version "5.2.15"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-5.2.15.tgz#a9e8685e50e06cc5b3fdea5297273246c26f5b30"
   dependencies:
     chalk "^1.1.3"
     js-base64 "^2.1.9"
@@ -4344,7 +4346,15 @@ stylehacks@^2.3.0:
     text-table "^0.2.0"
     write-file-stdout "0.0.2"
 
-stylelint@^7.7.0, stylelint@^7.8.0:
+stylelint-order@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/stylelint-order/-/stylelint-order-0.3.0.tgz#9a0f593c077c04d5e5da22404dab84288c933843"
+  dependencies:
+    lodash "^4.17.4"
+    postcss "^5.2.14"
+    stylelint "^7.8.0"
+
+stylelint@^7.8.0:
   version "7.8.0"
   resolved "https://registry.yarnpkg.com/stylelint/-/stylelint-7.8.0.tgz#ac701044ed03c44f7a9f73d4d5dc1bd1eaae12d1"
   dependencies:
@@ -4362,6 +4372,45 @@ stylelint@^7.7.0, stylelint@^7.8.0:
     ignore "^3.2.0"
     known-css-properties "^0.0.6"
     lodash "^4.0.0"
+    log-symbols "^1.0.2"
+    meow "^3.3.0"
+    micromatch "^2.3.11"
+    normalize-selector "^0.2.0"
+    postcss "^5.0.20"
+    postcss-less "^0.14.0"
+    postcss-media-query-parser "^0.2.0"
+    postcss-reporter "^3.0.0"
+    postcss-resolve-nested-selector "^0.1.1"
+    postcss-scss "^0.4.0"
+    postcss-selector-parser "^2.1.1"
+    postcss-value-parser "^3.1.1"
+    resolve-from "^2.0.0"
+    specificity "^0.3.0"
+    string-width "^2.0.0"
+    style-search "^0.1.0"
+    stylehacks "^2.3.0"
+    sugarss "^0.2.0"
+    svg-tags "^1.0.0"
+    table "^4.0.1"
+
+stylelint@^7.9.0:
+  version "7.9.0"
+  resolved "https://registry.yarnpkg.com/stylelint/-/stylelint-7.9.0.tgz#b8d9ea20f887ab351075c6aded9528de24509327"
+  dependencies:
+    autoprefixer "^6.0.0"
+    balanced-match "^0.4.0"
+    chalk "^1.1.1"
+    colorguard "^1.2.0"
+    cosmiconfig "^2.1.1"
+    doiuse "^2.4.1"
+    execall "^1.0.0"
+    get-stdin "^5.0.0"
+    globby "^6.0.0"
+    globjoin "^0.1.4"
+    html-tags "^1.1.1"
+    ignore "^3.2.0"
+    known-css-properties "^0.0.6"
+    lodash "^4.17.4"
     log-symbols "^1.0.2"
     meow "^3.3.0"
     micromatch "^2.3.11"
