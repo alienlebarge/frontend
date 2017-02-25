@@ -48,6 +48,6 @@
     "postcss-responsive-type": "^0.5.1"
   },
   "devDependencies": {
-    "stylelint": "^7.8.0"
+    "stylelint": "^7.9.0"
   }
 }
