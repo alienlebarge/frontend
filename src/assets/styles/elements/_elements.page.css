@@ -16,6 +16,7 @@
 
 html {
     min-height: 100%; /* [1] */
+
     font-range: var(--global-base-lower-typography-range)
         var(--global-base-upper-typography-range); /* [2] */
     font-size: responsive var(--global-base-min-font-size)
