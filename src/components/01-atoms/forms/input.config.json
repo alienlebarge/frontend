@@ -1,0 +1,83 @@
+{
+  "variants": [
+    {
+      "name": "default",
+      "label": "Text",
+      "context": {
+        "type": "text"
+      }
+    },
+    {
+      "name": "search",
+      "context": {
+        "type": "search"
+      }
+    },
+    {
+      "name": "email",
+      "context": {
+        "type": "email"
+      }
+    },
+    {
+      "name": "url",
+      "context": {
+        "type": "url"
+      }
+    },
+    {
+      "name": "tel",
+      "context": {
+        "type": "tel"
+      }
+    },
+    {
+      "name": "number",
+      "context": {
+        "type": "number"
+      }
+    },
+    {
+      "name": "range",
+      "context": {
+        "type": "range"
+      }
+    },
+    {
+      "name": "date",
+      "context": {
+        "type": "date"
+      }
+    },
+    {
+      "name": "month",
+      "context": {
+        "type": "month"
+      }
+    },
+    {
+      "name": "week",
+      "context": {
+        "type": "time"
+      }
+    },
+    {
+      "name": "datetime",
+      "context": {
+        "type": "datetime"
+      }
+    },
+    {
+      "name": "datetime-local",
+      "context": {
+        "type": "datetime-local"
+      }
+    },
+    {
+      "name": "color",
+      "context": {
+        "type": "color"
+      }
+    }
+  ]
+}

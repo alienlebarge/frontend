@@ -1,5 +1,3 @@
 <picture>
-  {{#each sources}}
-  <source srcset="{{ srcset }}" media="{{ media }}">
-  {{/each}}
-  {{render '@image'}}</picture>
+    {% for attribute in sources %}<source srcset="{{ attribute.srcset }}" media="{{ attribute.media }}">{% endfor %}
+    {% render '@image' %}</picture>

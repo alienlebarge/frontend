@@ -1,8 +1,8 @@
 <nav id="nav">
     <h2>{{ title }}</h2>
     <ol>
-    {{#each items}}
-        <li><a href="{{ url }}">{{ name }}</a></li>
-    {{/each}}
+    {% for item in items %}
+        <li><a href="{{ item.url }}">{{ item.name }}</a></li>
+    {% endfor %}
     </ol>
 </nav>

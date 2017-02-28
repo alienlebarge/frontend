@@ -3,14 +3,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link media="all" rel="stylesheet" href="{{ path '/assets/styles/style.css' }}">
+    <link media="all" rel="stylesheet" href="{{ '/assets/styles/style.css' | path }}">
     <title>Preview Layout</title>
     <script src="https://use.typekit.net/vbs6yay.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
 </head>
 <body>
 
-{{{ yield }}}
+{{ yield }}
 
 </body>
 </html>
