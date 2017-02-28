@@ -20,23 +20,17 @@ const fractal = module.exports = require('@frctl/fractal').create();
 /* Set the title of the project */
 fractal.set('project.title', 'alb frontend');
 
-/* Tell Fractal where the components will live */
-fractal.components.set('path', paths.src + '/components');
+// Components settings
+fractal.components.set('path', paths.src + '/components'); // tell Fractal where the components will live
+fractal.components.engine('@frctl/nunjucks'); // register the Nunjucks adapter for your components
+fractal.components.set('ext', '.html'); // look for files with a .nunj file extension
+fractal.components.set('default.preview', '@preview'); // Tell Fractal what is the default preview
 
-/* Tell Fractal where the documentation pages will live */
-fractal.docs.set('path', __dirname + '/src/docs');
+// Documentation settings
+fractal.docs.set('path', __dirname + '/src/docs'); // tell Fractal where the documentation pages will live
 
-/* Destination for the static export */
-fractal.web.set('builder.dest', paths.build);
-
-/* Tell Fractal where static assets are */
-fractal.web.set('static.path', paths.static);
-
-/* Tell fractal to not use file extension when rewriting URLs */
-fractal.web.set('builder.urls.ext', null);
-
-/* Tell fractal wich theme to use */
-fractal.web.theme(mandelbrot);
-
-/* Tell Fractal what is the default preview */
-fractal.components.set('default.preview', '@preview');
+// Web settings
+fractal.web.set('builder.dest', paths.build); // Destination for the static export
+fractal.web.set('static.path', paths.static); // Tell Fractal where static assets are
+fractal.web.set('builder.urls.ext', null); // Tell fractal to not use file extension when rewriting URLs
+fractal.web.theme(mandelbrot); // Tell fractal wich theme to use
