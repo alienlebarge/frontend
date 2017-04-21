@@ -46,7 +46,7 @@
      * 3. Range
      */
     --global-base-min-font-size: 1.2em; /* [1] */
-    --global-base-max-font-size: 2.5em; /* [1] */
+    --global-base-max-font-size: 2em; /* [1] */
     --global-base-min-line-height: 1.5em; /* [2] */
     --global-base-max-line-height: 1.75em; /* [2] */
     --global-base-lower-typography-range: 30em; /* [3] */
