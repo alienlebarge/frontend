@@ -2,13 +2,13 @@
 {% block main %}
     {% render '@paragraph', {text: "Voici une question qui revient éternellement dans le monde du web."} %}
     {% render '@blockquote', {text: "Faut-il utiliser Bootstrap ou non ?", cite: "Quelqu'un"} %}
-    {% render '@figure' %}
     {% render '@paragraph', {text:"Je vais tenter de répondre à cette question, mais en prenant en compte un contexte particulier. Il s’agit de celui de développer une libraire de patterns distribuée à large échelle. Cette libraire comprend des styles, des fonctionnalités et de la documentation qui peuvent être utilisés, quelle que soit la technologie qui produit le frontend."} %}
     {% render '@paragraph', {text:"Vous l’aurez assez vite compris, je pense que dans ce contexte, il vaut mieux développer une solution maison."} %}
 
     {% render '@headings--h2', {text:"Arguments"}, true %}
     {% render '@headings--h3', {text:"Développer un framework pour ses propres besoins"}, true %}
     {% render '@paragraph', {text:"Bootstrap a énormément de composants. Mais vous avez très rarement (jamais ?) besoin de tout ce qui est mis à votre disposition."} %}
+    {% render '@figure' %}
     {% render '@paragraph', {text:"Développer son propre framwork permet de construire un outil qui réponde à vos besoins. Vous développer uniquement ce qui vous est nécessaire."} %}
     {% render '@paragraph', {text:"Cela a pour avantage de restreindre le poids des fichiers.
 Vos visiteurs éviteront ainsi de télécharger des styles, des scripts, des fonctionnalités inutilisés. Tout le monde n’a pas un forfait de donnée illimité. Ayez une attitude responsable. Consulter un site a un coût. D’autant plus si c’est via un forfait mobile."} %}
