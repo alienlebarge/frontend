@@ -51,6 +51,7 @@
     --global-base-max-line-height: 1.75em; /* [2] */
     --global-base-lower-typography-range: 30em; /* [3] */
     --global-base-upper-typography-range: 60em; /* [3] */
+    --global-small-font-size: .8em;
 
     /**
      * Spacing
