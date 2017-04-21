@@ -28,6 +28,7 @@
  * ELEMENTS
  */
 
+@import "elements/_elements.blockquotes.css";
 @import "elements/_elements.figcaption.css";
 @import "elements/_elements.headings.css";
 @import "elements/_elements.images.css";
