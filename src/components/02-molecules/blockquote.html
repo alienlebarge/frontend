@@ -1,4 +1,4 @@
 <blockquote>
-    {% include '@paragraph' %}
-    <cite cite="{{ blockquote.url }}">{{ blockquote.cite }}</cite>
+    {% include '@paragraph' -%}
+    {%- if cite %}<cite{% if url %} cite="{{ url }}"{% endif %}>{{ cite }}</cite>{%- endif %}
 </blockquote>
