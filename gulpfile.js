@@ -97,7 +97,7 @@ function deploy() {
  */
 function styles() {
   const processors = [
-    require('postcss-import'),
+    require('postcss-easy-import'),
     require('postcss-map')({
         maps: [
             paths.src + '/tokens/borders.json',
