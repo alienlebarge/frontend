@@ -13,8 +13,10 @@
 
 <link rel="stylesheet" href="../fractal/css/grey.css?cachebust=1.1.0" type="text/css">
 
+<link rel="stylesheet" href="../assets/styles/theme.css?cachebust=1.1.0" type="text/css">
 
-<title>README | alb frontend</title>
+
+<title>Design tokens | alb frontend</title>
 
 </head>
 <body>
@@ -52,7 +54,7 @@
 
     <div class="Document-header">
         
-        <h1 class="Document-title">README</h1>
+        <h1 class="Document-title">Design tokens</h1>
         
 
 
@@ -69,8 +71,248 @@
 
     
     
-    <h1 id="doc">Doc</h1>
-<p>This is an empty doc…</p>
+    <p><a href="https://medium.com/eightshapes-llc/25dd82d58421">Design tokens</a> are named entities that store visual design information. These are used in place of hard-coded values (such as hex values for color or pixels for spacing) in order to maintain a scalable, consistent system for UI development.</p>
+<h2 id="colour-palettes">Colour Palettes</h2>
+<p><strong>Primary</strong> palette values. Accessed via <code>map(colors, primary, &lt;key&gt;)</code></p>
+<div class="palette">
+<div class="color" style="color: rgba(255, 158, 158, 1)">
+    <span>rgba(255, 158, 158, 1)</span>
+    <code>light</code>
+  </div>
+<div class="color color--base" style="color: rgba(255, 107, 107, 1)">
+    <span>rgba(255, 107, 107, 1)</span>
+    <code>base</code>
+  </div>
+<div class="color" style="color: rgba(255, 56, 56, 1)">
+    <span>rgba(255, 56, 56, 1)</span>
+    <code>dark</code>
+  </div>
+</div>
+
+
+<p><strong>Secondary</strong> palette values. Accessed via <code>map(colors, secondary, &lt;key&gt;)</code></p>
+<div class="palette">
+<div class="color" style="color: rgba(85, 132, 140, 1)">
+    <span>rgba(85, 132, 140, 1)</span>
+    <code>light</code>
+  </div>
+<div class="color color--base" style="color: rgba(26, 83, 92, 1)">
+    <span>rgba(26, 83, 92, 1)</span>
+    <code>base</code>
+  </div>
+<div class="color" style="color: rgba(2, 62, 71, 1)">
+    <span>rgba(2, 62, 71, 1)</span>
+    <code>dark</code>
+  </div>
+</div>
+
+
+<p><strong>Tertiary</strong> palette values. Accessed via <code>map(colors, tertiary, &lt;key&gt;)</code></p>
+<div class="palette">
+<div class="color" style="color: rgba(255, 241, 173, 1)">
+    <span>rgba(255, 241, 173, 1)</span>
+    <code>light</code>
+  </div>
+<div class="color color--base" style="color: rgba(255, 230, 109, 1)">
+    <span>rgba(255, 230, 109, 1)</span>
+    <code>base</code>
+  </div>
+<div class="color" style="color: rgba(255, 198, 79, 1)">
+    <span>rgba(255, 198, 79, 1)</span>
+    <code>dark</code>
+  </div>
+</div>
+
+
+<p><strong>Text</strong> palette values. Accessed via <code>map(colors, text, &lt;key&gt;)</code></p>
+<div class="palette">
+<div class="color color--base" style="color: rgba(51, 51, 51, 1)">
+    <span>rgba(51, 51, 51, 1)</span>
+    <code>base</code>
+  </div>
+</div>
+
+
+<p><strong>Neutral</strong> palette values. Accessed via <code>map(colors, neutral, &lt;key&gt;)</code></p>
+<div class="palette">
+<div class="color" style="color: #efeff0">
+    <span>#efeff0</span>
+    <code>lightest</code>
+  </div>
+<div class="color" style="color: #b9b9c0">
+    <span>#b9b9c0</span>
+    <code>lighter</code>
+  </div>
+<div class="color" style="color: #8c8c9c">
+    <span>#8c8c9c</span>
+    <code>light</code>
+  </div>
+<div class="color color--base" style="color: #778">
+    <span>#778</span>
+    <code>base</code>
+  </div>
+<div class="color" style="color: #636373">
+    <span>#636373</span>
+    <code>dark</code>
+  </div>
+<div class="color" style="color: #3f3f46">
+    <span>#3f3f46</span>
+    <code>darker</code>
+  </div>
+<div class="color" style="color: #1f1f20">
+    <span>#1f1f20</span>
+    <code>darkest</code>
+  </div>
+</div>
+
+
+
+<h2 id="borders">Borders</h2>
+<p>Width and radius tokens are used to style element borders. Accessed via <code>map(borders, &lt;key&gt;)</code>.</p>
+<h3 id="width">Width</h3>
+<p>Accessed via <code>map(borders, width, &lt;key&gt;)</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>thin</code></td>
+<td>1px</td>
+</tr>
+<tr>
+<td><code>thick</code></td>
+<td>2px</td>
+</tr>
+<tr>
+<td><code>thicker</code></td>
+<td>4px</td>
+</tr>
+<tr>
+<td><code>thickest</code></td>
+<td>8px</td>
+</tr>
+</tbody>
+</table>
+<h3 id="radius">Radius</h3>
+<p>Accessed via <code>map(borders, radius, &lt;key&gt;)</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>small</code></td>
+<td>0.125rem</td>
+</tr>
+<tr>
+<td><code>default</code></td>
+<td>0.25rem</td>
+</tr>
+<tr>
+<td><code>circle</code></td>
+<td>50%</td>
+</tr>
+</tbody>
+</table>
+<h2 id="breakpoints">Breakpoints</h2>
+<p>Breakpoint tokens are used within <code>@media</code> queries. Accessed via <code>map(breakpoints, &lt;key&gt;)</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>mobile</code></td>
+<td>320px</td>
+</tr>
+<tr>
+<td><code>tablet</code></td>
+<td>740px</td>
+</tr>
+<tr>
+<td><code>desktop</code></td>
+<td>980px</td>
+</tr>
+<tr>
+<td><code>wide</code></td>
+<td>1300px</td>
+</tr>
+</tbody>
+</table>
+<h2 id="font-families">Font families</h2>
+<p>Font family tokens are used for typographic styling. Accessed via <code>map(fonts, &lt;key&gt;)</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>base-font-family</code></td>
+<td><span style="font: 1.25em/1 'ff-meta-serif-web-pro', serif">‘ff-meta-serif-web-pro’, serif</span></td>
+</tr>
+<tr>
+<td><code>headings-font-family</code></td>
+<td><span style="font: 1.25em/1 'reklame-script', sans-serif">‘reklame-script’, sans-serif</span></td>
+</tr>
+<tr>
+<td><code>family-monospace</code></td>
+<td><span style="font: 1.25em/1 'Source Code Pro', monospace">‘Source Code Pro’, monospace</span></td>
+</tr>
+<tr>
+<td><code>family-system</code></td>
+<td><span style="font: 1.25em/1 -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">-apple-system, BlinkMacSystemFont, ‘Segoe UI’, Roboto, Oxygen, Ubuntu, Cantarell, ‘Open Sans’, ‘Helvetica Neue’, sans-serif</span></td>
+</tr>
+</tbody>
+</table>
+<h2 id="spacing">Spacing</h2>
+<p>Spacing tokens describe the distance between elements. Accessed via <code>map(spaces, &lt;key&gt;)</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>xsmall</code></td>
+<td>0.25rem</td>
+</tr>
+<tr>
+<td><code>small</code></td>
+<td>0.5rem</td>
+</tr>
+<tr>
+<td><code>medium</code></td>
+<td>1rem</td>
+</tr>
+<tr>
+<td><code>large</code></td>
+<td>1.5rem</td>
+</tr>
+<tr>
+<td><code>xlarge</code></td>
+<td>3rem</td>
+</tr>
+<tr>
+<td><code>xxlarge</code></td>
+<td>4.5rem</td>
+</tr>
+</tbody>
+</table>
 
     
 
@@ -1872,9 +2114,19 @@
     
         
         
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../.." data-pjax>
+                <span>Overview</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
         <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
             <a class="Tree-entityLink" href="" data-pjax>
-                <span>README</span>
+                <span>Design tokens</span>
                 
             </a>
         </li>
