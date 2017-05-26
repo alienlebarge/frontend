@@ -9,3 +9,12 @@ label: "Design tokens"
 **{{ palette | capitalize }}** palette values. Accessed via `map(colors, {{ palette }}, <key>)`
 {% include "@palette-sample" %}
 {% endfor %}
+
+## Breakpoints
+Breakpoint tokens are used within `@media` queries. Accessed via `map(breakpoints, <key>)`.
+
+Key         | Value
+------------|------------
+{% for key, value in breakpoints -%}
+`{{ key }}` | {{ value }}
+{% endfor -%}

@@ -11,7 +11,7 @@
  * 4. Set a counter to display it as the li are no more list-items.
  */
 
-@media (--palm) {
+@media (--mobile-and-down) {
 
     ul,
     ol {

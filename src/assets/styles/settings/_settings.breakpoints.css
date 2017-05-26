@@ -2,5 +2,18 @@
    #BREAKPOINTS
    ======================================================================== */
 
-@custom-media --palm screen and (max-width: 44.9375em);
-@custom-media --lap-and-up screen and (min-width: 45em);
+/* mobile */
+@custom-media --mobile-and-down screen and (width < map(breakpoints, mobile));
+@custom-media --mobile-and-up screen and (width >= map(breakpoints, mobile));
+
+/* tablet */
+@custom-media --tablet-and-down screen and (width < map(breakpoints, tablet));
+@custom-media --tablet-and-up screen and (width >= map(breakpoints, tablet));
+
+/* desktop */
+@custom-media --desktop-and-down screen and (width < map(breakpoints, desktop));
+@custom-media --desktop-and-up screen and (width >= map(breakpoints, desktop));
+
+/* wide */
+@custom-media --wide-and-down screen and (width < map(breakpoints, wide));
+@custom-media --wide-and-up screen and (width >= map(breakpoints, wide));
