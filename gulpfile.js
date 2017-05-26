@@ -1,13 +1,28 @@
 'use strict';
 
 const pkg = require('./package.json');
-const gulp = require('gulp');
+
+// Utils
 const del = require('del');
-const ghPages = require('gulp-gh-pages');
+const gulp = require('gulp');
+
+// CSS
 const postcss = require('gulp-postcss');
 const stylelint = require('gulp-stylelint');
+
+// Javascripts
+const babel = require('gulp-babel');
+
+// Misc
+const ghPages = require('gulp-gh-pages');
 const sourcemaps = require('gulp-sourcemaps');
 
+
+/**
+ * Configuration
+ */
+
+// Paths
 const paths = {
   build: __dirname + '/www',
   dest: __dirname + '/tmp',
