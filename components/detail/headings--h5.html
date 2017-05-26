@@ -131,6 +131,12 @@
         
         
         
+        <li class="Browser-tab Browser-tab--resources" data-role="tab">
+            <a href="#browser-34dbbffa052376efd2587cce062fb447-panel-assets">Assets</a>
+        </li>
+        
+        
+        
         
         
         <li class="Browser-tab Browser-tab--info" data-role="tab">
@@ -181,6 +187,123 @@
 
     
     
+
+
+<div class="Browser-panel Browser-resources" data-role="tab-panel" id="browser-34dbbffa052376efd2587cce062fb447-panel-assets">
+    <div class="FileBrowser">
+
+        <div class="FileBrowser-selectWrapper">
+            <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
+            <select class="FileBrowser-select" id="filebrowser-select">
+                
+                <option value="file-ca775662e18b55b5f46dea6bd8e16a90">_elements.headings.css</option>
+                
+            </select>
+        </div>
+
+        
+        <div class="FileBrowser-item is-active" id="file-ca775662e18b55b5f46dea6bd8e16a90" data-role="resource-preview">
+            <ul class="Meta">
+                <li class="Meta-item">
+                    <strong class="Meta-key">Content:</strong>
+                    <span class="Meta-value">
+                        <div class="FileBrowser-itemPreview">
+                            
+                            <code class="Code Code--lang-CSS FileBrowser-code">
+                                <pre>/* ==========================================================================
+   #HEADINGS
+   ========================================================================== */
+
+:root {
+    --font-size-h1: 2.25em;
+    --font-size-h2: 1.75em;
+    --font-size-h3: 1.5em;
+    --font-size-h4: 1.25em;
+    --font-size-h5: 1.125em;
+    --font-size-h6: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--global-headings-font-family);
+    line-height: 1.2;
+
+    margin-top: 1.5em;
+    margin-bottom: .5em;
+
+    @apply --font-headings;
+}
+
+h1 {
+    font-size: var(--font-size-h1);
+
+    border-bottom: var(--global-border-width) solid
+        var(--global-secondary-tertiary);
+}
+
+h2 {
+    font-size: var(--font-size-h2);
+
+    border-bottom: var(--global-border-width) solid
+        var(--global-secondary-tertiary);
+}
+
+h3 {
+    font-size: var(--font-size-h3);
+}
+
+h4 {
+    font-size: var(--font-size-h4);
+}
+
+h5 {
+    font-size: var(--font-size-h5);
+}
+
+h6 {
+    font-size: var(--font-size-h6);
+}
+
+.wf-active {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-weight: var(--enhance-headings-font-weight-bold);
+        font-family: var(--enhance-headings-font-family);
+    }
+}
+</pre>
+                            </code>
+                            
+                        </div>
+                    </span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">URL:</strong>
+                    <span class="Meta-value"><a data-no-pjax href="../raw/headings/_elements.headings.css"><span>/components/raw/headings/_elements.headings.css</span></a></span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Filesystem Path:</strong>
+                    <span class="Meta-value">src/components/01-atoms/text/headings/_elements.headings.css</span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Size:</strong>
+                    <span class="Meta-value">1.2 KB</span>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+</div>
+
 
 
     
@@ -338,6 +461,30 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="button" data-pjax>
                 <span>Button</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="description-list" data-pjax>
+                <span>Description List</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -971,8 +1118,8 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="description-list" data-pjax>
-                <span>Description List</span>
+            <a class="Tree-entityLink" href="lists--default" data-pjax>
+                <span>Default</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -995,32 +1142,8 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="ordered-list" data-pjax>
-                <span>Ordered List</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="unordered-list" data-pjax>
-                <span>Unordered List</span>
+            <a class="Tree-entityLink" href="lists--ordered" data-pjax>
+                <span>Ordered</span>
                 
 
 <div class="Status Status--unlabelled">

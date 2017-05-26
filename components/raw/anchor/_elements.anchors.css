@@ -1,0 +1,14 @@
+/* ==========================================================================
+   #ANCHORS
+   ========================================================================== */
+
+a {
+    color: var(--global-secondary-color);
+    text-decoration: none;
+
+    border-bottom: .125em solid var(--global-primary-color);
+
+    &:hover {
+        color: var(--global-primary-color);
+    }
+}

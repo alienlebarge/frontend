@@ -1,0 +1,22 @@
+/* ==========================================================================
+   #BLOCKQUOTES
+   ========================================================================== */
+
+blockquote {
+    font-style: italic;
+
+    border-left: var(--global-border-width) solid var(--global-text-color);
+    padding-left: var(--global-spacing-unit);
+
+    cite {
+        font-size: var(--global-small-font-size);
+
+        &::before {
+            content: "\2014\00a0";
+        }
+    }
+}
+
+main blockquote {
+    margin-left: -var(--global-spacing-unit);
+}

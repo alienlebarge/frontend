@@ -131,6 +131,10 @@
         
         
         
+        <li class="Browser-tab Browser-tab--resources" data-role="tab">
+            <a href="#browser-e96ced98769ec88bed0d1afd77fd8108-panel-assets">Assets</a>
+        </li>
+        
         
         
         
@@ -192,6 +196,73 @@
     
 
 
+<div class="Browser-panel Browser-resources" data-role="tab-panel" id="browser-e96ced98769ec88bed0d1afd77fd8108-panel-assets">
+    <div class="FileBrowser">
+
+        <div class="FileBrowser-selectWrapper">
+            <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
+            <select class="FileBrowser-select" id="filebrowser-select">
+                
+                <option value="file-25c0ca7595ee1303ca9df30d4fab2a3b">_elements.blockquotes.css</option>
+                
+            </select>
+        </div>
+
+        
+        <div class="FileBrowser-item is-active" id="file-25c0ca7595ee1303ca9df30d4fab2a3b" data-role="resource-preview">
+            <ul class="Meta">
+                <li class="Meta-item">
+                    <strong class="Meta-key">Content:</strong>
+                    <span class="Meta-value">
+                        <div class="FileBrowser-itemPreview">
+                            
+                            <code class="Code Code--lang-CSS FileBrowser-code">
+                                <pre>/* ==========================================================================
+   #BLOCKQUOTES
+   ========================================================================== */
+
+blockquote {
+    font-style: italic;
+
+    border-left: var(--global-border-width) solid var(--global-text-color);
+    padding-left: var(--global-spacing-unit);
+
+    cite {
+        font-size: var(--global-small-font-size);
+
+        &amp;::before {
+            content: "\2014\00a0";
+        }
+    }
+}
+
+main blockquote {
+    margin-left: -var(--global-spacing-unit);
+}
+</pre>
+                            </code>
+                            
+                        </div>
+                    </span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">URL:</strong>
+                    <span class="Meta-value"><a data-no-pjax href="../raw/blockquote/_elements.blockquotes.css"><span>/components/raw/blockquote/_elements.blockquotes.css</span></a></span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Filesystem Path:</strong>
+                    <span class="Meta-value">src/components/02-molecules/blockquote/_elements.blockquotes.css</span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Size:</strong>
+                    <span class="Meta-value">539 Bytes</span>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+</div>
+
 
 
     
@@ -225,7 +296,7 @@
         </li>
         <li class="Meta-item">
             <strong class="Meta-key">Filesystem Path:</strong>
-            <span class="Meta-value">src/components/02-molecules/blockquote.html</span>
+            <span class="Meta-value">src/components/02-molecules/blockquote/blockquote.html</span>
         </li>
         
         <li class="Meta-item">
@@ -327,6 +398,30 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="button" data-pjax>
                 <span>Button</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="description-list" data-pjax>
+                <span>Description List</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -960,8 +1055,8 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="description-list" data-pjax>
-                <span>Description List</span>
+            <a class="Tree-entityLink" href="lists--default" data-pjax>
+                <span>Default</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -984,32 +1079,8 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="ordered-list" data-pjax>
-                <span>Ordered List</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="unordered-list" data-pjax>
-                <span>Unordered List</span>
+            <a class="Tree-entityLink" href="lists--ordered" data-pjax>
+                <span>Ordered</span>
                 
 
 <div class="Status Status--unlabelled">

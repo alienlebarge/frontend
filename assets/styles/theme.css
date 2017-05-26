@@ -1,2 +1,120 @@
-.palette{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin:0 -.25em}.color{position:relative;-webkit-box-flex:1;-ms-flex:1 1 4em;flex:1 1 4em;margin:0 .25em 1.5em}.color:before{display:block;width:100%;height:5em;background-color:currentColor;content:""}.color code{display:inline-block;color:$color-text}.color span{position:absolute;top:.5rem;left:.5rem;display:block;font:.75em/1em Hack,Consolas,Monaco,monospace;font-style:normal;color:#efeff0;text-shadow:0 0 2px #333}.color--base{margin-right:1em;-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1}
+/* =====================================================
+   Fractal UI styles
+   ===================================================== */
+
+/* ========================================================================
+   #CORE
+   ======================================================================== */
+
+:root {
+    /**
+     * Base Font
+     *
+     * 1. Default font settings
+     * 2. Enhance font settings
+     */ /* [1] */ /* [1] */ /* [1] */ /* [2] */ /* [2] */ /* [2] */
+
+    /**
+     * Headings font
+     *
+     * 1. Default font settings
+     * 2. Enhance font settongs
+     */ /* [1] */ /* [1] */ /* [1] */ /* [2] */ /* [2] */ /* [2] */
+
+    /**
+     * Font sizing
+     *
+     * 1. Min and max font size in the range
+     * 2. Min and max line height in the range
+     * 3. Range
+     */ /* [1] */ /* [1] */ /* [2] */ /* [2] */ /* [3] */ /* [3] */
+
+    /**
+     * Colors
+     */
+
+    /**
+     * Spacing
+     */
+
+    /**
+     * Border
+     */
+}
+
+/* ========================================================================
+   #BREAKPOINTS
+   ======================================================================== */
+
+/* mobile */
+
+/* tablet */
+
+/* desktop */
+
+/* wide */
+
+/* Palette container */
+
+.palette {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+    margin: 0 -.25em;
+}
+
+/* Colour swatch */
+
+.color {
+    position: relative;
+
+    -webkit-box-flex: 1;
+
+        -ms-flex: 1 1 4em;
+
+            flex: 1 1 4em;
+
+    margin: 0 .25em 1.5em;
+}
+
+.color::before {
+        display: block;
+        width: 100%;
+        height: 5em;
+
+        background-color: currentColor;
+        content: "";
+
+        /* border-radius: map(borders, radius-default); */
+    }
+
+.color code {
+        display: inline-block;
+
+        color: $color-text;
+    }
+
+.color span {
+        position: absolute;
+        top: .5rem;
+        left: .5rem;
+
+        display: block;
+
+        font: .75em/1em Hack, Consolas, Monaco, monospace;
+        font-style: normal;
+        color: #efeff0;
+        text-shadow: 0 0 2px rgba(51, 51, 51, 1);
+    }
+
+.color--base {
+    margin-right: 1em;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+}
+
 /*# sourceMappingURL=theme.css.map */
