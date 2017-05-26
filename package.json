@@ -27,6 +27,10 @@
     "url": "https://github.com/alienlebarge/alb-frontend/issues"
   },
   "homepage": "http://www.alienlebarge.ch/alb-frontend",
+  "browserslist": [
+    "> 5% in CH",
+    "last 2 versions"
+  ],
   "dependencies": {
     "@alienlebarge/stylelint-config": "^2.1.0",
     "@frctl/fractal": "^1.1.4",
