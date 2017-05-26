@@ -2569,7 +2569,7 @@ js-beautify@^1.6.2:
     mkdirp "~0.5.0"
     nopt "~3.0.1"
 
-js-yaml@^3.4.3, js-yaml@^3.6.1, js-yaml@^3.8.1:
+js-yaml@^3.4.3, js-yaml@^3.5.4, js-yaml@^3.6.1, js-yaml@^3.8.1:
   version "3.8.4"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.8.4.tgz#520b4564f86573ba96662af85a8cafa7b4b5a6f6"
   dependencies:
@@ -3637,6 +3637,14 @@ postcss-load-plugins@^2.3.0:
   dependencies:
     cosmiconfig "^2.1.1"
     object-assign "^4.1.0"
+
+postcss-map@^0.9.0:
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/postcss-map/-/postcss-map-0.9.0.tgz#00b0b7649384ec3de2fbe4e43557cbe02a417d44"
+  dependencies:
+    js-yaml "^3.5.4"
+    postcss "^6.0.0"
+    reduce-function-call "^1.0.1"
 
 postcss-media-query-parser@^0.2.0:
   version "0.2.3"

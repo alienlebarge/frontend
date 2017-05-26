@@ -49,6 +49,7 @@
     "postcss-custom-media": "^6.0.0",
     "postcss-custom-properties": "^6.0.1",
     "postcss-import": "^10.0.0",
+    "postcss-map": "^0.9.0",
     "postcss-nested": "^2.0.2",
     "postcss-responsive-type": "^0.5.1"
   },
