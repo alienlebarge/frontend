@@ -1,0 +1,13 @@
+{
+  "width": {
+    "thin": "1px",
+    "thick": "2px",
+    "thicker": "4px",
+    "thickest": "8px"
+  },
+  "radius": {
+    "small": "0.125rem",
+    "default": "0.25rem",
+    "circle": "50%"
+  }
+}

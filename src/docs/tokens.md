@@ -10,6 +10,20 @@ label: "Design tokens"
 {% include "@palette-sample" %}
 {% endfor %}
 
+## Borders
+Width and radius tokens are used to style element borders. Accessed via `map(borders, <key>)`.
+
+{% for properties, values in borders %}
+### {{ properties | capitalize }}
+Accessed via `map(borders, {{ properties }}, <key>)`.
+
+Key         | Value
+------------|------------
+{% for key, value in values -%}
+`{{ key }}` | {{ value }}
+{% endfor -%}
+{% endfor -%}
+
 ## Breakpoints
 Breakpoint tokens are used within `@media` queries. Accessed via `map(breakpoints, <key>)`.
 

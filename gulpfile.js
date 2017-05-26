@@ -100,6 +100,7 @@ function styles() {
     require('postcss-import'),
     require('postcss-map')({
         maps: [
+            paths.src + '/tokens/borders.json',
             paths.src + '/tokens/breakpoints.json',
             paths.src + '/tokens/colors.json',
             paths.src + '/tokens/fonts.json',
