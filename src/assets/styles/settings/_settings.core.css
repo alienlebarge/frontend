@@ -57,9 +57,9 @@
      * Colors
      */
     --global-text-color: rgba(51, 51, 51, 1);
-    --global-primary-color: rgba(255, 107, 107, 1);
-    --global-secondary-color: rgba(26, 83, 92, 1);
-    --global-secondary-tertiary: rgba(255, 230, 109, 1);
+    --global-primary-color: map(colors, primary, base);
+    --global-secondary-color: map(colors, secondary, base);
+    --global-secondary-tertiary: map(colors, tertiary, base);
 
     /**
      * Spacing

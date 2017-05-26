@@ -1,13 +1,21 @@
 {
   "primary": {
-    "light": "#f04",
-    "base": "#FF6B6B",
-    "dark": "#601"
+    "light": "rgba(255, 158, 158, 1)",
+    "base": "rgba(255, 107, 107, 1)",
+    "dark": "rgba(255, 56, 56, 1)"
   },
   "secondary": {
-    "light": "#3be",
-    "base": "#FFE66D",
-    "dark": "#257"
+    "light": "rgba(85, 132, 140, 1)",
+    "base": "rgba(26, 83, 92, 1)",
+    "dark": "rgba(2, 62, 71, 1)"
+  },
+  "tertiary": {
+    "light": "rgba(255, 241, 173, 1)",
+    "base": "rgba(255, 230, 109, 1)",
+    "dark": "rgba(255, 198, 79, 1)"
+  },
+  "text": {
+    "base": "rgba(51, 51, 51, 1)"
   },
   "neutral": {
     "lightest": "#efeff0",

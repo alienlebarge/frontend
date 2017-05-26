@@ -86,6 +86,11 @@ function deploy() {
 function styles() {
   const processors = [
     require('postcss-import'),
+    require('postcss-map')({
+        maps: [
+            paths.src + '/tokens/colors.json'
+        ],
+    }),
     require('postcss-custom-media'),
     require('postcss-custom-properties'),
     require('postcss-apply'),
