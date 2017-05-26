@@ -27,3 +27,12 @@ Key         | Value
 {% for key, value in fonts -%}
 `{{ key }}` | <span style="font: 1.25em/1 {{ value }}">{{ value }}</span>
 {% endfor -%}
+
+## Spacing
+Spacing tokens describe the distance between elements. Accessed via `map(spaces, <key>)`.
+
+Key         | Value
+------------|------------
+{% for key, value in spaces -%}
+`{{ key }}` | {{ value }}
+{% endfor -%}

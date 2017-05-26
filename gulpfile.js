@@ -102,7 +102,8 @@ function styles() {
         maps: [
             paths.src + '/tokens/breakpoints.json',
             paths.src + '/tokens/colors.json',
-            paths.src + '/tokens/fonts.json'
+            paths.src + '/tokens/fonts.json',
+            paths.src + '/tokens/spaces.json'
         ],
     }),
     require('postcss-media-minmax'),

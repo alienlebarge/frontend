@@ -58,7 +58,7 @@
     /**
      * Spacing
      */
-    --global-spacing-unit: 1em;
+    --global-spacing-unit: map(spaces, medium);
 
     /**
      * Border
