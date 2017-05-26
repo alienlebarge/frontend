@@ -10,9 +10,6 @@ const gulp = require('gulp');
 const postcss = require('gulp-postcss');
 const stylelint = require('gulp-stylelint');
 
-// Javascripts
-const babel = require('gulp-babel');
-
 // Misc
 const ghPages = require('gulp-gh-pages');
 const sourcemaps = require('gulp-sourcemaps');
