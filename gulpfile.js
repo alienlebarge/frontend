@@ -89,7 +89,8 @@ function styles() {
     require('postcss-map')({
         maps: [
             paths.src + '/tokens/breakpoints.json',
-            paths.src + '/tokens/colors.json'
+            paths.src + '/tokens/colors.json',
+            paths.src + '/tokens/fonts.json'
         ],
     }),
     require('postcss-media-minmax'),

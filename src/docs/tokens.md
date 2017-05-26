@@ -18,3 +18,12 @@ Key         | Value
 {% for key, value in breakpoints -%}
 `{{ key }}` | {{ value }}
 {% endfor -%}
+
+## Font families
+Font family tokens are used for typographic styling. Accessed via `map(fonts, <key>)`.
+
+Key         | Value
+------------|------------
+{% for key, value in fonts -%}
+`{{ key }}` | <span style="font: 1.25em/1 {{ value }}">{{ value }}</span>
+{% endfor -%}
