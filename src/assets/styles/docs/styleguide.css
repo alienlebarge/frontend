@@ -1,0 +1,51 @@
+/* Palette container */
+.palette {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 0 -.25em;
+}
+
+/* Colour swatch */
+.color {
+    position: relative;
+
+    flex: 1 1 4em;
+
+    margin: 0 .25em 1.5em;
+
+    &::before {
+        display: block;
+        width: 100%;
+        height: 5em;
+
+        background-color: currentColor;
+        content: "";
+
+        /* border-radius: map(borders, radius-default); */
+    }
+
+    code {
+        display: inline-block;
+
+        color: $color-text;
+    }
+
+    span {
+        position: absolute;
+        top: .5rem;
+        left: .5rem;
+
+        display: block;
+
+        font: .75em/1em Hack, Consolas, Monaco, monospace;
+        font-style: normal;
+        color: map(colors, neutral, lightest);
+        text-shadow: 0 0 2px var(--global-text-color);
+    }
+}
+
+.color--base {
+    margin-right: 1em;
+    order: -1;
+}

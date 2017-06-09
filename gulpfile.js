@@ -1,13 +1,25 @@
 'use strict';
 
 const pkg = require('./package.json');
-const gulp = require('gulp');
+
+// Utils
 const del = require('del');
-const ghPages = require('gulp-gh-pages');
+const gulp = require('gulp');
+
+// CSS
 const postcss = require('gulp-postcss');
 const stylelint = require('gulp-stylelint');
+
+// Misc
+const ghPages = require('gulp-gh-pages');
 const sourcemaps = require('gulp-sourcemaps');
 
+
+/**
+ * Configuration
+ */
+
+// Paths
 const paths = {
   build: __dirname + '/www',
   dest: __dirname + '/tmp',
@@ -85,7 +97,17 @@ function deploy() {
  */
 function styles() {
   const processors = [
-    require('postcss-import'),
+    require('postcss-easy-import'),
+    require('postcss-map')({
+        maps: [
+            paths.src + '/tokens/borders.json',
+            paths.src + '/tokens/breakpoints.json',
+            paths.src + '/tokens/colors.json',
+            paths.src + '/tokens/fonts.json',
+            paths.src + '/tokens/spaces.json'
+        ],
+    }),
+    require('postcss-media-minmax'),
     require('postcss-custom-media'),
     require('postcss-custom-properties'),
     require('postcss-apply'),

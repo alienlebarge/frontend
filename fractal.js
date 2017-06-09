@@ -8,6 +8,7 @@ const paths = {
 
 const mandelbrot = require('@frctl/mandelbrot')({
   lang: 'en-gb',
+  styles: ['default', '/assets/styles/theme.css'],
   static: {
     mount: 'fractal'
   },
@@ -27,6 +28,8 @@ fractal.components.set('ext', '.html'); // look for files with a .nunj file exte
 fractal.components.set('default.preview', '@preview'); // Tell Fractal what is the default preview
 
 // Documentation settings
+fractal.docs.engine('@frctl/nunjucks');
+fractal.docs.set('ext', '.md');
 fractal.docs.set('path', __dirname + '/src/docs'); // tell Fractal where the documentation pages will live
 
 // Web settings

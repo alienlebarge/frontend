@@ -200,6 +200,10 @@ ansi-wrap@0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/ansi-wrap/-/ansi-wrap-0.1.0.tgz#a82250ddb0015e9a27ca82e82ea603bbfa45efaf"
 
+any-promise@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/any-promise/-/any-promise-0.1.0.tgz#830b680aa7e56f33451d4b049f3bd8044498ee27"
+
 anymatch@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/anymatch/-/anymatch-1.3.0.tgz#a3e52fa39168c825ff57b0248126ce5a8ff95507"
@@ -2574,7 +2578,7 @@ js-beautify@^1.6.2:
     mkdirp "~0.5.0"
     nopt "~3.0.1"
 
-js-yaml@^3.4.3, js-yaml@^3.6.1, js-yaml@^3.8.1:
+js-yaml@^3.4.3, js-yaml@^3.5.4, js-yaml@^3.6.1, js-yaml@^3.8.1:
   version "3.8.4"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.8.4.tgz#520b4564f86573ba96662af85a8cafa7b4b5a6f6"
   dependencies:
@@ -3613,6 +3617,19 @@ postcss-discard-unused@^2.2.1:
     postcss "^5.0.14"
     uniqs "^2.0.0"
 
+postcss-easy-import@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/postcss-easy-import/-/postcss-easy-import-2.0.0.tgz#a874d4de054b9242545bf553e438c1823c108512"
+  dependencies:
+    globby "^6.1.0"
+    is-glob "^3.1.0"
+    lodash "^4.17.4"
+    object-assign "^4.0.1"
+    pify "^2.3.0"
+    postcss "^5.0.15"
+    postcss-import "^9.1.0"
+    resolve "^1.1.7"
+
 postcss-filter-plugins@^2.0.0:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/postcss-filter-plugins/-/postcss-filter-plugins-2.0.2.tgz#6d85862534d735ac420e4a85806e1f5d4286d84c"
@@ -3620,13 +3637,14 @@ postcss-filter-plugins@^2.0.0:
     postcss "^5.0.4"
     uniqid "^4.0.0"
 
-postcss-import@^10.0.0:
-  version "10.0.0"
-  resolved "https://registry.yarnpkg.com/postcss-import/-/postcss-import-10.0.0.tgz#4c85c97b099136cc5ea0240dc1dfdbfde4e2ebbe"
+postcss-import@^9.1.0:
+  version "9.1.0"
+  resolved "https://registry.yarnpkg.com/postcss-import/-/postcss-import-9.1.0.tgz#95fe9876a1e79af49fbdc3589f01fe5aa7cc1e80"
   dependencies:
     object-assign "^4.0.1"
-    postcss "^6.0.1"
+    postcss "^5.0.14"
     postcss-value-parser "^3.2.3"
+    promise-each "^2.2.0"
     read-cache "^1.0.0"
     resolve "^1.1.7"
 
@@ -3658,6 +3676,20 @@ postcss-load-plugins@^2.3.0:
   dependencies:
     cosmiconfig "^2.1.1"
     object-assign "^4.1.0"
+
+postcss-map@^0.9.0:
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/postcss-map/-/postcss-map-0.9.0.tgz#00b0b7649384ec3de2fbe4e43557cbe02a417d44"
+  dependencies:
+    js-yaml "^3.5.4"
+    postcss "^6.0.0"
+    reduce-function-call "^1.0.1"
+
+postcss-media-minmax@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/postcss-media-minmax/-/postcss-media-minmax-3.0.0.tgz#675256037a43ef40bc4f0760bfd06d4dc69d48d2"
+  dependencies:
+    postcss "^6.0.1"
 
 postcss-media-query-parser@^0.2.0:
   version "0.2.3"
@@ -3844,7 +3876,7 @@ postcss-zindex@^2.0.1:
     postcss "^5.0.4"
     uniqs "^2.0.0"
 
-postcss@^5.0.0, postcss@^5.0.10, postcss@^5.0.11, postcss@^5.0.12, postcss@^5.0.13, postcss@^5.0.14, postcss@^5.0.16, postcss@^5.0.18, postcss@^5.0.2, postcss@^5.0.20, postcss@^5.0.21, postcss@^5.0.4, postcss@^5.0.5, postcss@^5.0.8, postcss@^5.2.13, postcss@^5.2.14, postcss@^5.2.16, postcss@^5.2.4:
+postcss@^5.0.0, postcss@^5.0.10, postcss@^5.0.11, postcss@^5.0.12, postcss@^5.0.13, postcss@^5.0.14, postcss@^5.0.15, postcss@^5.0.16, postcss@^5.0.18, postcss@^5.0.2, postcss@^5.0.20, postcss@^5.0.21, postcss@^5.0.4, postcss@^5.0.5, postcss@^5.0.8, postcss@^5.2.13, postcss@^5.2.14, postcss@^5.2.16, postcss@^5.2.4:
   version "5.2.17"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-5.2.17.tgz#cf4f597b864d65c8a492b2eabe9d706c879c388b"
   dependencies:
@@ -3876,6 +3908,12 @@ pretty-hrtime@^1.0.0:
 process-nextick-args@~1.0.6:
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-1.0.7.tgz#150e20b756590ad3f91093f25a4f2ad8bff30ba3"
+
+promise-each@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/promise-each/-/promise-each-2.2.0.tgz#3353174eff2694481037e04e01f77aa0fb6d1b60"
+  dependencies:
+    any-promise "^0.1.0"
 
 promise@^7.1.1:
   version "7.1.1"
