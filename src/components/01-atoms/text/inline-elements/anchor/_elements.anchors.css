@@ -11,4 +11,15 @@ a {
     &:hover {
         color: var(--global-primary-color);
     }
+
+    &:visited {
+        color: map(colors, special, visited);
+    }
+
+    &:focus {
+        color: map(colors, text, base);
+
+        background-color: map(colors, special, focus);
+        outline: map(borders, width, thicker) solid map(colors, special, focus);
+    }
 }
