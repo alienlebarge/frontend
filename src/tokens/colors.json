@@ -18,12 +18,12 @@
     "base": "rgba(0, 0, 0, 0.8)"
   },
   "neutral": {
-    "lightest": "#efeff0",
-    "lighter": "#b9b9c0",
-    "light": "#8c8c9c",
-    "base": "#778",
-    "dark": "#636373",
-    "darker": "#3f3f46",
-    "darkest": "#1f1f20"
+    "lightest": "rgba(239, 239, 240, 1)",
+    "lighter": "rgba(185, 185, 192, 1)",
+    "light": "rgba(140, 140, 156, 1)",
+    "base": "rgba(119, 119, 136, 1)",
+    "dark": "rgba(99, 99, 115, 1)",
+    "darker": "rgba(63, 63, 70, 1)",
+    "darkest": "rgba(31, 31, 32, 1)"
   }
 }
