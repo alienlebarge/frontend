@@ -6,7 +6,7 @@ label: "Design tokens"
 
 ## Colour Palettes
 {% for palette, values in colors %}
-**{{ palette | capitalize }}** palette values. Accessed via `map(colors, {{ palette }}, <key>)`
+**{{ palette | capitalize | replace("-", " ") }}** palette values. Accessed via `map(colors, {{ palette }}, <key>)`
 {% include "@palette-sample" %}
 {% endfor %}
 

@@ -26,7 +26,7 @@
     "darker": "rgba(63, 63, 70, 1)",
     "darkest": "rgba(31, 31, 32, 1)"
   },
-  "special": {
+  "special-states": {
     "focus": "rgba(255, 191, 71, 1)",
     "visited": "rgba(76, 44, 146, 1)"
   }

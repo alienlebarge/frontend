@@ -13,13 +13,14 @@ a {
     }
 
     &:visited {
-        color: map(colors, special, visited);
+        color: map(colors, special-states, visited);
     }
 
     &:focus {
         color: map(colors, text, base);
 
-        background-color: map(colors, special, focus);
-        outline: map(borders, width, thicker) solid map(colors, special, focus);
+        background-color: map(colors, special-states, focus);
+        outline: map(borders, width, thicker) solid
+            map(colors, special-states, focus);
     }
 }
