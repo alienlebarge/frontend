@@ -1,5 +1,5 @@
-<ul>
+<ul{% if styleModifier %} class="{{ styleModifier }}"{% endif %}>
     {%- for item in list -%}
-    <li>{{ item.item }}</li>
+    <li{% if styleModifierChild %} class="{{ styleModifierChild }}"{% endif %}>{{ item.item }}</li>
     {%- endfor -%}
 </ul>

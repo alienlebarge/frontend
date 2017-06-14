@@ -1,7 +1,7 @@
 'use strict';
 
  const faker = require('faker'); // require the faker module
- const listItemCount = 10; // how many itmes we should generate data for
+ const listItemCount = 5; // how many itmes we should generate data for
  const listItemData = [];
 
  for (var i = 0; i < listItemCount; i++) {
@@ -13,5 +13,17 @@
  module.exports = {
      context: {
          list: listItemData // use our generated list of members as context data for our template.
-     }
+     },
+     variants: [
+         {
+             name: "ordered",
+         },
+         {
+             name: "inline",
+             context: {
+                 styleModifier: "o-list-inline",
+                 styleModifierChild: "o-list-inline__item",
+             },
+         },
+     ],
  };
