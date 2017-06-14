@@ -16,7 +16,3 @@ blockquote {
         }
     }
 }
-
-main blockquote {
-    margin-left: -var(--global-spacing-unit);
-}
