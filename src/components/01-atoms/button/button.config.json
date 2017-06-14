@@ -1,0 +1,21 @@
+{
+  "context": {
+    "text": "Button"
+  },
+  "variants": [
+    {
+      "name": "primary",
+      "context": {
+        "text": "Primary button",
+        "styleModifier": "c-btn c-btn--primary"
+      }
+    },
+    {
+      "name": "Secondary",
+      "context": {
+        "text": "Secondary button",
+        "styleModifier": "c-btn c-btn--secondary"
+      }
+    }
+  ]
+}

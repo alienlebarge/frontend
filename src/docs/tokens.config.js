@@ -8,6 +8,7 @@ module.exports = {
         breakpoints: require(path.join(process.cwd(), 'src/tokens/breakpoints.json')),
         colors: require(path.join(process.cwd(), 'src/tokens/colors.json')),
         fonts: require(path.join(process.cwd(), 'src/tokens/fonts.json')),
-        spaces: require(path.join(process.cwd(), 'src/tokens/spaces.json'))
+        spaces: require(path.join(process.cwd(), 'src/tokens/spaces.json')),
+        animations: require(path.join(process.cwd(), 'src/tokens/animations.json'))
     }
 };

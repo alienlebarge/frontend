@@ -39,6 +39,12 @@
 @import "../../components/**/_objects.*.css";
 
 /**
+ * COMPONENTS
+ */
+
+@import "../../components/**/_components.*.css";
+
+/**
  * UTILITIES
  */
 

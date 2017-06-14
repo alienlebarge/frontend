@@ -104,7 +104,8 @@ function styles() {
             paths.src + '/tokens/breakpoints.json',
             paths.src + '/tokens/colors.json',
             paths.src + '/tokens/fonts.json',
-            paths.src + '/tokens/spaces.json'
+            paths.src + '/tokens/spaces.json',
+            paths.src + '/tokens/animations.json'
         ],
     }),
     require('postcss-media-minmax'),

@@ -50,3 +50,17 @@ Key         | Value
 {% for key, value in spaces -%}
 `{{ key }}` | {{ value }}
 {% endfor -%}
+
+## Animations
+Animation tokens describe how elements are animated. Accessed via `map(animations, <key>)`.
+
+{% for properties, values in animations %}
+### {{ properties | capitalize }}
+Accessed via `map(animations, {{ properties }}, <key>)`.
+
+Key         | Value
+------------|------------
+{% for key, value in values -%}
+`{{ key }}` | {{ value }}
+{% endfor -%}
+{% endfor -%}
