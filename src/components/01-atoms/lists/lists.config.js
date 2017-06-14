@@ -25,5 +25,12 @@
                  styleModifierChild: "o-list-inline__item",
              },
          },
+         {
+             name: "bare",
+             context: {
+                 styleModifier: "o-list-bare",
+                 styleModifierChild: "o-list-bare__item",
+             },
+         },
      ],
  };
