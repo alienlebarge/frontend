@@ -9,13 +9,13 @@
      * 1. Default font settings
      * 2. Enhance font settings
      */
-    --global-base-font-family: map(fonts, family-system), serif; /* [1] */
-    --global-base-font-weight-normal: 400; /* [1] */
-    --global-base-font-weight-bold: 700; /* [1] */
-    --enhance-base-font-family: map(fonts, base-font-family),
+    --global-base-font-family: map(fonts, system, family), serif; /* [1] */
+    --global-base-font-weight-normal: map(fonts, system, normal); /* [1] */
+    --global-base-font-weight-bold: map(fonts, system, bold); /* [1] */
+    --enhance-base-font-family: map(fonts, base, family),
         var(--global-base-font-family); /* [2] */
-    --enhance-base-font-weight-normal: 500; /* [2] */
-    --enhance-base-font-weight-bold: 700; /* [2] */
+    --enhance-base-font-weight-normal: map(fonts, base, normal); /* [2] */
+    --enhance-base-font-weight-bold: map(fonts, base, bold); /* [2] */
 
     /**
      * Headings font
@@ -23,14 +23,14 @@
      * 1. Default font settings
      * 2. Enhance font settongs
      */
-    --global-headings-font-family: map(fonts, family-system),
+    --global-headings-font-family: map(fonts, system, family),
         sans-serif; /* [1] */
-    --global-headings-font-weight-normal: 400; /* [1] */
-    --global-headings-font-weight-bold: 700; /* [1] */
-    --enhance-headings-font-family: map(fonts, headings-font-family),
+    --global-headings-font-weight-normal: map(fonts, system, normal); /* [1] */
+    --global-headings-font-weight-bold: map(fonts, system, bold); /* [1] */
+    --enhance-headings-font-family: map(fonts, heading, family),
         var(--global-headings-font-family); /* [2] */
-    --enhance-headings-font-weight-normal: 400; /* [2] */
-    --enhance-headings-font-weight-bold: 500; /* [2] */
+    --enhance-headings-font-weight-normal: map(fonts, heading, normal);/* [2] */
+    --enhance-headings-font-weight-bold: map(fonts, heading, bold); /* [2] */
 
     /**
      * Font sizing
