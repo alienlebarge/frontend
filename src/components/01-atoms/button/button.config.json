@@ -11,7 +11,7 @@
       }
     },
     {
-      "name": "Secondary",
+      "name": "secondary",
       "context": {
         "text": "Secondary button",
         "styleModifier": "c-btn c-btn--secondary"
@@ -20,7 +20,7 @@
     {
       "name": "block",
       "context": {
-        "text": "block button",
+        "text": "Block button",
         "styleModifier": "c-btn c-btn--primary c-btn--block"
       }
     }
