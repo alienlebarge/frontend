@@ -16,6 +16,13 @@
         "text": "Secondary button",
         "styleModifier": "c-btn c-btn--secondary"
       }
+    },
+    {
+      "name": "block",
+      "context": {
+        "text": "block button",
+        "styleModifier": "c-btn c-btn--primary c-btn--block"
+      }
     }
   ]
 }

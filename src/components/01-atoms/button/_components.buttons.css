@@ -60,3 +60,13 @@ a.c-btn--secondary {
     --c-btn__color: map(colors, text, inverse);
     --c-btn__bg-color--focus: map(colors, secondary, dark);
 }
+
+
+
+
+
+/* Size variants
+   ========================================================================== */
+a.c-btn--block {
+    width: 100%;
+}
