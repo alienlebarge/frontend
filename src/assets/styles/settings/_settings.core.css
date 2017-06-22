@@ -54,14 +54,4 @@
     --global-primary-color: map(colors, primary, base);
     --global-secondary-color: map(colors, secondary, base);
     --global-secondary-tertiary: map(colors, tertiary, base);
-
-    /**
-     * Spacing
-     */
-    --global-spacing-unit: map(spaces, medium);
-
-    /**
-     * Border
-     */
-    --global-border-width: .25em;
 }
