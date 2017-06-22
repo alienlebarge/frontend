@@ -48,7 +48,7 @@ a.c-btn { /* [1] */
 /* Style variants
    ========================================================================== */
 
-a.c-btn--primary {
+a.c-btn--primary { /* [1] */
     --c-btn__bg-color: map(colors, primary, base);
     --c-btn__text-color: map(colors, text, inverse);
 
@@ -61,7 +61,7 @@ a.c-btn--primary {
 
 
 
-a.c-btn--secondary {
+a.c-btn--secondary { /* [1] */
     --c-btn__bg-color: map(colors, secondary, base);
     --c-btn__text-color: map(colors, text, inverse);
 
