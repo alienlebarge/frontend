@@ -19,11 +19,25 @@
 
     border-radius: map(borders, radius, default);
     border-bottom: none;
+    background-color: var(--c-btn__bg-color);
     margin: 0; /* [4] */
     padding: map(spaces, small) map(spaces, medium);
     cursor: pointer; /* [5] */
     transition: map(animations, transition, default);
     vertical-align: middle; /* [2] */
+
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+        color: var(--c-btn__color);
+        text-decoration: none; /* [4] */
+    }
+
+    &:hover,
+    &:focus {
+        background-color: var(--c-btn__bg-color--focus);
+    }
 }
 
 
@@ -34,37 +48,15 @@
    ========================================================================== */
 
 a.c-btn--primary {
-    background-color: map(colors, primary, base);
-
-    &,
-    &:hover,
-    &:active,
-    &:focus {
-        color: map(colors, text, inverse);
-        text-decoration: none; /* [4] */
-    }
-
-    &:hover,
-    &:focus {
-        background-color: map(colors, primary, dark);
-    }
+    --c-btn__bg-color: map(colors, primary, base);
+    --c-btn__color: map(colors, text, inverse);
+    --c-btn__bg-color--focus: map(colors, primary, dark);
 }
 
 
 
 a.c-btn--secondary {
-    background-color: map(colors, secondary, base);
-
-    &,
-    &:hover,
-    &:active,
-    &:focus {
-        color: map(colors, text, inverse);
-        text-decoration: none; /* [4] */
-    }
-
-    &:hover,
-    &:focus {
-        background-color: map(colors, secondary, dark);
-    }
+    --c-btn__bg-color: map(colors, secondary, base);
+    --c-btn__color: map(colors, text, inverse);
+    --c-btn__bg-color--focus: map(colors, secondary, dark);
 }
