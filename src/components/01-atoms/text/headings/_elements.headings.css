@@ -29,14 +29,14 @@ h6 {
 h1 {
     font-size: var(--font-size-h1);
 
-    border-bottom: map(borders, width, thicker) solid
+    border-bottom: map(borders, width, thickest) solid
         map(colors, tertiary, base);
 }
 
 h2 {
     font-size: var(--font-size-h2);
 
-    border-bottom: map(borders, width, thicker) solid
+    border-bottom: map(borders, width, thickest) solid
         map(colors, tertiary, base);
 }
 
