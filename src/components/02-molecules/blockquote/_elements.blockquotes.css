@@ -5,7 +5,7 @@
 blockquote {
     font-style: italic;
 
-    border-left: var(--global-border-width) solid var(--global-text-color);
+    border-left: map(borders, width, thicker) solid var(--global-text-color);
     padding-left: var(--global-spacing-unit);
 
     cite {
