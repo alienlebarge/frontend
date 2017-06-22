@@ -17,9 +17,9 @@
     font: inherit; /* [3] */
     text-align: center; /* [4] */
 
+    background-color: var(--c-btn__bg-color);
     border-radius: map(borders, radius, default);
     border-bottom: none;
-    background-color: var(--c-btn__bg-color);
     margin: 0; /* [4] */
     padding: map(spaces, small) map(spaces, medium);
     cursor: pointer; /* [5] */
