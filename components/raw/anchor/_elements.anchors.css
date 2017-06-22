@@ -3,12 +3,24 @@
    ========================================================================== */
 
 a {
-    color: var(--global-secondary-color);
+    color: map(colors, secondary, base);
     text-decoration: none;
 
-    border-bottom: .125em solid var(--global-primary-color);
+    border-bottom: .125em solid map(colors, primary, base);
 
     &:hover {
-        color: var(--global-primary-color);
+        color: map(colors, primary, base);
+    }
+
+    &:visited {
+        color: map(colors, special-states, visited);
+    }
+
+    &:focus {
+        color: map(colors, text, base);
+
+        background-color: map(colors, special-states, focus);
+        outline: map(borders, width, thicker) solid
+            map(colors, special-states, focus);
     }
 }

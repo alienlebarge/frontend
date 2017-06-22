@@ -1,0 +1,70 @@
+/* ==========================================================================
+   #BUTTONS
+   ========================================================================== */
+
+/**
+* 1. Allow us to style box model properties.
+* 2. Line different sized buttons up a little nicer.
+* 3. Make buttons inherit font styles (often necessary when styling `input`s as
+*    buttons).
+* 4. Reset/normalize some styles.
+* 5. Force all button-styled elements to appear clickable.
+*/
+
+.c-btn {
+    display: inline-block; /* [1] */
+
+    font: inherit; /* [3] */
+    text-align: center; /* [4] */
+
+    border-radius: map(borders, radius, default);
+    border-bottom: none;
+    margin: 0; /* [4] */
+    padding: map(spaces, small) map(spaces, medium);
+    cursor: pointer; /* [5] */
+    transition: map(animations, transition, default);
+    vertical-align: middle; /* [2] */
+}
+
+
+
+
+
+/* Style variants
+   ========================================================================== */
+
+a.c-btn--primary {
+    background-color: map(colors, primary, base);
+
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+        color: map(colors, text, inverse);
+        text-decoration: none; /* [4] */
+    }
+
+    &:hover,
+    &:focus {
+        background-color: map(colors, primary, dark);
+    }
+}
+
+
+
+a.c-btn--secondary {
+    background-color: map(colors, secondary, base);
+
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+        color: map(colors, text, inverse);
+        text-decoration: none; /* [4] */
+    }
+
+    &:hover,
+    &:focus {
+        background-color: map(colors, secondary, dark);
+    }
+}

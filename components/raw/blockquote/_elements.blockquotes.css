@@ -5,18 +5,14 @@
 blockquote {
     font-style: italic;
 
-    border-left: var(--global-border-width) solid var(--global-text-color);
-    padding-left: var(--global-spacing-unit);
+    border-left: map(borders, width, thicker) solid map(colors, text, base);
+    padding-left: map(spaces, medium);
 
     cite {
-        font-size: var(--global-small-font-size);
+        font-size: map(fonts, small, font-size);
 
         &::before {
             content: "\2014\00a0";
         }
     }
-}
-
-main blockquote {
-    margin-left: -var(--global-spacing-unit);
 }
