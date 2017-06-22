@@ -17,7 +17,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: var(--global-headings-font-family);
+    font-family: map(fonts, system, family);
     line-height: 1.2;
 
     margin-top: 1.5em;
@@ -64,7 +64,7 @@ h6 {
     h4,
     h5,
     h6 {
-        font-weight: var(--enhance-headings-font-weight-bold);
-        font-family: var(--enhance-headings-font-family);
+        font-weight: map(fonts, heading, bold);
+        font-family: map(fonts, heading, family);
     }
 }

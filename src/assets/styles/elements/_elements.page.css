@@ -17,6 +17,7 @@
 html {
     min-height: 100%; /* [1] */
 
+    font-family: map(fonts, base, family);
     font-range: var(--global-base-lower-typography-range)
         var(--global-base-upper-typography-range); /* [2] */
     font-size: responsive var(--global-base-min-font-size)
@@ -31,6 +32,6 @@ html {
 }
 
 html.wf-active {
-    font-weight: var(--enhance-base-font-weight-normal);
-    font-family: var(--enhance-base-font-family);
+    font-weight: map(fonts, base, normal);
+    font-family: map(fonts, base, family);
 }
