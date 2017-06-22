@@ -4,6 +4,13 @@
   },
   "variants": [
     {
+      "name": "default",
+      "context": {
+        "text": "Default button",
+        "styleModifier": "c-btn"
+      }
+    },
+    {
       "name": "primary",
       "context": {
         "text": "Primary button",
