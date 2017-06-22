@@ -17,15 +17,15 @@
 html {
     min-height: 100%; /* [1] */
 
+    font-range: map(fonts, base, upper-typography-range)
+        map(fonts, base, lower-typography-range); /* [2] */
+    font-size: responsive map(fonts, base, min-font-size)
+        map(fonts, base, max-font-size); /* [2] */
     font-family: map(fonts, base, family);
-    font-range: var(--global-base-lower-typography-range)
-        var(--global-base-upper-typography-range); /* [2] */
-    font-size: responsive var(--global-base-min-font-size)
-        var(--global-base-max-font-size); /* [2] */
-    line-height: responsive var(--global-base-min-line-height)
-        var(--global-base-max-line-height); /* [2] */
-    line-height-range:  var(--global-base-lower-typography-range)
-        var(--global-base-upper-typography-range); /* [2] */
+    line-height: responsive map(fonts, base, min-line-height)
+        map(fonts, base, max-line-height); /* [2] */
+    line-height-range: map(fonts, base, lower-typography-range)
+        map(fonts, base, upper-typography-range); /* [2] */
     color: rgba(51, 51, 51, 1);
     overflow-y: scroll; /* [3] */
     @apply --font-bodytext;

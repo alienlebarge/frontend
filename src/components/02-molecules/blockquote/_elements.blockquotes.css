@@ -9,7 +9,7 @@ blockquote {
     padding-left: map(spaces, medium);
 
     cite {
-        font-size: var(--global-small-font-size);
+        font-size: map(fonts, small, font-size);
 
         &::before {
             content: "\2014\00a0";
