@@ -46,12 +46,4 @@
     --global-base-lower-typography-range: 30em; /* [3] */
     --global-base-upper-typography-range: 60em; /* [3] */
     --global-small-font-size: .8em;
-
-    /**
-     * Colors
-     */
-    --global-text-color: map(colors, text, base);
-    --global-primary-color: map(colors, primary, base);
-    --global-secondary-color: map(colors, secondary, base);
-    --global-secondary-tertiary: map(colors, tertiary, base);
 }

@@ -41,7 +41,7 @@
         font: .75em/1em Hack, Consolas, Monaco, monospace;
         font-style: normal;
         color: map(colors, neutral, lightest);
-        text-shadow: 0 0 2px var(--global-text-color);
+        text-shadow: 0 0 2px map(colors, text, base);
     }
 }
 
