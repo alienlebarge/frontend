@@ -33,13 +33,18 @@ Key         | Value
 `{{ key }}` | {{ value }}
 {% endfor -%}
 
-## Font families
+## Font family
 Font family tokens are used for typographic styling. Accessed via `map(fonts, <key>)`.
+
+{% for properties, values in fonts %}
+### {{ properties | capitalize }}
+Accessed via `map(fonts, {{ properties }}, <key>)`.
 
 Key         | Value
 ------------|------------
-{% for key, value in fonts -%}
-`{{ key }}` | <span style="font: 1.25em/1 {{ value }}">{{ value }}</span>
+{% for key, value in values -%}
+`{{ key }}` | {% if key == "family" %}<span style="font: 1.25em/1 {{ value }}">{% endif %}{{ value }}{% if key == "family" %}</span>{% endif %}
+{% endfor -%}
 {% endfor -%}
 
 ## Spacing

@@ -2,34 +2,26 @@
  * SETTINGS
  */
 
-@import "settings/_settings.core.css";
-@import "settings/_settings.breakpoints.css";
+@import "**/_settings.*.css";
 
 /**
- * TOOLS
- */
+* TOOLS
+*/
+
+@import "**/_tools.*.css";
 
 /**
  * GENERIC
  */
 
-@import "generic/_generic.box-sizing.css";
 @import "normalize.css";
-@import "generic/_generic.reset.css";
-@import "generic/_generic.shared.css";
-
-/**
- * TOOLS
- */
-
-@import "tools/_tools.typography.css";
+@import "**/_generic.**.css";
 
 /**
  * ELEMENTS
  */
 
-@import "elements/_elements.main.css";
-@import "elements/_elements.page.css";
+@import "**/_elements.*.css";
 @import "../../components/**/_elements.*.css";
 
 /**
@@ -48,4 +40,4 @@
  * UTILITIES
  */
 
-@import "utilities/_utilities.visually-hidden.css"
+@import "**/_utilities.*.css"

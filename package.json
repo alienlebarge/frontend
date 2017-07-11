@@ -47,7 +47,6 @@
     "normalize.css": "^7.0.0",
     "postcss-apply": "^0.8.0",
     "postcss-custom-media": "^6.0.0",
-    "postcss-custom-properties": "^6.0.1",
     "postcss-easy-import": "^2.1.0",
     "postcss-map": "^0.9.0",
     "postcss-media-minmax": "^3.0.0",
@@ -55,6 +54,6 @@
     "postcss-responsive-type": "^0.5.1"
   },
   "devDependencies": {
-    "stylelint": "^7.11.0"
+    "stylelint": "^7.11.1"
   }
 }

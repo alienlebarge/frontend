@@ -4,6 +4,13 @@
   },
   "variants": [
     {
+      "name": "default",
+      "context": {
+        "text": "Default button",
+        "styleModifier": "c-btn"
+      }
+    },
+    {
       "name": "primary",
       "context": {
         "text": "Primary button",
@@ -11,10 +18,17 @@
       }
     },
     {
-      "name": "Secondary",
+      "name": "secondary",
       "context": {
         "text": "Secondary button",
         "styleModifier": "c-btn c-btn--secondary"
+      }
+    },
+    {
+      "name": "block",
+      "context": {
+        "text": "Block button",
+        "styleModifier": "c-btn c-btn--primary c-btn--block"
       }
     }
   ]

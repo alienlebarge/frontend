@@ -14,15 +14,15 @@ main {
 
     margin-right: auto; /* [1] */
     margin-left: auto; /* [1] */
-    padding: var(--global-spacing-unit);
+    padding: map(spaces, medium);
 }
 
 main figure {
-    margin-right: -var(--global-spacing-unit); /* [2] */
-    margin-left: -var(--global-spacing-unit); /* [2] */
+    margin-right: -map(spaces, medium); /* [2] */
+    margin-left: -map(spaces, medium); /* [2] */
 }
 
 main figure figcaption {
-    margin-right: var(--global-spacing-unit); /* [3] */
-    margin-left: var(--global-spacing-unit); /* [3] */
+    margin-right: map(spaces, medium); /* [3] */
+    margin-left: map(spaces, medium); /* [3] */
 }
