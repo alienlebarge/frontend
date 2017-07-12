@@ -4,28 +4,28 @@
 
 :root {
     --e-anchors__color: map(colors, secondary, base);
-    --e-anchors__color--focus: map(colors, special-states, focus);
+    --e-anchors__underline: map(colors, primary, base);
 }
 
 a {
     color: var(--e-anchors__color);
     text-decoration: none;
 
-    border-bottom: map(borders, width, thick) solid map(colors, primary, base);
+    border-bottom: map(borders, width, thick) solid var(--e-anchors__underline);
 
     &:hover {
-        color: map(colors, primary, base);
+        --e-anchors__color:  map(colors, primary, base);
     }
 
     &:visited {
-        color: map(colors, special-states, visited);
+        --e-anchors__color: map(colors, special-states, visited);
     }
 
     &:focus {
-        color: map(colors, text, base);
+        --e-anchors__color: map(colors, special-states, focus);
 
-        background-color: var(--e-anchors__color--focus);
+        background-color: map(colors, special-states, focus);
         outline: map(borders, width, thicker) solid
-            var(--e-anchors__color--focus);
+            map(colors, special-states, focus);
     }
 }
