@@ -35,7 +35,7 @@
     "@alienlebarge/stylelint-config": "^2.1.0",
     "@frctl/fractal": "^1.1.4",
     "@frctl/nunjucks": "^1.0.3",
-    "autoprefixer": "^7.1.1",
+    "autoprefixer": "^7.1.2",
     "cssnano": "^3.8.2",
     "del": "^3.0.0",
     "faker": "^4.1.0",
@@ -54,6 +54,6 @@
     "postcss-responsive-type": "^0.5.1"
   },
   "devDependencies": {
-    "stylelint": "^7.11.1"
+    "stylelint": "^7.13.0"
   }
 }

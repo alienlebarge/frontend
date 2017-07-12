@@ -196,6 +196,12 @@ ansi-styles@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-2.2.1.tgz#b432dd3358b634cf75e1e4664368240533c1ddbe"
 
+ansi-styles@^3.1.0:
+  version "3.1.0"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/ansi-styles/-/ansi-styles-3.1.0.tgz#09c202d5c917ec23188caa5c9cb9179cd9547750"
+  dependencies:
+    color-convert "^1.0.0"
+
 ansi-wrap@0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/ansi-wrap/-/ansi-wrap-0.1.0.tgz#a82250ddb0015e9a27ca82e82ea603bbfa45efaf"
@@ -379,15 +385,15 @@ autoprefixer@^6.0.0, autoprefixer@^6.3.1:
     postcss "^5.2.16"
     postcss-value-parser "^3.2.3"
 
-autoprefixer@^7.1.1:
-  version "7.1.1"
-  resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-7.1.1.tgz#97bc854c7d0b979f8d6489de547a0d17fb307f6d"
+autoprefixer@^7.1.2:
+  version "7.1.2"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/autoprefixer/-/autoprefixer-7.1.2.tgz#fbeaf07d48fd878e0682bf7cbeeade728adb2b18"
   dependencies:
-    browserslist "^2.1.3"
-    caniuse-lite "^1.0.30000670"
+    browserslist "^2.1.5"
+    caniuse-lite "^1.0.30000697"
     normalize-range "^0.1.2"
     num2fraction "^1.2.2"
-    postcss "^6.0.1"
+    postcss "^6.0.6"
     postcss-value-parser "^3.2.3"
 
 aws-sign2@~0.6.0:
@@ -576,12 +582,12 @@ browserslist@^1.1.1, browserslist@^1.1.3, browserslist@^1.3.6, browserslist@^1.5
     caniuse-db "^1.0.30000639"
     electron-to-chromium "^1.2.7"
 
-browserslist@^2.1.3:
-  version "2.1.4"
-  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-2.1.4.tgz#cc526af4a1312b7d2e05653e56d0c8ab70c0e053"
+browserslist@^2.1.5:
+  version "2.1.5"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/browserslist/-/browserslist-2.1.5.tgz#e882550df3d1cd6d481c1a3e0038f2baf13a4711"
   dependencies:
-    caniuse-lite "^1.0.30000670"
-    electron-to-chromium "^1.3.11"
+    caniuse-lite "^1.0.30000684"
+    electron-to-chromium "^1.3.14"
 
 bs-recipes@1.3.4:
   version "1.3.4"
@@ -650,9 +656,9 @@ caniuse-db@^1.0.30000187, caniuse-db@^1.0.30000529, caniuse-db@^1.0.30000634, ca
   version "1.0.30000672"
   resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000672.tgz#f40f4bf126cb7e063f6a2e1df1c955c803d12265"
 
-caniuse-lite@^1.0.30000670:
-  version "1.0.30000671"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000671.tgz#c206c2f1a1feb34de46064407c4356818389bf1e"
+caniuse-lite@^1.0.30000684, caniuse-lite@^1.0.30000697:
+  version "1.0.30000700"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/caniuse-lite/-/caniuse-lite-1.0.30000700.tgz#6084871ec75c6fa62327de97622514f95d9db26a"
 
 capture-stack-trace@^1.0.0:
   version "1.0.0"
@@ -682,6 +688,14 @@ chalk@^1.0.0, chalk@^1.1.0, chalk@^1.1.1, chalk@^1.1.3:
     has-ansi "^2.0.0"
     strip-ansi "^3.0.0"
     supports-color "^2.0.0"
+
+chalk@^2.0.1:
+  version "2.0.1"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/chalk/-/chalk-2.0.1.tgz#dbec49436d2ae15f536114e76d14656cdbc0f44d"
+  dependencies:
+    ansi-styles "^3.1.0"
+    escape-string-regexp "^1.0.5"
+    supports-color "^4.0.0"
 
 chokidar@1.7.0, chokidar@^1.4.3, chokidar@^1.6.0:
   version "1.7.0"
@@ -793,7 +807,7 @@ collection-map@^0.1.0:
     is-plain-object "^2.0.1"
     make-iterator "^0.1.1"
 
-color-convert@^1.3.0:
+color-convert@^1.0.0, color-convert@^1.3.0:
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/color-convert/-/color-convert-1.9.0.tgz#1accf97dd739b983bf994d56fec8f95853641b7a"
   dependencies:
@@ -1301,9 +1315,13 @@ ee-first@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
 
-electron-to-chromium@^1.2.7, electron-to-chromium@^1.3.11:
+electron-to-chromium@^1.2.7:
   version "1.3.11"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.11.tgz#744761df1d67b492b322ce9aa0aba5393260eb61"
+
+electron-to-chromium@^1.3.14:
+  version "1.3.15"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/electron-to-chromium/-/electron-to-chromium-1.3.15.tgz#08397934891cbcfaebbd18b82a95b5a481138369"
 
 emitter-steward@^1.0.0:
   version "1.0.0"
@@ -2126,6 +2144,10 @@ has-flag@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/has-flag/-/has-flag-1.0.0.tgz#9d9e793165ce017a00f00418c43f942a7b1d11fa"
 
+has-flag@^2.0.0:
+  version "2.0.0"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/has-flag/-/has-flag-2.0.0.tgz#e8207af1cc7b30d446cc70b734b5e8be18f88d51"
+
 has-gulplog@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/has-gulplog/-/has-gulplog-0.1.0.tgz#6414c82913697da51590397dafb12f22967811ce"
@@ -2176,6 +2198,10 @@ html-comment-regex@^1.1.0:
 html-tags@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/html-tags/-/html-tags-1.1.1.tgz#869f43859f12d9bdc3892419e494a628aa1b204e"
+
+html-tags@^2.0.0:
+  version "2.0.0"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/html-tags/-/html-tags-2.0.0.tgz#10b30a386085f43cede353cc8fa7cb0deeea668b"
 
 http-errors@~1.5.0:
   version "1.5.1"
@@ -3882,6 +3908,14 @@ postcss@^6.0.0, postcss@^6.0.1:
     source-map "^0.5.6"
     supports-color "^3.2.3"
 
+postcss@^6.0.6:
+  version "6.0.6"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/postcss/-/postcss-6.0.6.tgz#bba4d58e884fc78c840d1539e10eddaabb8f73bd"
+  dependencies:
+    chalk "^2.0.1"
+    source-map "^0.5.6"
+    supports-color "^4.1.0"
+
 prepend-http@^1.0.0, prepend-http@^1.0.1:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/prepend-http/-/prepend-http-1.0.4.tgz#d4f4562b0ce3696e41ac52d0e002e57a635dc6dc"
@@ -4685,7 +4719,51 @@ stylelint-order@^0.3.0:
     postcss "^5.2.14"
     stylelint "^7.8.0"
 
-stylelint@^7.11.1, stylelint@^7.8.0, stylelint@^7.9.0:
+stylelint@^7.13.0:
+  version "7.13.0"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/stylelint/-/stylelint-7.13.0.tgz#111f97b6da72e775c80800d6bb6f5f869997785d"
+  dependencies:
+    autoprefixer "^6.0.0"
+    balanced-match "^0.4.0"
+    chalk "^2.0.1"
+    colorguard "^1.2.0"
+    cosmiconfig "^2.1.1"
+    debug "^2.6.0"
+    doiuse "^2.4.1"
+    execall "^1.0.0"
+    file-entry-cache "^2.0.0"
+    get-stdin "^5.0.0"
+    globby "^6.0.0"
+    globjoin "^0.1.4"
+    html-tags "^2.0.0"
+    ignore "^3.2.0"
+    imurmurhash "^0.1.4"
+    known-css-properties "^0.2.0"
+    lodash "^4.17.4"
+    log-symbols "^1.0.2"
+    mathml-tag-names "^2.0.0"
+    meow "^3.3.0"
+    micromatch "^2.3.11"
+    normalize-selector "^0.2.0"
+    pify "^2.3.0"
+    postcss "^5.0.20"
+    postcss-less "^0.14.0"
+    postcss-media-query-parser "^0.2.0"
+    postcss-reporter "^3.0.0"
+    postcss-resolve-nested-selector "^0.1.1"
+    postcss-scss "^0.4.0"
+    postcss-selector-parser "^2.1.1"
+    postcss-value-parser "^3.1.1"
+    resolve-from "^3.0.0"
+    specificity "^0.3.0"
+    string-width "^2.0.0"
+    style-search "^0.1.0"
+    stylehacks "^2.3.2"
+    sugarss "^0.2.0"
+    svg-tags "^1.0.0"
+    table "^4.0.1"
+
+stylelint@^7.8.0, stylelint@^7.9.0:
   version "7.11.1"
   resolved "https://registry.yarnpkg.com/stylelint/-/stylelint-7.11.1.tgz#c816c658baf7d9e5d167d82273fead37c97ae49d"
   dependencies:
@@ -4744,6 +4822,12 @@ supports-color@^3.2.3:
   resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-3.2.3.tgz#65ac0504b3954171d8a64946b2ae3cbb8a5f54f6"
   dependencies:
     has-flag "^1.0.0"
+
+supports-color@^4.0.0, supports-color@^4.1.0:
+  version "4.2.0"
+  resolved "http://nexus.etat-de-vaud.ch/repository/npm-group/supports-color/-/supports-color-4.2.0.tgz#ad986dc7eb2315d009b4d77c8169c2231a684037"
+  dependencies:
+    has-flag "^2.0.0"
 
 svg-tags@^1.0.0:
   version "1.0.0"
