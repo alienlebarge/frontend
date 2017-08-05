@@ -110,7 +110,6 @@ function styles() {
     }),
     require('postcss-media-minmax'),
     require('postcss-custom-media'),
-    require('postcss-apply'),
     require('postcss-nested'),
     require('postcss-responsive-type'),
     require('autoprefixer'),

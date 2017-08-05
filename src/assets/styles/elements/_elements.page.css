@@ -12,6 +12,8 @@
  * 3. Force scrollbars to always be visible to prevent awkward ‘jumps’ when
  *    navigating between pages that do/do not have enough content to produce
  *    scrollbars naturally.
+ * 4. Mor readable bodytext
+ *    see http://practice.typekit.com/lesson/caring-about-opentype-features/
  */
 
 html {
@@ -22,13 +24,17 @@ html {
     font-size: responsive map(fonts, base, min-font-size)
         map(fonts, base, max-font-size); /* [2] */
     font-family: map(fonts, base, family);
+    font-variant-ligatures: common-ligatures, contextual; /* [4] */
+    font-variant-numeric: oldstyle-nums, proportional-nums; /* [4] */
+    font-feature-settings: "kern", "liga", "clig", "calt", "onum",
+        "pnum"; /* [4] */
+    font-kerning: normal; /* [4] */
     line-height: responsive map(fonts, base, min-line-height)
         map(fonts, base, max-line-height); /* [2] */
     line-height-range: map(fonts, base, lower-typography-range)
         map(fonts, base, upper-typography-range); /* [2] */
     color: rgba(51, 51, 51, 1);
     overflow-y: scroll; /* [3] */
-    @apply --font-bodytext;
 }
 
 html.wf-active {

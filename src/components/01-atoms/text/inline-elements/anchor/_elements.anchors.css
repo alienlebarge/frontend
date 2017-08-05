@@ -14,7 +14,7 @@ a {
     border-bottom: map(borders, width, thick) solid var(--e-anchors__underline);
 
     &:hover {
-        --e-anchors__color:  map(colors, primary, base);
+        --e-anchors__color: map(colors, primary, base);
     }
 
     &:visited {
