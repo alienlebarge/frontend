@@ -11,9 +11,9 @@
     <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
     <link rel="shortcut icon" href="../../fractal/favicon.ico" type="image/ico">
 
-<link rel="stylesheet" href="../../fractal/css/grey.css?cachebust=1.1.0" type="text/css">
+<link rel="stylesheet" href="../../fractal/css/grey.css?cachebust=1.2.0" type="text/css">
 
-<link rel="stylesheet" href="../../assets/styles/theme.css?cachebust=1.1.0" type="text/css">
+<link rel="stylesheet" href="../../assets/styles/theme.css?cachebust=1.2.0" type="text/css">
 
 
 <title>Headings: Heading level 2 | alb frontend</title>
@@ -223,6 +223,10 @@
     --font-size-h6: 1em;
 }
 
+/**
+ * 1. More readable headings
+ *    see http://practice.typekit.com/lesson/caring-about-opentype-features/
+ */
 h1,
 h2,
 h3,
@@ -230,12 +234,15 @@ h4,
 h5,
 h6 {
     font-family: map(fonts, system, family);
+    font-kerning: normal; /* [1] */
     line-height: 1.2;
 
     margin-top: 1.5em;
     margin-bottom: .5em;
 
-    @apply --font-headings;
+    font-feature-settings: "kern", "liga", "clig", "calt", "dlig"; /* [1] */
+    font-variant-ligatures: common-ligatures, contextual,
+        discretionary-ligatures; /* [1] */
 }
 
 h1 {
@@ -296,7 +303,7 @@ h6 {
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.1 KB</span>
+                    <span class="Meta-value">1.4 KB</span>
                 </li>
             </ul>
         </div>
@@ -522,6 +529,30 @@ h6 {
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="button--secondary" data-pjax>
                 <span>Secondary</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button--block" data-pjax>
+                <span>Block</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -1899,6 +1930,30 @@ h6 {
         
         
         <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="supscript" data-pjax>
+                <span>Supscript</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="time" data-pjax>
                 <span>Time</span>
                 
@@ -2345,7 +2400,7 @@ h6 {
 
 
 
-<script src="../../fractal/js/mandelbrot.js?cachebust=1.1.0"></script>
+<script src="../../fractal/js/mandelbrot.js?cachebust=1.2.0"></script>
 
 
 

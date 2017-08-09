@@ -3,27 +3,42 @@
    ========================================================================== */
 
 /**
-* 1. Allow us to style box model properties.
-* 2. Line different sized buttons up a little nicer.
-* 3. Make buttons inherit font styles (often necessary when styling `input`s as
-*    buttons).
-* 4. Reset/normalize some styles.
-* 5. Force all button-styled elements to appear clickable.
-*/
+ * 1. Add specificity to override `a::visited` style.
+ * 2. Allow us to style box model properties.
+ * 3. Make buttons inherit font styles (often necessary when styling `input`s as
+ *    buttons).
+ * 4. Reset/normalize some styles.
+ * 5. Force all button-styled elements to appear clickable.
+ * 6. Line different sized buttons up a little nicer.
+ */
 
-.c-btn {
-    display: inline-block; /* [1] */
+a.c-btn { /* [1] */
+    --c-btn__text-color: var(--e-anchors__color);
+    --c-btn__bg-color: none;
+
+    display: inline-block; /* [2] */
 
     font: inherit; /* [3] */
+    color: var(--c-btn__text-color);
     text-align: center; /* [4] */
+    text-decoration: none; /* [4] */
 
-    border-radius: map(borders, radius, default);
+    background-color: var(--c-btn__bg-color);
     border-bottom: none;
     margin: 0; /* [4] */
     padding: map(spaces, small) map(spaces, medium);
+    border-radius: map(borders, radius, default);
     cursor: pointer; /* [5] */
     transition: map(animations, transition, default);
-    vertical-align: middle; /* [2] */
+    vertical-align: middle; /* [6] */
+
+    &:hover,
+    &:active,
+    &:focus,
+    &:visited {
+        --c-btn__text-color: map(colors, text, inverse);
+        --c-btn__bg-color: var(--e-anchors__color);
+    }
 }
 
 
@@ -33,38 +48,36 @@
 /* Style variants
    ========================================================================== */
 
-a.c-btn--primary {
-    background-color: map(colors, primary, base);
+a.c-btn--primary { /* [1] */
+    --c-btn__bg-color: map(colors, primary, base);
+    --c-btn__text-color: map(colors, text, inverse);
 
-    &,
     &:hover,
     &:active,
     &:focus {
-        color: map(colors, text, inverse);
-        text-decoration: none; /* [4] */
-    }
-
-    &:hover,
-    &:focus {
-        background-color: map(colors, primary, dark);
+        --c-btn__bg-color: map(colors, primary, dark);
     }
 }
 
 
 
-a.c-btn--secondary {
-    background-color: map(colors, secondary, base);
+a.c-btn--secondary { /* [1] */
+    --c-btn__bg-color: map(colors, secondary, base);
+    --c-btn__text-color: map(colors, text, inverse);
 
-    &,
     &:hover,
     &:active,
     &:focus {
-        color: map(colors, text, inverse);
-        text-decoration: none; /* [4] */
+        --c-btn__bg-color: map(colors, secondary, dark);
     }
+}
 
-    &:hover,
-    &:focus {
-        background-color: map(colors, secondary, dark);
-    }
+
+
+
+
+/* Size variants
+   ========================================================================== */
+a.c-btn--block {
+    width: 100%;
 }

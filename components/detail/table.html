@@ -11,9 +11,9 @@
     <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
     <link rel="shortcut icon" href="../../fractal/favicon.ico" type="image/ico">
 
-<link rel="stylesheet" href="../../fractal/css/grey.css?cachebust=1.1.0" type="text/css">
+<link rel="stylesheet" href="../../fractal/css/grey.css?cachebust=1.2.0" type="text/css">
 
-<link rel="stylesheet" href="../../assets/styles/theme.css?cachebust=1.1.0" type="text/css">
+<link rel="stylesheet" href="../../assets/styles/theme.css?cachebust=1.2.0" type="text/css">
 
 
 <title>Table | alb frontend</title>
@@ -247,17 +247,25 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-CSS FileBrowser-code">
-                                <pre>/* ==========================================================================
+                                <pre><span class="hljs-comment">/* ==========================================================================
    #TABLES
-   ========================================================================== */
+   ========================================================================== */</span>
 
-/**
+<span class="hljs-comment">/**
  * 1. Ensure tables fill up as much space as possible.
- */
+ * 2. OpenType feature for data
+ *    see http://practice.typekit.com/lesson/caring-about-opentype-features/
+ */</span>
+<span class="hljs-selector-tag">table</span> {
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>; <span class="hljs-comment">/* [1] */</span>
 
-table {
-    width: 100%; /* [1] */
-    @apply --font-data;
+    <span class="hljs-attribute">font-kerning</span>: normal; <span class="hljs-comment">/* [2] */</span>
+    <span class="hljs-attribute">font-feature-settings</span>: <span class="hljs-string">"kern"</span>, <span class="hljs-string">"liga"</span>, <span class="hljs-string">"clig"</span>, <span class="hljs-string">"calt"</span>, <span class="hljs-string">"lnum"</span>,
+        <span class="hljs-string">"tnum"</span>;
+
+    <span class="hljs-comment">/* [2] */</span>
+    <span class="hljs-attribute">font-variant-ligatures</span>: common-ligatures, contextual; <span class="hljs-comment">/* [2] */</span>
+    <span class="hljs-attribute">font-variant-numeric</span>: lining-nums, tabular-nums; <span class="hljs-comment">/* [2] */</span>
 }
 </pre>
                             </code>
@@ -275,7 +283,7 @@ table {
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">296 Bytes</span>
+                    <span class="Meta-value">646 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -459,6 +467,30 @@ table {
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="button--secondary" data-pjax>
                 <span>Secondary</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button--block" data-pjax>
+                <span>Block</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -1836,6 +1868,30 @@ table {
         
         
         <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="supscript" data-pjax>
+                <span>Supscript</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="time" data-pjax>
                 <span>Time</span>
                 
@@ -2282,7 +2338,7 @@ table {
 
 
 
-<script src="../../fractal/js/mandelbrot.js?cachebust=1.1.0"></script>
+<script src="../../fractal/js/mandelbrot.js?cachebust=1.2.0"></script>
 
 
 

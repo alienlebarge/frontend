@@ -11,6 +11,10 @@
     --font-size-h6: 1em;
 }
 
+/**
+ * 1. More readable headings
+ *    see http://practice.typekit.com/lesson/caring-about-opentype-features/
+ */
 h1,
 h2,
 h3,
@@ -18,12 +22,15 @@ h4,
 h5,
 h6 {
     font-family: map(fonts, system, family);
+    font-kerning: normal; /* [1] */
     line-height: 1.2;
 
     margin-top: 1.5em;
     margin-bottom: .5em;
 
-    @apply --font-headings;
+    font-feature-settings: "kern", "liga", "clig", "calt", "dlig"; /* [1] */
+    font-variant-ligatures: common-ligatures, contextual,
+        discretionary-ligatures; /* [1] */
 }
 
 h1 {
