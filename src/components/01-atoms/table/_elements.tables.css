@@ -10,9 +10,11 @@
 table {
     width: 100%; /* [1] */
 
+    font-kerning: normal; /* [2] */
+    font-feature-settings: "kern", "liga", "clig", "calt", "lnum",
+        "tnum";
+
+    /* [2] */
     font-variant-ligatures: common-ligatures, contextual; /* [2] */
     font-variant-numeric: lining-nums, tabular-nums; /* [2] */
-    font-feature-settings: "kern", "liga", "clig", "calt", "lnum",
-        "tnum"; /* [2] */
-    font-kerning: normal; /* [2] */
 }

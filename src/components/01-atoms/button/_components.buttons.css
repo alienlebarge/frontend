@@ -24,10 +24,10 @@ a.c-btn { /* [1] */
     text-decoration: none; /* [4] */
 
     background-color: var(--c-btn__bg-color);
-    border-radius: map(borders, radius, default);
     border-bottom: none;
     margin: 0; /* [4] */
     padding: map(spaces, small) map(spaces, medium);
+    border-radius: map(borders, radius, default);
     cursor: pointer; /* [5] */
     transition: map(animations, transition, default);
     vertical-align: middle; /* [6] */

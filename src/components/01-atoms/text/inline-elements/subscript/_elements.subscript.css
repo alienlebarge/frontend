@@ -7,8 +7,8 @@
  *    see http://practice.typekit.com/lesson/caring-about-opentype-features/
  */
 sub {
+    font-kerning: normal; /* [1] */
+    font-feature-settings: "kern", "liga", "clig", "calt", "subs"; /* [1] */
     font-variant-ligatures: common-ligatures, contextual; /* [1] */
     font-variant-position: sub; /* [1] */
-    font-feature-settings: "kern", "liga", "clig", "calt", "subs"; /* [1] */
-    font-kerning: normal; /* [1] */
 }

@@ -1,9 +1,9 @@
 /* Palette container */
 .palette {
     display: flex;
-    flex-wrap: wrap;
 
     margin: 0 -.25em;
+    flex-wrap: wrap;
 }
 
 /* Colour swatch */
