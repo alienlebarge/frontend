@@ -1,0 +1,18 @@
+/* ==========================================================================
+   #PREFORMATTED-TEXT
+   ========================================================================== */
+
+pre {
+    font-family: map(fonts, monospace, family);
+    font-size: map(fonts, small, font-size);
+    color: map(colors, text, inverse);
+
+    background-color: map(colors, neutral, darker);
+
+    padding: map(spaces, small);
+    overflow: auto;
+    white-space: pre;
+    word-wrap: normal;
+
+    border-radius: map(borders, radius, default);
+}
