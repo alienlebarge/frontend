@@ -1,11 +1,11 @@
 /* ==========================================================================
-   #CODE
+   #KEYBOARD INPUT
    ========================================================================== */
 
 /**
  * This style is the same for '<code>', '<kbd>' and '<samp>'
  */
-code {
+kbd {
     font-size: map(fonts, small, font-size);
     font-family: map(fonts, monospace, family);
     color: map(colors, secondary, dark);
