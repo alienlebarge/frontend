@@ -3,16 +3,15 @@
    ========================================================================== */
 
 pre {
-    font-family: map(fonts, monospace, family);
     font-size: map(fonts, small, font-size);
+    font-family: map(fonts, monospace, family);
     color: map(colors, text, inverse);
 
     background-color: map(colors, neutral, darker);
 
     padding: map(spaces, small);
+    border-radius: map(borders, radius, default);
     overflow: auto;
     white-space: pre;
     word-wrap: normal;
-
-    border-radius: map(borders, radius, default);
 }
