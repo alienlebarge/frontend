@@ -1,0 +1,11 @@
+/* ==========================================================================
+   #CODE
+   ========================================================================== */
+
+code {
+    font-size: map(fonts, small, font-size);
+    font-family: map(fonts, monospace, family);
+    color: map(colors, secondary, dark);
+
+    background-color: map(colors, neutral, lightest);
+}
