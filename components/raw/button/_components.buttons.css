@@ -13,6 +13,7 @@
  */
 
 a.c-btn { /* [1] */
+
     --c-btn__text-color: var(--e-anchors__color);
     --c-btn__bg-color: none;
 
@@ -49,6 +50,7 @@ a.c-btn { /* [1] */
    ========================================================================== */
 
 a.c-btn--primary { /* [1] */
+
     --c-btn__bg-color: map(colors, primary, base);
     --c-btn__text-color: map(colors, text, inverse);
 
@@ -62,6 +64,7 @@ a.c-btn--primary { /* [1] */
 
 
 a.c-btn--secondary { /* [1] */
+
     --c-btn__bg-color: map(colors, secondary, base);
     --c-btn__text-color: map(colors, text, inverse);
 
