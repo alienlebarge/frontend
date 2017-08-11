@@ -1,0 +1,22 @@
+/* ==========================================================================
+   #MARK
+   ========================================================================== */
+
+/**
+ * This design mimic Stabilo https://codepen.io/alienlebarge/pen/BZgWre
+ */
+mark {
+    background-color: transparent;
+    background-image: linear-gradient(
+        -100deg,
+        color(map(colors, tertiary, base) alpha(-70%)),
+        color(map(colors, tertiary, base) alpha(-30%)) 95%,
+        color(map(colors, tertiary, base) alpha(-90%))
+        );
+
+    border-radius:
+        map(borders, radius, default)
+        0
+        map(borders, radius, default)
+        0;
+}
