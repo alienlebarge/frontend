@@ -51,7 +51,7 @@
     "postcss-map": "^0.9.0",
     "postcss-media-minmax": "^3.0.0",
     "postcss-nested": "^2.0.2",
-    "postcss-responsive-type": "^0.5.1"
+    "postcss-responsive-type": "^1.0.0"
   },
   "devDependencies": {
     "stylelint": "^7.13.0"
