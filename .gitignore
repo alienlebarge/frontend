@@ -4,3 +4,7 @@ node_modules
 tmp
 www
 *.log
+
+# Ignore Vim temporary files
+*.swp
+*.swo
