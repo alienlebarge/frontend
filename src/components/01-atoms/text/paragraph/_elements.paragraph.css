@@ -1,0 +1,17 @@
+/* ==========================================================================
+   #PARAGRAPH
+   ========================================================================== */
+
+/**
+ * If you set your lines too long, your reader will have difficulty in following 
+ * from one line to the next; they may mistakenly skip lines or reread the same
+ * line. Set your measure too short and your reader’s eyes will have to change 
+ * direction too frequently, resulting in tired eyes and a reading experience 
+ * that feels like hard work, however engaging the text.
+ * The often quoted ideal length for a line is 66 characters, with a range of
+ * 45-75 characters (including spaces) generally considered satisfacrory.
+ */
+p {
+    max-width: max-width: 38em;
+}
+
