@@ -9,9 +9,7 @@
 
 a {
     color: var(--e-anchors__color);
-    text-decoration: none;
-
-    border-bottom: map(borders, width, thick) solid var(--e-anchors__underline);
+    text-decoration-skip: ink;
 
     &:hover {
         --e-anchors__color: map(colors, primary, base);
@@ -22,10 +20,8 @@ a {
     }
 
     &:focus {
-        --e-anchors__color: map(colors, special-states, focus);
-
         background-color: map(colors, special-states, focus);
-        outline: map(borders, width, thicker) solid
-            map(colors, special-states, focus);
+        outline: map(borders, width, thicker) solid 
+          map(colors, special-states, focus);
     }
 }
