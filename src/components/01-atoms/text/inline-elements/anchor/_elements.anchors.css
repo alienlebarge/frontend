@@ -21,7 +21,7 @@ a {
 
     &:focus {
         background-color: map(colors, special-states, focus);
-        outline: map(borders, width, thicker) solid 
+        outline: map(borders, width, thicker) solid
           map(colors, special-states, focus);
     }
 }
