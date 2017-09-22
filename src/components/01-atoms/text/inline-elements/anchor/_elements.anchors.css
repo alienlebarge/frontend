@@ -2,6 +2,12 @@
    #ANCHORS
    ========================================================================== */
 
+/**
+ * Anchors
+ *
+ * 1. When the website is printed, the url is visible
+ */
+
 :root {
     --e-anchors__color: map(colors, secondary, base);
     --e-anchors__underline: map(colors, primary, base);
@@ -23,5 +29,11 @@ a {
         background-color: map(colors, special-states, focus);
         outline: map(borders, width, thicker) solid
           map(colors, special-states, focus);
+    }
+
+    @media print {
+        &:after {
+            content: "("attr(href)")"; /* [1] */
+        }
     }
 }
