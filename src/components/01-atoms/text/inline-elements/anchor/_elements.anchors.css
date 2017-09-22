@@ -32,8 +32,9 @@ a {
     }
 
     @media print {
-        &:after {
-            content: "("attr(href)")"; /* [1] */
+
+        &::after {
+            content: "("attr(href) ")"; /* [1] */
         }
     }
 }
