@@ -1,0 +1,32 @@
+{
+  "collated": true,
+  "context": {
+    "text": "This is text link go !"
+  },
+  "variants": [
+    {
+      "name": "hover",
+      "context": {
+        "styleModifier": "is-hover"
+      }
+    },
+    {
+      "name": "visited",
+      "context": {
+        "styleModifier": "is-visited"
+      }
+    },
+    {
+      "name": "focus",
+      "context": {
+        "styleModifier": "is-focus"
+      }
+    },
+    {
+      "name": "print",
+      "context": {
+        "styleModifier": "is-print"
+      }
+    }
+  ]
+}

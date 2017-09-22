@@ -8,27 +8,29 @@
  * 1. When the website is printed, the url is visible
  */
 
-:root {
-    --e-anchors__color: map(colors, secondary, base);
-    --e-anchors__underline: map(colors, primary, base);
-}
-
 a {
-    color: var(--e-anchors__color);
+    --text-color: map(colors, text, base);
+    --background-color: transparent;
+
+    color: var(--text-color);
+
+    background-color: var(--background-color);
+    outline: map(borders, width, thicker) solid var(--background-color);
     text-decoration-skip: ink;
 
-    &:hover {
-        --e-anchors__color: map(colors, primary, base);
+    &:hover,
+    &.is-hover {
+        --background-color: map(colors, primary, base);
     }
 
-    &:visited {
-        --e-anchors__color: map(colors, special-states, visited);
+    &:visited,
+    &.is-visited {
+        --text-color: map(colors, special-states, visited);
     }
 
-    &:focus {
-        background-color: map(colors, special-states, focus);
-        outline: map(borders, width, thicker) solid
-          map(colors, special-states, focus);
+    &:focus,
+    &.is-focus {
+        --background-color: map(colors, special-states, focus);
     }
 
     @media print {
