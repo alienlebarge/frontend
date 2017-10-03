@@ -27,7 +27,7 @@ a.c-btn { /* [1] */
     background-color: var(--c-btn__bg-color);
     border-bottom: none;
     margin: 0; /* [4] */
-    padding: map(spaces, small) map(spaces, medium);
+    padding: var(--space-small) var(--space-medium);
     border-radius: map(borders, radius, default);
     cursor: pointer; /* [5] */
     transition: map(animations, transition, default);

@@ -9,7 +9,7 @@ pre {
 
     background-color: map(colors, neutral, darker);
 
-    padding: map(spaces, small);
+    padding: var(--space-small);
     border-radius: map(borders, radius, default);
     overflow: auto;
     white-space: pre;

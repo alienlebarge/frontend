@@ -1,0 +1,12 @@
+/* ========================================================================
+   #SPACES
+   ======================================================================== */
+
+:root {
+    --space-xsmall: map(spaces, xsmall);
+    --space-small: map(spaces, small);
+    --space-medium: map(spaces, medium);
+    --space-large: map(spaces, large);
+    --space-xlarge: map(spaces, xlarge);
+    --space-xxlarge: map(spaces, xxlarge);
+}

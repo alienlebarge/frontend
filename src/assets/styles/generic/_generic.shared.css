@@ -21,7 +21,7 @@ figure,
 hr,
 table,
 fieldset {
-    margin-bottom: map(spaces, medium);
+    margin-bottom: var(--space-medium);
 }
 
 
@@ -30,7 +30,7 @@ fieldset {
  */
 
 dd, ol, ul {
-    margin-left: map(spaces, medium);
+    margin-left: var(--space-medium);
 }
 
 /* stylelint-enable selector-list-comma-newline-after */
