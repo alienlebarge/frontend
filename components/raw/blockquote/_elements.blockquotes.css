@@ -6,7 +6,7 @@ blockquote {
     font-style: italic;
 
     border-left: map(borders, width, thicker) solid map(colors, text, base);
-    padding-left: map(spaces, medium);
+    padding-left: var(--space-medium);
 
     cite {
         font-size: map(fonts, small, font-size);

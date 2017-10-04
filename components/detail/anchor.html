@@ -159,7 +159,32 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-85dd907998b41ece78c76a9e8ed4b2ec-panel-html">
     <code class="Code Code--lang-html">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>This is a text link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></pre>
+        
+            <pre><span class="hljs-comment">&lt;!-- Default --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>This is text link go !<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+</pre>
+        
+            <pre><span class="hljs-comment">&lt;!-- Hover --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"is-hover"</span>&gt;</span>This is text link go !<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+</pre>
+        
+            <pre><span class="hljs-comment">&lt;!-- Visited --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"is-visited"</span>&gt;</span>This is text link go !<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+</pre>
+        
+            <pre><span class="hljs-comment">&lt;!-- Focus --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"is-focus"</span>&gt;</span>This is text link go !<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+</pre>
+        
+            <pre><span class="hljs-comment">&lt;!-- Print --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"is-print"</span>&gt;</span>This is text link go !<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+</pre>
+        
         
     </code>
 </div>
@@ -167,7 +192,7 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-85dd907998b41ece78c76a9e8ed4b2ec-panel-view">
     <code class="Code Code--lang-html">
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>This is a text link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></pre>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>{% <span class="hljs-attr">if</span> <span class="hljs-attr">styleModifier</span> %} <span class="hljs-attr">class</span>=<span class="hljs-string">"{{ styleModifier }}"</span>{% <span class="hljs-attr">endif</span> %}&gt;</span>{{ text }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></pre>
     </code>
 </div>
 
@@ -175,9 +200,51 @@
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-85dd907998b41ece78c76a9e8ed4b2ec-panel-context">
     <code class="Code Code--lang-json">
         
-            
-            <pre><span class="hljs-comment">/* No context defined for this component. */</span></pre>
-            
+        
+            <pre>
+<span class="hljs-comment">/* Default */</span>
+{
+  <span class="hljs-attr">"text"</span>: <span class="hljs-string">"This is text link go !"</span>
+}
+
+</pre>
+        
+            <pre>
+<span class="hljs-comment">/* Hover */</span>
+{
+  <span class="hljs-attr">"text"</span>: <span class="hljs-string">"This is text link go !"</span>,
+  <span class="hljs-attr">"styleModifier"</span>: <span class="hljs-string">"is-hover"</span>
+}
+
+</pre>
+        
+            <pre>
+<span class="hljs-comment">/* Visited */</span>
+{
+  <span class="hljs-attr">"text"</span>: <span class="hljs-string">"This is text link go !"</span>,
+  <span class="hljs-attr">"styleModifier"</span>: <span class="hljs-string">"is-visited"</span>
+}
+
+</pre>
+        
+            <pre>
+<span class="hljs-comment">/* Focus */</span>
+{
+  <span class="hljs-attr">"text"</span>: <span class="hljs-string">"This is text link go !"</span>,
+  <span class="hljs-attr">"styleModifier"</span>: <span class="hljs-string">"is-focus"</span>
+}
+
+</pre>
+        
+            <pre>
+<span class="hljs-comment">/* Print */</span>
+{
+  <span class="hljs-attr">"text"</span>: <span class="hljs-string">"This is text link go !"</span>,
+  <span class="hljs-attr">"styleModifier"</span>: <span class="hljs-string">"is-print"</span>
+}
+
+</pre>
+        
         
     </code>
 </div>
@@ -211,27 +278,42 @@
    #ANCHORS
    ========================================================================== */
 
-:root {
-    --e-anchors__color: map(colors, secondary, base);
-    --e-anchors__underline: map(colors, primary, base);
-}
+/**
+ * Anchors
+ *
+ * 1. When the website is printed, the url is visible
+ */
 
 a {
-    color: var(--e-anchors__color);
+    --text-color: map(colors, text, base);
+    --background-color: transparent;
+
+    color: var(--text-color);
+
+    background-color: var(--background-color);
+    outline: map(borders, width, thicker) solid var(--background-color);
     text-decoration-skip: ink;
 
-    &amp;:hover {
-        --e-anchors__color: map(colors, primary, base);
+    &amp;:hover,
+    &amp;.is-hover {
+        --background-color: map(colors, primary, base);
     }
 
-    &amp;:visited {
-        --e-anchors__color: map(colors, special-states, visited);
+    &amp;:visited,
+    &amp;.is-visited {
+        --text-color: map(colors, special-states, visited);
     }
 
-    &amp;:focus {
-        background-color: map(colors, special-states, focus);
-        outline: map(borders, width, thicker) solid 
-          map(colors, special-states, focus);
+    &amp;:focus,
+    &amp;.is-focus {
+        --background-color: map(colors, special-states, focus);
+    }
+
+    @media print {
+
+        &amp;::after {
+            content: "("attr(href) ")"; /* [1] */
+        }
     }
 }
 </pre>
@@ -250,7 +332,7 @@ a {
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">714 Bytes</span>
+                    <span class="Meta-value">919 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -271,6 +353,33 @@ a {
         
         
         
+        
+        <li class="Meta-item">
+            <strong class="Meta-key">Variants <em class="Meta-count">(5)</em>:</strong>
+            <span class="Meta-value Meta-value--linkList">
+            
+                <a href="anchor--default">
+                    <span>Default</span>
+                </a>, 
+            
+                <a href="anchor--hover">
+                    <span>Hover</span>
+                </a>, 
+            
+                <a href="anchor--visited">
+                    <span>Visited</span>
+                </a>, 
+            
+                <a href="anchor--focus">
+                    <span>Focus</span>
+                </a>, 
+            
+                <a href="anchor--print">
+                    <span>Print</span>
+                </a>
+            
+            </span>
+        </li>
         
         <li class="Meta-item">
             <strong class="Meta-key">Preview:</strong>
