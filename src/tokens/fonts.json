@@ -1,8 +1,8 @@
 {
   "heading": {
-    "family": "'reklame-script', sans-serif",
+    "family": "'ff-prater-serif-web', sans-serif",
     "normal": "400",
-    "bold": "500"
+    "bold": "700"
   },
   "base": {
     "family": "'ff-meta-serif-web-pro', serif",
