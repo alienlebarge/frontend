@@ -1,3 +1,12 @@
+/* ==========================================================================
+   #FONTS
+   ========================================================================== */
+
+/**
+ * Set fonts variables
+ *
+ * 1. Use enhance fonts when loaded
+ */
 :root {
     --heading-font-family: map(fonts, system, family);
     --heading-font-weight--normal: map(fonts, heading, normal);
@@ -13,6 +22,6 @@
 }
 
 html.wf-active {
-    --heading-font-family: map(fonts, heading, family);
-    --base-font-family: map(fonts, base, family);
+    --heading-font-family: map(fonts, heading, family); /* [1] */
+    --base-font-family: map(fonts, base, family); /* [1] */
 }
