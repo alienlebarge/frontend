@@ -19,35 +19,27 @@
 html {
     min-height: 100%; /* [1] */
 
-    /* [2] */
     font-size: responsive map(fonts, base, min-font-size)
-        map(fonts, base, max-font-size);
+        map(fonts, base, max-font-size); /* [2] */
 
-    /* [2] */
-    font-family: map(fonts, base, family);
+    font-weight: var(--base-font-weight--normal);
+    font-family: var(--base-font-family); /* [2] */
 
-    /* [4] */
     font-kerning: normal; /* [4] */
     line-height: responsive map(fonts, base, min-line-height)
-        map(fonts, base, max-line-height);
+        map(fonts, base, max-line-height); /* [4] */
 
-    /* [2] */
     color: rgba(51, 51, 51, 1);
     font-feature-settings: "kern", "liga", "clig", "calt", "onum",
-        "pnum";
+        "pnum"; /* [2] */
 
     font-range: map(fonts, base, upper-typography-range)
         map(fonts, base, lower-typography-range);
     font-variant-ligatures: common-ligatures, contextual; /* [4] */
     font-variant-numeric: oldstyle-nums, proportional-nums; /* [4] */
 
-    /* [2] */
     line-height-range: map(fonts, base, lower-typography-range)
-        map(fonts, base, upper-typography-range);
+        map(fonts, base, upper-typography-range); /* [2] */
     overflow-y: scroll; /* [3] */
 }
 
-html.wf-active {
-    font-weight: map(fonts, base, normal);
-    font-family: map(fonts, base, family);
-}

@@ -21,7 +21,8 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: map(fonts, system, family);
+    font-weight: var(--heading-font-weight--bold);
+    font-family: var(--heading-font-family);
     font-kerning: normal; /* [1] */
     line-height: 1.2;
 
@@ -63,15 +64,3 @@ h6 {
     font-size: var(--font-size-h6);
 }
 
-.wf-active {
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-weight: map(fonts, heading, bold);
-        font-family: map(fonts, heading, family);
-    }
-}
