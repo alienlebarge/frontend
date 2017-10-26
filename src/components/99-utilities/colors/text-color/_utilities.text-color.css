@@ -5,11 +5,18 @@
 .u-text-color {
 
     &--text-base {
-        color: map(colors, text, base);
+
+        &,
+        a {
+          color: map(colors, text, base);
+        }
     }
 
     &--text-inverse {
-        color: map(colors, text, inverse);
+        &,
+        a {
+            color: map(colors, text, inverse);
+        }
     }
 }
 
