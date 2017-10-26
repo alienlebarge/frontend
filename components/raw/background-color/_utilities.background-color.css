@@ -1,0 +1,58 @@
+/* ==========================================================================
+   #TEXT-COLOR
+   ========================================================================== */
+
+.u-background-color {
+
+    &--primary {
+
+        &-base {
+            background-color: map(colors, primary, base);
+        }
+
+        &-light {
+            background-color: map(colors, primary, light);
+        }
+
+        &-dark {
+            background-color: map(colors, primary, dark);
+        }
+    }
+
+    &--secondary {
+
+        &-base {
+            background-color: map(colors, secondary, base);
+        }
+
+        &-light {
+            background-color: map(colors, secondary, light);
+        }
+
+        &-dark {
+            background-color: map(colors, secondary, dark);
+        }
+    }
+
+    &--tertiary {
+
+        &-base {
+            background-color: map(colors, tertiary, base);
+        }
+
+        &-light {
+            background-color: map(colors, tertiary, light);
+        }
+
+        &-dark {
+            background-color: map(colors, tertiary, dark);
+        }
+    }
+
+    &--quaternary {
+
+        &-base {
+            background-color: map(colors, quaternary, base);
+        }
+    }
+}
