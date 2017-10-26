@@ -1,0 +1,78 @@
+{
+    "collated": true,
+    "context": {
+        "text": "background color"
+    },
+    "variants": [
+        {
+            "name": "primary-base",
+            "context": {
+                "text": "Primary base",
+                "styleModifier": "u-background-color--primary-base"
+            }
+        },
+        {
+            "name": "primary-light",
+            "context": {
+                "text": "Primary light",
+                "styleModifier": "u-background-color--primary-light"
+            }
+        },
+        {
+            "name": "primary-light",
+            "context": {
+                "text": "Primary dark",
+                "styleModifier": "u-background-color--primary-dark"
+            }
+        },
+        {
+            "name": "secondary-base",
+            "context": {
+                "text": "Secondary base",
+                "styleModifier": "u-background-color--secondary-base"
+            }
+        },
+        {
+            "name": "secondary-light",
+            "context": {
+                "text": "Secondary light",
+                "styleModifier": "u-background-color--secondary-light"
+            }
+        },
+        {
+            "name": "secondary-dark",
+            "context": {
+                "text": "Secondary dark",
+                "styleModifier": "u-background-color--secondary-dark"
+            }
+        },
+        {
+            "name": "tertiary-base",
+            "context": {
+                "text": "Tertiary base",
+                "styleModifier": "u-background-color--tertiary-base"
+            }
+        },
+        {
+            "name": "tertiary-light",
+            "context": {
+                "text": "Tertiary light",
+                "styleModifier": "u-background-color--tertiary-light"
+            }
+        },
+        {
+            "name": "tertiary-dark",
+            "context": {
+                "text": "Tertiary dark",
+                "styleModifier": "u-background-color--tertiary-dark"
+            }
+        },
+        {
+            "name": "quaternary-base",
+            "context": {
+                "text": "Quaternary base",
+                "styleModifier": "u-background-color--quaternary-base"
+            }
+        }
+    ]
+}
