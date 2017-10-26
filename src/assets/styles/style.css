@@ -13,8 +13,8 @@
 @import "**/_settings.*.css";
 
 /**
-* TOOLS
-*/
+ * TOOLS
+ */
 
 @import "**/_tools.*.css";
 
@@ -48,4 +48,5 @@
  * UTILITIES
  */
 
-@import "**/_utilities.*.css"
+@import "**/_utilities.*.css";
+@import "../../components/**/_utilities.*.css";
