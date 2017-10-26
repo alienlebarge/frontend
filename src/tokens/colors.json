@@ -1,18 +1,21 @@
 {
   "primary": {
-    "light": "rgba(240, 136, 137, 1)",
-    "base": "rgba(232, 69, 70, 1)",
-    "dark": "rgba(148, 44, 45, 1)"
+    "light": "rgba(247, 111, 143, 1)",
+    "base": "rgba(239, 71, 111, 1)",
+    "dark": "rgba(204, 36, 75, 1)"
   },
   "secondary": {
-    "light": "rgba(153, 218, 227, 1)",
-    "base": "rgba(70, 165, 228, 1)",
-    "dark": "rgba(38, 103, 112, 1)"
+    "light": "rgba(255, 222, 147, 1)",
+    "base": "rgba(255, 209, 102, 1)",
+    "dark": "rgba(247, 185, 39, 1)"
   },
   "tertiary": {
-    "light": "rgba(255, 207, 152, 1)",
-    "base": "rgba(255, 167, 67, 1)",
-    "dark": "rgba(140, 92, 37, 1)"
+    "light": "rgba(41, 244, 192, 1)",
+    "base": "rgba(6, 214, 160, 1)",
+    "dark": "rgba(0, 193, 142, 1)"
+  },
+  "quaternary": {
+    "base": "rgba(38, 84, 124, 1)"
   },
   "text": {
     "base": "rgba(0, 0, 0, 0.8)",
