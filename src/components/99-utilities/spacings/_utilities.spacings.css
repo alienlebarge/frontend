@@ -2,3 +2,12 @@
    #SPACINGS
    ========================================================================== */
 
+@each $property in (padding, margin) {
+    @each $direction in (-top, -bottom) {
+        @each $size in (-small, -big) {
+            .u-$(property)$(direction)$(size) {
+                this: "that";
+            }
+        }
+    }
+}
