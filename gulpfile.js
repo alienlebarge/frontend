@@ -111,6 +111,7 @@ function styles() {
     require("postcss-color-function"),
     require('postcss-media-minmax'),
     require('postcss-custom-media'),
+    require('postcss-each'),
     require('postcss-nested'),
     require('postcss-responsive-type'),
     require('autoprefixer'),
