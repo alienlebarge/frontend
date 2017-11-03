@@ -2,12 +2,47 @@
    #SPACINGS
    ========================================================================== */
 
-@each $property in (padding, margin) {
-    @each $direction in (-top, -bottom) {
-        @each $size in (-small, -big) {
-            .u-$(property)$(direction)$(size) {
-                this: "that";
-            }
-        }
+.u-margin {
+    --u-margin: var(--space-medium);
+    margin-top: var(--u-margin) !important;
+    margin-right: var(--u-margin) !important;
+    margin-bottom: var(--u-margin) !important;
+    margin-left: var(--u-margin) !important;
+}
+
+.u-margin--xsmall,
+.u-margin--small,
+.u-margin--large,
+.u-margin--xlarge,
+.u-margin--xxlarge {
+    &:not([class*="u-margin "]) {
+        --error: "It needs a .u-margin class";
+        cursor: help;
+        outline: 1px solid red;
     }
+}
+
+.u-margin--xsmall {
+    --u-margin: var(--space-xsmall);
+}
+
+.u-margin--small {
+    --u-margin: var(--space-small);
+}
+
+.u-margin--large {
+    --u-margin: var(--space-large);
+}
+
+.u-margin--xlarge {
+    --u-margin: var(--space-xlarge);
+}
+
+.u-margin--xxlarge {
+    --u-margin: var(--space-xxlarge);
+}
+
+.u-margin-top {
+    --u-margin-top: var(--space-medium);
+    margin-top: var(--u-margin-top) !important;
 }
