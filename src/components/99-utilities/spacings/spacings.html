@@ -1,4 +1,11 @@
-<p class="u-margin">hello</p>
-<p class="u-margin u-margin--large">yo !</p>
-<p class="u-margin u-margin--xsmall">xsmall</p>
-<p class="u-margin--xsmall">error</p>
+{% for propertie in properties %}
+{% for direction in directions %}
+{% for size in sizes %}
+<p class="u{{ propertie }}{{ direction }} u-margin{{ direction }}{{ size }}">
+    {{ propertie | replace("-","") }} 
+    {{ direction | replace("-","") }} 
+    {{ size | replace("-","") }}
+</p>
+{% endfor %}
+{% endfor %}
+{% endfor %}
