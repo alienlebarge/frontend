@@ -202,6 +202,86 @@
 
 
 /**
+ * Add margin at vertical of element
+ */
+
+.u-margin-vertical {
+    --u-margin-vertical: var(--space-medium);
+    margin-top: var(--u-margin-vertical) !important;
+    margin-bottom: var(--u-margin-vertical) !important;
+}
+
+
+.u-margin-vertical--xsmall { --u-margin-vertical: var(--space-xsmall); }
+
+.u-margin-vertical--small { --u-margin-vertical: var(--space-small); }
+
+.u-margin-vertical--large { --u-margin-vertical: var(--space-large); }
+
+.u-margin-vertical--xlarge { --u-margin-vertical: var(--space-xlarge); }
+
+.u-margin-vertical--xxlarge { --u-margin-vertical: var(--space-xxlarge); }
+
+
+
+.u-margin-vertical-xsmall,
+.u-margin-vertical--small,
+.u-margin-vertical--large,
+.u-margin-vertical--xlarge,
+.u-margin-vertical--xxlarge {
+
+    &:not([class*="u-margin-vertical "]) {
+        --error: ".u-margin-vertical class is missing";
+        cursor: help;
+        outline: map(borders, width, thick) solid map(colors, primary, dark);
+    }
+}
+
+
+
+
+
+/**
+ * Add margin at horizontal of element
+ */
+
+.u-margin-horizontal {
+    --u-margin-horizontal: var(--space-medium);
+    margin-right: var(--u-margin-horizontal) !important;
+    margin-left: var(--u-margin-horizontal) !important;
+}
+
+
+.u-margin-horizontal--xsmall { --u-margin-horizontal: var(--space-xsmall); }
+
+.u-margin-horizontal--small { --u-margin-horizontal: var(--space-small); }
+
+.u-margin-horizontal--large { --u-margin-horizontal: var(--space-large); }
+
+.u-margin-horizontal--xlarge { --u-margin-horizontal: var(--space-xlarge); }
+
+.u-margin-horizontal--xxlarge { --u-margin-horizontal: var(--space-xxlarge); }
+
+
+
+.u-margin-horizontal-xsmall,
+.u-margin-horizontal--small,
+.u-margin-horizontal--large,
+.u-margin-horizontal--xlarge,
+.u-margin-horizontal--xxlarge {
+
+    &:not([class*="u-margin-horizontal "]) {
+        --error: ".u-margin-horizontal class is missing";
+        cursor: help;
+        outline: map(borders, width, thick) solid map(colors, primary, dark);
+    }
+}
+
+
+
+
+
+/**
  * Add padding around element
  *
  *    <div class="u-padding">...</div>
@@ -395,3 +475,88 @@
         outline: map(borders, width, thick) solid map(colors, primary, dark);
     }
 }
+
+
+
+
+
+/**
+ * Add padding at vertical of element
+ */
+
+.u-padding-vertical {
+    --u-padding-vertical: var(--space-medium);
+    padding-top: var(--u-padding-vertical) !important;
+    padding-bottom: var(--u-padding-vertical) !important;
+}
+
+
+.u-padding-vertical--xsmall { --u-padding-vertical: var(--space-xsmall); }
+
+.u-padding-vertical--small { --u-padding-vertical: var(--space-small); }
+
+.u-padding-vertical--large { --u-padding-vertical: var(--space-large); }
+
+.u-padding-vertical--xlarge { --u-padding-vertical: var(--space-xlarge); }
+
+.u-padding-vertical--xxlarge { --u-padding-vertical: var(--space-xxlarge); }
+
+
+
+.u-padding-vertical-xsmall,
+.u-padding-vertical--small,
+.u-padding-vertical--large,
+.u-padding-vertical--xlarge,
+.u-padding-vertical--xxlarge {
+
+    &:not([class*="u-padding-vertical "]) {
+        --error: ".u-padding-vertical class is missing";
+        cursor: help;
+        outline: map(borders, width, thick) solid map(colors, primary, dark);
+    }
+}
+
+
+
+
+
+/**
+ * Add padding at horizontal of element
+ */
+
+.u-padding-horizontal {
+    --u-padding-horizontal: var(--space-medium);
+    padding-right: var(--u-padding-horizontal) !important;
+    padding-left: var(--u-padding-horizontal) !important;
+}
+
+
+.u-padding-horizontal--xsmall { --u-padding-horizontal: var(--space-xsmall); }
+
+.u-padding-horizontal--small { --u-padding-horizontal: var(--space-small); }
+
+.u-padding-horizontal--large { --u-padding-horizontal: var(--space-large); }
+
+.u-padding-horizontal--xlarge { --u-padding-horizontal: var(--space-xlarge); }
+
+.u-padding-horizontal--xxlarge { --u-padding-horizontal: var(--space-xxlarge); }
+
+
+
+.u-padding-horizontal-xsmall,
+.u-padding-horizontal--small,
+.u-padding-horizontal--large,
+.u-padding-horizontal--xlarge,
+.u-padding-horizontal--xxlarge {
+
+    &:not([class*="u-padding-horizontal "]) {
+        --error: ".u-padding-horizontal class is missing";
+        cursor: help;
+        outline: map(borders, width, thick) solid map(colors, primary, dark);
+    }
+}
+
+
+
+
+
