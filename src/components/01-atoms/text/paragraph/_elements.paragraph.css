@@ -17,7 +17,7 @@ p {
     hyphens: auto;
     hyphenate-limit-chars: 6 3 2;
     hyphenate-limit-last: always;
-    hyphenate-limite-line: 2;
+    hyphenate-limite-lines: 2;
     hyphenate-limite-zone: 8%;
 }
 
