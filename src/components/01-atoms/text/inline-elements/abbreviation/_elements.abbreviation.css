@@ -8,6 +8,7 @@
  *
  * 1. Safari iOs doesn't support `font-feature` so we use `text-transform`
  *    to make the texte uppercase. http://caniuse.com/#search=font-feature
+ * 2 . This will prevent abbreviations from being hyphenated.
  */
 abbr {
     font-kerning: normal;
@@ -17,4 +18,6 @@ abbr {
     font-variant-caps: all-small-caps;
     font-variant-ligatures: common-ligatures, contextual;
     font-variant-numeric: oldstyle-nums, proportional-nums;
+
+    hyphens: manual;
 }

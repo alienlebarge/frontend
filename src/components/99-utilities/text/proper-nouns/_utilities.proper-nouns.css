@@ -1,0 +1,11 @@
+/* ==========================================================================
+   #PROPER NOUNS
+   ========================================================================== */
+
+/**
+ * 1. As a general rule don’t hyphenate proper nouns (names of people, places
+ *    and organisations)
+ */
+.u-proper-noun {
+    hyphens: manual; /* [1] */
+}
