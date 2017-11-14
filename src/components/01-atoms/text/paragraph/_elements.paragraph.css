@@ -9,9 +9,15 @@
  * direction too frequently, resulting in tired eyes and a reading experience
  * that feels like hard work, however engaging the text.
  * The often quoted ideal length for a line is 66 characters, with a range of
- * 45-75 characters (including spaces) generally considered satisfacrory.
+ * 45-75 characters (including spaces) generally considered satisfactory.
  */
 p {
     max-width: 38em;
+
+    hyphens: auto;
+    hyphenate-limit-chars: 6 3 2;
+    hyphenate-limit-last: always;
+    hyphenate-limite-line: 2;
+    hyphenate-limite-zone: 8%;
 }
 
