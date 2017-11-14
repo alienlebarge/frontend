@@ -2,6 +2,6 @@
     "context": {
         "properties": ["-margin", "-padding"],
         "directions": ["", "-top", "-right", "-bottom", "-left", "-vertical", "-horizontal"],
-        "sizes": ["--xsmall", "--small", "", "--large", "--xlarge"]
+        "sizes": ["--none", "--xsmall", "--small", "", "--large", "--xlarge"]
     }
 }
