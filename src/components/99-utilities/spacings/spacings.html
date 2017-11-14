@@ -1,11 +1,11 @@
 {% for propertie in properties %}
 {% for direction in directions %}
 {% for size in sizes %}
-<p class="u{{ propertie }}{{ direction }} u-margin{{ direction }}{{ size }}">
-    {{ propertie | replace("-","") }} 
-    {{ direction | replace("-","") }} 
+    <div class="u{{ propertie }}{{ direction }} u{{ propertie }}{{ direction }}{{ size }}">
+    {{ propertie | replace("-","") }}
+    {{ direction | replace("-","") }}
     {{ size | replace("-","") }}
-</p>
+    </div>
 {% endfor %}
 {% endfor %}
 {% endfor %}
