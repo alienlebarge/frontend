@@ -2,15 +2,6 @@
    #HEADINGS
    ========================================================================== */
 
-:root {
-    --font-size-h1: 2.25em;
-    --font-size-h2: 1.75em;
-    --font-size-h3: 1.5em;
-    --font-size-h4: 1.25em;
-    --font-size-h5: 1.125em;
-    --font-size-h6: 1em;
-}
-
 /**
  * 1. More readable headings
  *    see http://practice.typekit.com/lesson/caring-about-opentype-features/
@@ -35,32 +26,32 @@ h6 {
 }
 
 h1 {
-    font-size: var(--font-size-h1);
+    font-size: var(--typography-scale-3);
 
     border-bottom: map(borders, width, thickest) solid
         map(colors, tertiary, base);
 }
 
 h2 {
-    font-size: var(--font-size-h2);
+    font-size: var(--typography-scale-2);
 
     border-bottom: map(borders, width, thickest) solid
         map(colors, tertiary, base);
 }
 
 h3 {
-    font-size: var(--font-size-h3);
+    font-size: var(--typography-scale-1);
 }
 
 h4 {
-    font-size: var(--font-size-h4);
+    font-size: var(--typography-scale-base);
 }
 
 h5 {
-    font-size: var(--font-size-h5);
+    font-size: var(--typography-scale-small);
 }
 
 h6 {
-    font-size: var(--font-size-h6);
+    font-size: var(--typography-scale-small);
 }
 

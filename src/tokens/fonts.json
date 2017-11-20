@@ -8,12 +8,8 @@
     "family": "'ff-meta-serif-web-pro', serif",
     "normal": "400",
     "bold": "700",
-    "min-font-size": "1.2em",
-    "max-font-size": "2em",
-    "min-line-height": "1.5em",
-    "max-line-height": "1.75em",
-    "lower-typography-range": "30em",
-    "upper-typography-range": "60em"
+    "font-size": "1rem",
+    "line-height": "1.5"
   },
   "monospace": {
     "family": "'Source Code Pro', monospace"

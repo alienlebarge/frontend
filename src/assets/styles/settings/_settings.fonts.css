@@ -18,7 +18,32 @@
     --monospace-font-family: map(fonts, monospace, family);
 }
 
+
 html.wf-active {
     --heading-font-family: map(fonts, heading, family); /* [1] */
     --base-font-family: map(fonts, base, family); /* [1] */
+}
+
+:root {
+    --typography-scale-3: 2.2rem; /* 33px */
+    --typography-scale-2: 1.5625rem; /* 25px */
+    --typography-scale-1: 1.3125rem; /* 21px */
+    --typography-scale-base: 1rem; /* 16px */
+    --typography-scale-small: .875rem; /* 14px */
+
+    @media (--desktop-and-up) {
+        --typography-scale-3: 3.1875rem; /* 51px */
+        --typography-scale-2: 2.2rem; /* 33px */
+        --typography-scale-1: 1.5625rem; /* 25px */
+        --typography-scale-base: 1.125rem; /* 18px */
+        --typography-scale-small: 1rem; /* 16px */
+    }
+
+    @media (--wide-and-up) {
+        --typography-scale-3: 4.875rem; /* 78px */
+        --typography-scale-2: 2.75rem; /* 44px */
+        --typography-scale-1: 1.75rem; /* 28px */
+        --typography-scale-base: 1.3125rem; /* 21px */
+        --typography-scale-small: 1.125rem; /* 18px */
+    }
 }
