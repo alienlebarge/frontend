@@ -1,0 +1,11 @@
+{
+    "context": {
+        "title": {
+            "text": "Article title"
+        },
+        "date": "One month ago",
+        "excerpt": {
+            "text": "This is the text"
+        }
+    }
+}

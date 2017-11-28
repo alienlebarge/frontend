@@ -1,6 +1,7 @@
 <article>
     <header>
-    <h3>{{ title }}</h3>
+        {%- render '@headings--h3', title, true -%}
+        <p>{% render '@time' %}</p>
     </header>
-    {% render '@paragraph' %}
+    {% render '@paragraph', excerpt, true -%}
 </article>
