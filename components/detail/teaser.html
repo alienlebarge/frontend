@@ -157,13 +157,11 @@
         
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">article</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Article title<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">time</span> <span class="hljs-attr">datetime</span>=<span class="hljs-string">"2001-05-15T19:00"</span>&gt;</span>May 15<span class="hljs-tag">&lt;/<span class="hljs-name">time</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt eius animi officia beatae amet minima nobis ullam molestiae eos vitae exercitationem, molestias expedita debitis corporis totam incidunt aspernatur doloremque nisi itaque doloribus
-        sed fugit quis! Minus, odio at ut eius velit deleniti error quia, rerum recusandae delectus reprehenderit quaerat nulla nostrum itaque ipsum non nesciunt aut modi neque sed nisi deserunt tenetur. Magnam natus ullam sunt maxime provident quos perspiciatis
-        iste repudiandae, necessitatibus, repellat eius, architecto, consequatur. Maxime, voluptatem! Expedita pariatur quas mollitia, architecto voluptates. Aspernatur, molestias modi praesentium numquam corrupti eius eligendi iure nulla quaerat quod
-        sapiente dolores debitis consectetur laudantium. Quam odio voluptates, minima dolores atque nihil voluptate placeat similique sapiente soluta, architecto! Molestiae officiis, deleniti possimus nemo.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>This is the text<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span></pre>
         
     </code>
@@ -174,9 +172,10 @@
     <code class="Code Code--lang-html">
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">article</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>{{ title }}<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+        {%- render '<a href="headings--h3">@headings--h3</a>', title, true -%}
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{% render '<a href="time">@time</a>' %}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
-    {% render '<a href="paragraph">@paragraph</a>' %}
+    {% render '<a href="paragraph">@paragraph</a>', excerpt, true -%}
 <span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span></pre>
     </code>
 </div>
@@ -186,7 +185,15 @@
     <code class="Code Code--lang-json">
         
             
-            <pre><span class="hljs-comment">/* No context defined for this component. */</span></pre>
+            <pre>{
+  <span class="hljs-attr">"title"</span>: {
+    <span class="hljs-attr">"text"</span>: <span class="hljs-string">"Article title"</span>
+  },
+  <span class="hljs-attr">"date"</span>: <span class="hljs-string">"One month ago"</span>,
+  <span class="hljs-attr">"excerpt"</span>: {
+    <span class="hljs-attr">"text"</span>: <span class="hljs-string">"This is the text"</span>
+  }
+}</pre>
             
         
     </code>
@@ -233,8 +240,12 @@
         </li>
         
         <li class="Meta-item">
-            <strong class="Meta-key">References <em class="Meta-count">(1)</em>:</strong>
+            <strong class="Meta-key">References <em class="Meta-count">(3)</em>:</strong>
             <span class="Meta-value Meta-value--linkList">
+            
+                <a href="headings--h3">@<span>headings--h3</span></a>, 
+            
+                <a href="time">@<span>time</span></a>, 
             
                 <a href="paragraph">@<span>paragraph</span></a>
             
