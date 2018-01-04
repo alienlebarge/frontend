@@ -20,8 +20,8 @@
 
 @font-face {
     font-family: "TrenchSlab";
-    src: url("./assets/fonts/TrenchSlab/TrenchSlab-Regular.woff2") format("woff2"),
-         url("./assets/fonts/TrenchSlab/TrenchSlab-Regular.woff")  format("woff")
+    src: url("/assets/fonts/TrenchSlab/TrenchSlab-Regular.woff2") format("woff2"),
+         url("/assets/fonts/TrenchSlab/TrenchSlab-Regular.woff")  format("woff")
 }
 
 @font-face {
