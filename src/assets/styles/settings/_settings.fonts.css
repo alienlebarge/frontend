@@ -19,13 +19,41 @@
 }
 
 @font-face {
-    font-family: "TrenchSlab";
-    src: url("/assets/fonts/TrenchSlab/TrenchSlab-Regular.woff2") format("woff2"),
-         url("/assets/fonts/TrenchSlab/TrenchSlab-Regular.woff")  format("woff")
+    font-family: SkemaProOmni;
+    src: url("/assets/fonts/SkemaProOmni/SkemaProOmni-Regular.woff2") format("woff2"),
+         url("/assets/fonts/SkemaProOmni/SkemaProOmni-Regular.woff") format("woff");
 }
 
 @font-face {
-    font-family: "TrenchSlabBold";
+    font-family: SkemaProOmniItalic;
+    src: url("/assets/fonts/SkemaProOmni/SkemaProOmni-Italic.woff2") format("woff2"),
+         url("/assets/fonts/SkemaProOmni/SkemaProOmni-Italic.woff") format("woff");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: SkemaProOmniBold;
+    src: url("/assets/fonts/SkemaProOmni/SkemaProOmni-Bold.woff2") format("woff2"),
+         url("/assets/fonts/SkemaProOmni/SkemaProOmni-Bold.woff") format("woff");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: SkemaProOmniBoldItalic;
+    src: url("/assets/fonts/SkemaProOmni/SkemaProOmni-BoldItalic.woff2") format("woff2"),
+         url("/assets/fonts/SkemaProOmni/SkemaProOmni-BoldItalic.woff") format("woff");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: TrenchSlab;
+    src: url("/assets/fonts/TrenchSlab/TrenchSlab-Regular.woff2") format("woff2"),
+         url("/assets/fonts/TrenchSlab/TrenchSlab-Regular.woff")  format("woff");
+}
+
+@font-face {
+    font-family: TrenchSlabBold;
     src: url("/assets/fonts/TrenchSlab/TrenchSlab-Bold.woff2") format("woff2"),
          url("/assets/fonts/TrenchSlab/TrenchSlab-Bold.woff")  format("woff");
     font-weight: 700;
