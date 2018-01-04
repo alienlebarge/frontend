@@ -93,6 +93,14 @@ function deploy() {
 }
 
 /**
+ * Fonts
+ */
+function fonts() {
+    return gulp.src('node_modules/alb-frontend-fonts/**/*.{woff,woff2}')
+    .pipe(gulp.dest(paths.dest + '/assets/fonts'))
+}
+
+/**
  * Styles
  */
 function styles() {
@@ -148,7 +156,7 @@ function watch(done) {
 /**
  * Task set
  */
-const compile = gulp.series(clean, gulp.parallel(lintstyles, styles));
+const compile = gulp.series(clean, gulp.parallel(fonts, lintstyles, styles));
 
 gulp.task('build', gulp.series(compile, build));
 gulp.task('dev', gulp.series(compile, watch));
