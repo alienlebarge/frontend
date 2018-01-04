@@ -35,6 +35,7 @@
     "@alienlebarge/stylelint-config": "^3.1.1",
     "@frctl/fractal": "^1.1.4",
     "@frctl/nunjucks": "^1.0.3",
+    "alb-frontend-fonts": "https://github.com/alienlebarge/alb-frontend-fonts.git",
     "autoprefixer": "^7.1.4",
     "cssnano": "^3.8.2",
     "del": "^3.0.0",

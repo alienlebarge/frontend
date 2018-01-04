@@ -150,6 +150,10 @@ ajv@^5.2.3:
     fast-json-stable-stringify "^2.0.0"
     json-schema-traverse "^0.3.0"
 
+"alb-frontend-fonts@https://github.com/alienlebarge/alb-frontend-fonts.git":
+  version "0.0.0"
+  resolved "https://github.com/alienlebarge/alb-frontend-fonts.git#b53cff20df34150ea08816728ef611be3abc8ec4"
+
 align-text@^0.1.1, align-text@^0.1.3:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/align-text/-/align-text-0.1.4.tgz#0cd90a561093f35d0a99256c22b7069433fad117"
