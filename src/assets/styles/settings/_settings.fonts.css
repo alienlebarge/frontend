@@ -8,21 +8,29 @@
  * 1. Use enhance fonts when loaded
  */
 :root {
-    --heading-font-family: map(fonts, system, family);
+    --heading-font-family: map(fonts, heading, family);
     --heading-font-weight--normal: map(fonts, heading, normal);
     --heading-font-weight--bold: map(fonts, heading, bold);
-    --base-font-family: map(fonts, system, family);
+    --base-font-family: map(fonts, base, family);
     --base-font-weight--normal: map(fonts, base, normal);
     --base-font-weight--bold: map(fonts, base, bold);
     --small-font-size: map(fonts, small, font-size);
     --monospace-font-family: map(fonts, monospace, family);
 }
 
-
-html.wf-active {
-    --heading-font-family: map(fonts, heading, family); /* [1] */
-    --base-font-family: map(fonts, base, family); /* [1] */
+@font-face {
+    font-family: "TrenchSlab";
+    src: url("./assets/fonts/TrenchSlab/TrenchSlab-Regular.woff2") format("woff2"),
+         url("./assets/fonts/TrenchSlab/TrenchSlab-Regular.woff")  format("woff")
 }
+
+@font-face {
+    font-family: "TrenchSlabBold";
+    src: url("/assets/fonts/TrenchSlab/TrenchSlab-Bold.woff2") format("woff2"),
+         url("/assets/fonts/TrenchSlab/TrenchSlab-Bold.woff")  format("woff");
+    font-weight: 700;
+}
+
 
 :root {
     --typography-scale-3: 2.2rem; /* 33px */
