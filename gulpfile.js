@@ -21,9 +21,9 @@ const sourcemaps = require('gulp-sourcemaps');
 
 // Paths
 const paths = {
-  build: __dirname + '/www',
-  dest: __dirname + '/tmp',
-  src: __dirname + '/src',
+    build: __dirname + '/www',
+    dest: __dirname + '/tmp',
+    src: __dirname + '/src',
 };
 
 /*
@@ -43,15 +43,15 @@ const logger = fractal.cli.console; // keep a reference to the fractal CLI conso
  * This task will also log any errors to the console.
  */
 function serve() {
-  const server = fractal.web.server({
-    sync: true
-  });
+    const server = fractal.web.server({
+        sync: true
+    });
 
-  server.on('error', err => logger.error(err.message));
+    server.on('error', err => logger.error(err.message));
 
-  return server.start().then(() => {
-    logger.success(`Fractal server is now running at ${server.url}`);
-  });
+    return server.start().then(() => {
+        logger.success(`Fractal server is now running at ${server.url}`);
+    });
 };
 
 /*
@@ -76,19 +76,19 @@ function build() {
 /**
  * Clean
  */
- function clean() {
-   return del(paths.dest + '/assets/');
- };
+function clean() {
+    return del(paths.dest + '/assets/');
+};
 
 /**
  * Deploy
  */
 function deploy() {
-  // Push contents of build folder to `gh-pages` branch
-  return gulp.src(paths.build + '/**/*')
-    .pipe(ghPages({
-      force: true
-    }));
+    // Push contents of build folder to `gh-pages` branch
+    return gulp.src(paths.build + '/**/*')
+        .pipe(ghPages({
+            force: true
+        }));
     done();
 }
 
@@ -97,60 +97,60 @@ function deploy() {
  */
 function fonts() {
     return gulp.src('node_modules/alb-frontend-fonts/**/*.{woff,woff2}')
-    .pipe(gulp.dest(paths.dest + '/assets/fonts'))
+        .pipe(gulp.dest(paths.dest + '/assets/fonts'))
 }
 
 /**
  * Styles
  */
 function styles() {
-  const processors = [
-    require('postcss-easy-import'),
-    require('postcss-map')({
-        maps: [
-            paths.src + '/tokens/borders.json',
-            paths.src + '/tokens/breakpoints.json',
-            paths.src + '/tokens/colors.json',
-            paths.src + '/tokens/fonts.json',
-            paths.src + '/tokens/spaces.json',
-            paths.src + '/tokens/animations.json'
-        ],
-    }),
-    require("postcss-color-function"),
-    require('postcss-media-minmax'),
-    require('postcss-custom-media'),
-    require('postcss-nested'),
-    require('autoprefixer'),
-    require('cssnano')
-  ];
+    const processors = [
+        require('postcss-easy-import'),
+        require('postcss-map')({
+            maps: [
+                paths.src + '/tokens/borders.json',
+                paths.src + '/tokens/breakpoints.json',
+                paths.src + '/tokens/colors.json',
+                paths.src + '/tokens/fonts.json',
+                paths.src + '/tokens/spaces.json',
+                paths.src + '/tokens/animations.json'
+            ],
+        }),
+        require("postcss-color-function"),
+        require('postcss-media-minmax'),
+        require('postcss-custom-media'),
+        require('postcss-nested'),
+        require('autoprefixer'),
+        require('cssnano')
+    ];
 
-  return gulp.src(paths.src + '/assets/styles/*.css')
-    .pipe(sourcemaps.init())
-    .pipe(postcss(processors))
-    .pipe(sourcemaps.write('./'))
-    .pipe(gulp.dest(paths.dest + '/assets/styles'));
+    return gulp.src(paths.src + '/assets/styles/*.css')
+        .pipe(sourcemaps.init())
+        .pipe(postcss(processors))
+        .pipe(sourcemaps.write('./'))
+        .pipe(gulp.dest(paths.dest + '/assets/styles'));
 }
 
 /**
  * Style linting
  */
 function lintstyles() {
-  return gulp.src(paths.src + '/**/*.css')
-    .pipe(stylelint({
-      failAfterError: false,
-      reporters: [{
-        formatter: 'string',
-        console: true
-      }]
-    }));
+    return gulp.src(paths.src + '/**/*.css')
+        .pipe(stylelint({
+            failAfterError: false,
+            reporters: [{
+                formatter: 'string',
+                console: true
+            }]
+        }));
 };
 
 /**
  * Watch
  */
 function watch(done) {
-  serve();
-  gulp.watch(paths.src + '/**/*.css', gulp.parallel(lintstyles, styles));
+    serve();
+    gulp.watch(paths.src + '/**/*.css', gulp.parallel(lintstyles, styles));
 };
 
 /**
