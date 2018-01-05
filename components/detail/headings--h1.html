@@ -223,11 +223,12 @@
 <span class="hljs-selector-tag">h4</span>,
 <span class="hljs-selector-tag">h5</span>,
 <span class="hljs-selector-tag">h6</span> {
-    <span class="hljs-attribute">color</span>: <span class="hljs-built_in">map</span>(colors, tertiary, base);
+    <span class="hljs-attribute">--color-text</span>: <span class="hljs-built_in">map</span>(colors, tertiary, base);
     <span class="hljs-attribute">font-weight</span>: <span class="hljs-built_in">var</span>(--heading-font-weight--bold);
     <span class="hljs-attribute">font-family</span>: <span class="hljs-built_in">map</span>(fonts, heading, family), <span class="hljs-built_in">map</span>(fonts, system, family);
     <span class="hljs-attribute">font-kerning</span>: normal; <span class="hljs-comment">/* [1] */</span>
     <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.2</span>;
+    <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--color-text);
 
     <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">1.5em</span>;
     <span class="hljs-attribute">margin-bottom</span>: .<span class="hljs-number">5em</span>;
