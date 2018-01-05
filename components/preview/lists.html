@@ -5,12 +5,42 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link media="all" rel="stylesheet" href="../../assets/styles/style.css">
     <title>Preview Layout</title>
+    <link media="all" rel="stylesheet" href="../../assets/styles/style.css">
+
+    <script>
+        var script = document.createElement('script');
+        script.src = '../../assets/scripts/fontfaceobserver.js';
+        script.async = true;
+
+        script.onload = function () {
+
+            // Timeout function
+            function timeout(time) {
+                return new Promise(function (resolve, reject) {
+                    setTimeout(reject, time);
+                });
+            }
+
+            // font-loading code
+            var trenchSlab = new FontFaceObserver('TrenchSlabBold');
+            var skemaProOmni = new FontFaceObserver('SkemaProOmni');
+            var html = document.documentElement;
+
+            Promise.race([
+                trenchSlab.load(),
+                skemaProOmni.load(),
+                timeout(1000)
+            ]).then(function () {
+                html.classList.add('fonts-loaded');
+            });
+        };
+        document.head.appendChild(script);
+    </script>
 </head>
 <body>
 
-<ul><li>Ut non rem quae laboriosam nisi omnis modi est sed.</li><li>Odit ea est qui eveniet repellat et repellendus quibusdam necessitatibus.</li><li>Voluptatum dolores mollitia rerum sequi adipisci tempora.</li><li>Quia distinctio consequatur sed rerum accusantium quia.</li><li>Ad ea aut fuga pariatur aut voluptates.</li></ul>
+<ul><li>Dolore rerum natus dolor quia totam enim vel.</li><li>Laborum amet ad voluptatem neque unde officiis odit iusto ipsum.</li><li>Eos unde eligendi voluptates quisquam qui reprehenderit est.</li><li>Alias modi maxime cum.</li><li>Rerum aut veritatis saepe illum qui maxime ea.</li></ul>
 
 
 </body>
