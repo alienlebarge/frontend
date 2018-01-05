@@ -21,16 +21,24 @@
             }
 
             // font-loading code
-            var trenchSlab = new FontFaceObserver('TrenchSlabBold');
+            var trenchSlab = new FontFaceObserver('TrenchSlab');
             var skemaProOmni = new FontFaceObserver('SkemaProOmni');
             var html = document.documentElement;
 
+            // add a class if TrenSlab is loaded
             Promise.race([
                 trenchSlab.load(),
+                timeout(1000)
+            ]).then(function () {
+                html.classList.add('js-fonts-loaded--TrenchSlab');
+            });
+
+            // add a class if SkemaProOmni is loaded
+            Promise.race([
                 skemaProOmni.load(),
                 timeout(1000)
             ]).then(function () {
-                html.classList.add('fonts-loaded');
+                html.classList.add('js-fonts-loaded--SkemaProOmni');
             });
         };
         document.head.appendChild(script);

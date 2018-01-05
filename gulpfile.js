@@ -128,11 +128,11 @@ function styles() {
             groups: [
                 {
                     families: ["SkemaProOmni"],
-                    classNames: ["fonts-loaded"]
+                    classNames: ["js-fonts-loaded--SkemaProOmni"]
                 },
                 {
                     families: ["TrenchSlab"],
-                    classNames: ["fonts-loaded"]
+                    classNames: ["js-fonts-loaded--TrenchSlab"]
                 }
             ]
         }),
