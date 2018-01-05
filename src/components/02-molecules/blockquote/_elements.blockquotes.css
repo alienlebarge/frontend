@@ -3,7 +3,6 @@
    ========================================================================== */
 
 blockquote {
-    font-size: var(--typography-scale-1);
     font-style: italic;
 
     border-left: map(borders, width, thicker) solid var(--color-text);
