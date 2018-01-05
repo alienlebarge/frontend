@@ -1,8 +1,8 @@
 {
   "primary": {
-    "light": "rgba(247, 111, 143, 1)",
-    "base": "rgba(239, 71, 111, 1)",
-    "dark": "rgba(204, 36, 75, 1)"
+    "light": "rgba(242, 92, 160, 1)",
+    "base": "rgba(217, 52, 126, 1)",
+    "dark": "rgba(173, 43, 102, 1)"
   },
   "secondary": {
     "light": "rgba(255, 222, 147, 1)",
