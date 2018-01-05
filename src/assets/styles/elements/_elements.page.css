@@ -14,6 +14,7 @@
  *    scrollbars naturally.
  * 4. Mor readable bodytext
  *    see http://practice.typekit.com/lesson/caring-about-opentype-features/
+ * 5. Font smooting
  */
 
 html {
@@ -27,14 +28,21 @@ html {
     font-kerning: normal; /* [4] */
     line-height: map(fonts, base, line-height); /* [4] */
 
-    color: rgba(51, 51, 51, 1);
+    color: map(colors, text, inverse);
+
+    background-color: map(colors, neutral, darker);
     font-feature-settings: "kern", "liga", "clig", "calt", "onum",
         "pnum"; /* [2] */
 
     font-range: map(fonts, base, lower-typography-range)
         map(fonts, base, upper-typography-range);
+    -moz-osx-font-smoothing: grayscale; /* [5] */
+    -webkit-font-smoothing: antialiased; /* [5] */
+    font-smoothing: antialiased; /* [5] */
     font-variant-ligatures: common-ligatures, contextual; /* [4] */
     font-variant-numeric: oldstyle-nums, proportional-nums; /* [4] */
 
     overflow-y: scroll; /* [3] */
+    text-rendering: optimizeLegibility; /* [5] */
+    text-shadow: rgba(0, 0, 0, .01) 0 0 1px; /* [5] */
 }
