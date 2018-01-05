@@ -8,11 +8,12 @@
 
         &,
         a {
-          color: map(colors, text, base);
+            color: map(colors, text, base);
         }
     }
 
     &--text-inverse {
+
         &,
         a {
             color: map(colors, text, inverse);
