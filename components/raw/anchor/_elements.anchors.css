@@ -9,28 +9,27 @@
  */
 
 a {
-    --text-color: map(colors, text, base);
-    --background-color: transparent;
+    --color-background: transparent;
 
-    color: var(--text-color);
+    color: var(--color-text);
 
-    background-color: var(--background-color);
-    outline: map(borders, width, thicker) solid var(--background-color);
+    background-color: var(--color-background);
+    outline: map(borders, width, thicker) solid var(--color-background);
     text-decoration-skip: ink;
 
     &:hover,
     &.is-hover {
-        --background-color: map(colors, primary, base);
+        --color-background: map(colors, primary, base);
     }
 
     &:visited,
     &.is-visited {
-        --text-color: map(colors, special-states, visited);
+        --color-text: map(colors, special-states, visited);
     }
 
     &:focus,
     &.is-focus {
-        --background-color: map(colors, special-states, focus);
+        --color-background: map(colors, special-states, focus);
     }
 
     @media print {

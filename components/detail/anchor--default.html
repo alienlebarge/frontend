@@ -220,28 +220,27 @@
  */
 
 a {
-    --text-color: map(colors, text, base);
-    --background-color: transparent;
+    --color-background: transparent;
 
-    color: var(--text-color);
+    color: var(--color-text);
 
-    background-color: var(--background-color);
-    outline: map(borders, width, thicker) solid var(--background-color);
+    background-color: var(--color-background);
+    outline: map(borders, width, thicker) solid var(--color-background);
     text-decoration-skip: ink;
 
     &amp;:hover,
     &amp;.is-hover {
-        --background-color: map(colors, primary, base);
+        --color-background: map(colors, primary, base);
     }
 
     &amp;:visited,
     &amp;.is-visited {
-        --text-color: map(colors, special-states, visited);
+        --color-text: map(colors, special-states, visited);
     }
 
     &amp;:focus,
     &amp;.is-focus {
-        --background-color: map(colors, special-states, focus);
+        --color-background: map(colors, special-states, focus);
     }
 
     @media print {
@@ -267,7 +266,7 @@ a {
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">919 Bytes</span>
+                    <span class="Meta-value">876 Bytes</span>
                 </li>
             </ul>
         </div>
