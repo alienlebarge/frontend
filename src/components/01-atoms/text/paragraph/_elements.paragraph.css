@@ -14,10 +14,10 @@
 p {
     max-width: 38em;
 
-    hyphens: auto;
     hyphenate-limit-chars: 6 3 2;
     hyphenate-limit-last: always;
     hyphenate-limite-lines: 2;
     hyphenate-limite-zone: 8%;
+    hyphens: auto;
 }
 
