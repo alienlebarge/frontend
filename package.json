@@ -50,6 +50,7 @@
     "postcss-color-function": "^4.0.0",
     "postcss-custom-media": "^6.0.0",
     "postcss-easy-import": "^3.0.0",
+    "postcss-foft-classes": "^1.0.2",
     "postcss-map": "^0.9.0",
     "postcss-media-minmax": "^3.0.0",
     "postcss-nested": "^2.1.2"

@@ -1,11 +1,11 @@
 {
   "heading": {
-    "family": "'TrenchSlabBold', sans-serif",
+    "family": "'TrenchSlab'",
     "normal": "400",
     "bold": "700"
   },
   "base": {
-    "family": "'SkemaProOmni', serif",
+    "family": "'SkemaProOmni'",
     "normal": "400",
     "bold": "700",
     "font-size": "1rem",

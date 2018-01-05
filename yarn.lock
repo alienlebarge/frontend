@@ -3560,6 +3560,10 @@ postcss-filter-plugins@^2.0.0:
     postcss "^5.0.4"
     uniqid "^4.0.0"
 
+postcss-foft-classes@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/postcss-foft-classes/-/postcss-foft-classes-1.0.2.tgz#fb698d559003e13d2c1d8b5475314dc70424d6b7"
+
 postcss-import@^10.0.0:
   version "10.0.0"
   resolved "https://registry.yarnpkg.com/postcss-import/-/postcss-import-10.0.0.tgz#4c85c97b099136cc5ea0240dc1dfdbfde4e2ebbe"

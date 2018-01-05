@@ -22,23 +22,15 @@
 
             // font-loading code
             var trenchSlab = new FontFaceObserver('TrenchSlabBold');
-            var trenchSlabBold = new FontFaceObserver('TrenchSlab');
             var skemaProOmni = new FontFaceObserver('SkemaProOmni');
-            var skemaProOmniItalic = new FontFaceObserver('SkemaProOmniItalic');
-            var skemaProOmniBold = new FontFaceObserver('SkemaProOmniBold');
-            var skemaProOmniBoldItalic = new FontFaceObserver('SkemaProOmniBoldItalic');
             var html = document.documentElement;
 
             Promise.race([
                 trenchSlab.load(),
-                trenchSlabBold.load(),
                 skemaProOmni.load(),
-                skemaProOmniItalic.load(),
-                skemaProOmniBold.load(),
-                skemaProOmniBoldItalic.load(),
                 timeout(1000)
             ]).then(function () {
-                html.classList.add('font-loaded');
+                html.classList.add('fonts-loaded');
             });
         };
         document.head.appendChild(script);

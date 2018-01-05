@@ -8,10 +8,8 @@
  * 1. Use enhance fonts when loaded
  */
 :root {
-    --heading-font-family: map(fonts, heading, family);
     --heading-font-weight--normal: map(fonts, heading, normal);
     --heading-font-weight--bold: map(fonts, heading, bold);
-    --base-font-family: map(fonts, base, family);
     --base-font-weight--normal: map(fonts, base, normal);
     --base-font-weight--bold: map(fonts, base, bold);
     --small-font-size: map(fonts, small, font-size);
@@ -25,21 +23,21 @@
 }
 
 @font-face {
-    font-family: SkemaProOmniItalic;
+    font-family: SkemaProOmni;
     src: url("../fonts/SkemaProOmni/SkemaProOmni-Italic.woff2") format("woff2"),
          url("../fonts/SkemaProOmni/SkemaProOmni-Italic.woff") format("woff");
     font-style: italic;
 }
 
 @font-face {
-    font-family: SkemaProOmniBold;
+    font-family: SkemaProOmni;
     src: url("../fonts/SkemaProOmni/SkemaProOmni-Bold.woff2") format("woff2"),
          url("../fonts/SkemaProOmni/SkemaProOmni-Bold.woff") format("woff");
     font-weight: 700;
 }
 
 @font-face {
-    font-family: SkemaProOmniBoldItalic;
+    font-family: SkemaProOmni;
     src: url("../fonts/SkemaProOmni/SkemaProOmni-BoldItalic.woff2") format("woff2"),
          url("../fonts/SkemaProOmni/SkemaProOmni-BoldItalic.woff") format("woff");
     font-weight: 700;
@@ -53,7 +51,7 @@
 }
 
 @font-face {
-    font-family: TrenchSlabBold;
+    font-family: TrenchSlab;
     src: url("../fonts/TrenchSlab/TrenchSlab-Bold.woff2") format("woff2"),
          url("../fonts/TrenchSlab/TrenchSlab-Bold.woff")  format("woff");
     font-weight: 700;
