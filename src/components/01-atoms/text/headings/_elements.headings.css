@@ -12,6 +12,7 @@ h3,
 h4,
 h5,
 h6 {
+    color: map(colors, tertiary, base);
     font-weight: var(--heading-font-weight--bold);
     font-family: map(fonts, heading, family), map(fonts, system, family);
     font-kerning: normal; /* [1] */
@@ -27,16 +28,10 @@ h6 {
 
 h1 {
     font-size: var(--typography-scale-3);
-
-    border-bottom: map(borders, width, thickest) solid
-        map(colors, tertiary, base);
 }
 
 h2 {
     font-size: var(--typography-scale-2);
-
-    border-bottom: map(borders, width, thickest) solid
-        map(colors, tertiary, base);
 }
 
 h3 {
