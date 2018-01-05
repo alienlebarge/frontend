@@ -12,11 +12,12 @@ h3,
 h4,
 h5,
 h6 {
-    color: map(colors, tertiary, base);
+    --color-text: map(colors, tertiary, base);
     font-weight: var(--heading-font-weight--bold);
     font-family: map(fonts, heading, family), map(fonts, system, family);
     font-kerning: normal; /* [1] */
     line-height: 1.2;
+    color: var(--color-text);
 
     margin-top: 1.5em;
     margin-bottom: .5em;
