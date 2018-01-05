@@ -3,8 +3,46 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link media="all" rel="stylesheet" href="{{ '/assets/styles/style.css' | path }}">
     <title>Preview Layout</title>
+    <link media="all" rel="stylesheet" href="{{ '/assets/styles/style.css' | path }}">
+
+    <script>
+        var script = document.createElement('script');
+        script.src = '../../assets/scripts/fontfaceobserver.js';
+        script.async = true;
+
+        script.onload = function () {
+
+            // Timeout function
+            function timeout(time) {
+                return new Promise(function (resolve, reject) {
+                    setTimeout(reject, time);
+                });
+            }
+
+            // font-loading code
+            var trenchSlab = new FontFaceObserver('TrenchSlabBold');
+            var trenchSlabBold = new FontFaceObserver('TrenchSlab');
+            var skemaProOmni = new FontFaceObserver('SkemaProOmni');
+            var skemaProOmniItalic = new FontFaceObserver('SkemaProOmniItalic');
+            var skemaProOmniBold = new FontFaceObserver('SkemaProOmniBold');
+            var skemaProOmniBoldItalic = new FontFaceObserver('SkemaProOmniBoldItalic');
+            var html = document.documentElement;
+
+            Promise.race([
+                trenchSlab.load(),
+                trenchSlabBold.load(),
+                skemaProOmni.load(),
+                skemaProOmniItalic.load(),
+                skemaProOmniBold.load(),
+                skemaProOmniBoldItalic.load(),
+                timeout(1000)
+            ]).then(function () {
+                html.classList.add('font-loaded');
+            });
+        };
+        document.head.appendChild(script);
+    </script>
 </head>
 <body>
 

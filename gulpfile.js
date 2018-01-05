@@ -101,6 +101,14 @@ function fonts() {
 }
 
 /**
+ * Scripts
+ */
+function scripts() {
+    return gulp.src('node_modules/fontfaceobserver/fontfaceobserver.js')
+        .pipe(gulp.dest(paths.dest + '/assets/scripts'))
+}
+
+/**
  * Styles
  */
 function styles() {
@@ -156,7 +164,7 @@ function watch(done) {
 /**
  * Task set
  */
-const compile = gulp.series(clean, gulp.parallel(fonts, lintstyles, styles));
+const compile = gulp.series(clean, gulp.parallel(fonts, scripts, lintstyles, styles));
 
 gulp.task('build', gulp.series(compile, build));
 gulp.task('dev', gulp.series(compile, watch));
