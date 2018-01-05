@@ -22,13 +22,11 @@
     "inverse": "rgba(255, 255, 255, 1)"
   },
   "neutral": {
-    "lightest": "rgba(239, 239, 240, 1)",
-    "lighter": "rgba(185, 185, 192, 1)",
-    "light": "rgba(140, 140, 156, 1)",
-    "base": "rgba(119, 119, 136, 1)",
-    "dark": "rgba(99, 99, 115, 1)",
-    "darker": "rgba(63, 63, 70, 1)",
-    "darkest": "rgba(31, 31, 32, 1)"
+    "lighter": "rgba(226, 226, 216, 1)",
+    "light": "rgba(179, 179, 171, 1)",
+    "base": "rgba(132, 132, 126, 1)",
+    "dark": "rgba(85, 85, 85, 81, 1)",
+    "darker": "rgba(38, 38, 38, 1)"
   },
   "special-states": {
     "focus": "rgba(255, 191, 71, 1)",
