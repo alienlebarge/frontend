@@ -10,9 +10,9 @@
     "dark": "rgba(247, 185, 39, 1)"
   },
   "tertiary": {
-    "light": "rgba(41, 244, 192, 1)",
-    "base": "rgba(6, 214, 160, 1)",
-    "dark": "rgba(0, 193, 142, 1)"
+    "light": "rgba(185, 224, 86, 1)",
+    "base": "rgba(147, 204, 41, 1)",
+    "dark": "rgba(106, 168, 25, 1)"
   },
   "quaternary": {
     "base": "rgba(38, 84, 124, 1)"
