@@ -8,12 +8,29 @@
  * 1. Use enhance fonts when loaded
  */
 :root {
+    --heading-font-family: map(fonts, system, family);
     --heading-font-weight--normal: map(fonts, heading, normal);
     --heading-font-weight--bold: map(fonts, heading, bold);
+    --base-font-family: map(fonts, system, family);
     --base-font-weight--normal: map(fonts, base, normal);
     --base-font-weight--bold: map(fonts, base, bold);
     --small-font-size: map(fonts, small, font-size);
     --monospace-font-family: map(fonts, monospace, family);
+}
+
+html {
+    &.js-fonts-loaded--TrenchSlab {
+        --heading-font-family: map(fonts, heading, family);
+    }
+    &.js-fonts-loaded--SkemaProOmni {
+        --base-font-family: map(fonts, base, family);
+    }
+}
+
+@font-face {
+    font-family: SkemaProOmniInitial;
+    src: url("../fonts/SkemaProOmni/SkemaProOmni-Regular.woff2") format("woff2"),
+         url("../fonts/SkemaProOmni/SkemaProOmni-Regular.woff") format("woff");
 }
 
 @font-face {

@@ -124,18 +124,6 @@ function styles() {
                 paths.src + '/tokens/animations.json'
             ],
         }),
-        require('postcss-foft-classes')({
-            groups: [
-                {
-                    families: ["SkemaProOmni"],
-                    classNames: ["js-fonts-loaded--SkemaProOmni"]
-                },
-                {
-                    families: ["TrenchSlab"],
-                    classNames: ["js-fonts-loaded--TrenchSlab"]
-                }
-            ]
-        }),
         require("postcss-color-function"),
         require('postcss-media-minmax'),
         require('postcss-custom-media'),

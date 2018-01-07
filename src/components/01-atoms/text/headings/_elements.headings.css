@@ -6,6 +6,7 @@
  * 1. More readable headings
  *    see http://practice.typekit.com/lesson/caring-about-opentype-features/
  */
+
 h1,
 h2,
 h3,
@@ -14,7 +15,7 @@ h5,
 h6 {
     --color-text: map(colors, tertiary, base);
     font-weight: var(--heading-font-weight--bold);
-    font-family: map(fonts, heading, family), map(fonts, system, family);
+    font-family: var(--heading-font-family);
     font-kerning: normal; /* [1] */
     line-height: 1.2;
     color: var(--color-text);
