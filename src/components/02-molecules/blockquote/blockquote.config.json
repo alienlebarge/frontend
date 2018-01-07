@@ -3,5 +3,13 @@
     "text": "Mon fils, pour t’évader de ce monde accablant, si le rêve et la paix sont le bonheur du sage, tu les trouveras là, sans quitter ton village, réunis, grâce à Dieu, dans ce joli vin blanc !",
     "cite": "Jean Villard",
     "url": "https://fr.wikipedia.org/wiki/Jean_Villard#Citations"
-  }
+  },
+  "variants": [
+    {
+      "name": "quoted",
+      "context": {
+        "styleModifier": "blockquote--quoted"
+      }
+    }
+  ]
 }

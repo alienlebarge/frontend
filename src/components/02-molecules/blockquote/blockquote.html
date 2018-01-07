@@ -1,4 +1,8 @@
-<blockquote>
+<blockquote{% if styleModifier %} class="{{ styleModifier }}"{% endif %}>
     {% include '@paragraph' -%}
-    {%- if cite %}<cite{% if url %} cite="{{ url }}"{% endif %}>{{ cite }}</cite>{%- endif %}
+    {%- if cite %}
+    <footer>
+        <cite{% if url %} cite="{{ url }}"{% endif %}>{{ cite }}</cite>
+    </footer>
+    {%- endif %}
 </blockquote>

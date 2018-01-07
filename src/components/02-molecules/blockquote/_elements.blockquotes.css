@@ -2,11 +2,19 @@
    #BLOCKQUOTES
    ========================================================================== */
 
-blockquote {
+/**
+ * 1. TODO: Check that it's the same the line-height.
+ */
+blockquote,
+.blockquote {
     font-style: italic;
 
-    border-left: map(borders, width, thicker) solid var(--color-text);
-    padding-left: var(--space-medium);
+    padding-left: var(--space-medium); /* [1] */
+
+    footer {
+        max-width: var(--max-paragraph-length);
+        text-align: right;
+    }
 
     cite {
         font-size: map(fonts, small, font-size);
@@ -14,5 +22,21 @@ blockquote {
         &::before {
             content: "\2014\00a0";
         }
+    }
+}
+
+.blockquote--quoted  {
+
+    p {
+        quotes: '“' '”' '‘' '’';
+    }
+
+    p::before {
+        content: open-quote;
+        margin-left: -0.5ch;
+    }
+
+    p::after {
+        content: close-quote;
     }
 }
