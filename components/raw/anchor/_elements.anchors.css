@@ -6,6 +6,7 @@
  * Anchors
  *
  * 1. When the website is printed, the url is visible
+ * 2. Make better underline
  */
 
 a {
@@ -15,7 +16,9 @@ a {
 
     background-color: var(--color-background);
     outline: map(borders, width, thicker) solid var(--color-background);
-    text-decoration-skip: ink;
+
+    text-decoration: none; /* [2] */
+    border-bottom: 1px solid var(--color-text); /* [2] */
 
     &:hover,
     &.is-hover {
@@ -37,5 +40,18 @@ a {
         &::after {
             content: "("attr(href) ")"; /* [1] */
         }
+    }
+}
+
+@supports (text-decoration-skip-ink: initial) {
+
+    a {
+        border-bottom: 0; /* [2] */
+
+        /* TODO: find how to set the distance of the underline */
+        text-decoration-skip-ink: initial; /* [2] */
+        text-decoration-color: var(--color-text); /* [2] */
+        text-decoration-line: underline; /* [2] */
+        text-decoration-style: solid; /* [2] */
     }
 }

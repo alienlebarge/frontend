@@ -11,6 +11,11 @@
  * The often quoted ideal length for a line is 66 characters, with a range of
  * 45-75 characters (including spaces) generally considered satisfactory.
  */
+
+:root {
+    --max-paragraph-length: 38em;
+}
+
 p {
     max-width: 38em;
 
