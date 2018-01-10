@@ -43,7 +43,7 @@ a {
     }
 }
 
-@supports (text-decoration-skip-ink: initial) {
+@supports (text-decoration-skip: ink) or (text-decoration-skip-ink: initial) {
 
     a {
         border-bottom: 0; /* [2] */
