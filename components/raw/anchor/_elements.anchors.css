@@ -14,11 +14,12 @@ a {
 
     color: var(--color-text);
 
-    background-color: var(--color-background);
-    outline: map(borders, width, thicker) solid var(--color-background);
-
     text-decoration: none; /* [2] */
+
+    background-color: var(--color-background);
     border-bottom: 1px solid var(--color-text); /* [2] */
+
+    outline: map(borders, width, thicker) solid var(--color-background);
 
     &:hover,
     &.is-hover {
@@ -43,15 +44,14 @@ a {
     }
 }
 
-@supports (text-decoration-skip-ink: initial) {
+@supports (text-decoration-skip: ink) or (text-decoration-skip-ink: initial) {
 
     a {
         border-bottom: 0; /* [2] */
 
-        /* TODO: find how to set the distance of the underline */
-        text-decoration-skip-ink: initial; /* [2] */
         text-decoration-color: var(--color-text); /* [2] */
         text-decoration-line: underline; /* [2] */
+        text-decoration-skip-ink: initial; /* [2] */
         text-decoration-style: solid; /* [2] */
     }
 }
