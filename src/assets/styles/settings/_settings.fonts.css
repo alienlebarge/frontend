@@ -19,9 +19,11 @@
 }
 
 html {
+
     &.js-fonts-loaded--TrenchSlab {
         --heading-font-family: map(fonts, heading, family);
     }
+
     &.js-fonts-loaded--SkemaProOmni {
         --base-font-family: map(fonts, base, family);
     }
@@ -40,25 +42,25 @@ html {
 }
 
 @font-face {
+    font-style: italic;
     font-family: SkemaProOmni;
     src: url("../fonts/SkemaProOmni/SkemaProOmni-Italic.woff2") format("woff2"),
          url("../fonts/SkemaProOmni/SkemaProOmni-Italic.woff") format("woff");
-    font-style: italic;
 }
 
 @font-face {
+    font-weight: 700;
     font-family: SkemaProOmni;
     src: url("../fonts/SkemaProOmni/SkemaProOmni-Bold.woff2") format("woff2"),
          url("../fonts/SkemaProOmni/SkemaProOmni-Bold.woff") format("woff");
-    font-weight: 700;
 }
 
 @font-face {
+    font-weight: 700;
+    font-style: italic;
     font-family: SkemaProOmni;
     src: url("../fonts/SkemaProOmni/SkemaProOmni-BoldItalic.woff2") format("woff2"),
          url("../fonts/SkemaProOmni/SkemaProOmni-BoldItalic.woff") format("woff");
-    font-weight: 700;
-    font-style: italic;
 }
 
 @font-face {
@@ -68,10 +70,10 @@ html {
 }
 
 @font-face {
+    font-weight: 700;
     font-family: TrenchSlab;
     src: url("../fonts/TrenchSlab/TrenchSlab-Bold.woff2") format("woff2"),
          url("../fonts/TrenchSlab/TrenchSlab-Bold.woff")  format("woff");
-    font-weight: 700;
 }
 
 
