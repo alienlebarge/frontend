@@ -13,6 +13,7 @@ blockquote,
 
     footer {
         max-width: var(--max-paragraph-length);
+
         text-align: right;
     }
 
@@ -28,12 +29,15 @@ blockquote,
 .blockquote--quoted  {
 
     p {
+        /* stylelint-disable */
         quotes: '“' '”' '‘' '’';
+        /* stylelint-enable */
     }
 
     p::before {
+        margin-left: -.5ch;
+
         content: open-quote;
-        margin-left: -0.5ch;
     }
 
     p::after {
