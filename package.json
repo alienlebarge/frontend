@@ -40,7 +40,6 @@
     "del": "^3.0.0",
     "faker": "^4.1.0",
     "fontfaceobserver": "^2.0.13",
-    "frontend-fonts": "https://github.com/alienlebarge/frontend-fonts.git",
     "gulp": "gulpjs/gulp#4.0",
     "gulp-gh-pages": "^0.5.4",
     "gulp-postcss": "^7.0.0",
@@ -56,5 +55,8 @@
   },
   "devDependencies": {
     "stylelint": "^8.1.1"
+  },
+  "optionalDependencies": {
+    "frontend-fonts": "https://github.com/alienlebarge/frontend-fonts.git"
   }
 }
