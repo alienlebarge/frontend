@@ -96,7 +96,7 @@ function deploy() {
  * Fonts
  */
 function fonts() {
-    return gulp.src('node_modules/frontend-fonts/**/*.{woff,woff2}')
+    return gulp.src(paths.src + '/assets/fonts/**/*.{woff,woff2}')
         .pipe(gulp.dest(paths.dest + '/assets/fonts'))
 }
 
