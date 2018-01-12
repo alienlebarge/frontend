@@ -1993,10 +1993,6 @@ fresh@0.5.2, fresh@^0.5.2:
   version "0.5.2"
   resolved "https://registry.yarnpkg.com/fresh/-/fresh-0.5.2.tgz#3d8cadd90d976569fa835ab1f8e4b23a105605a7"
 
-"frontend-fonts@https://github.com/alienlebarge/frontend-fonts.git":
-  version "0.0.0"
-  resolved "https://github.com/alienlebarge/frontend-fonts.git#b53cff20df34150ea08816728ef611be3abc8ec4"
-
 fs-extra@3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-3.0.1.tgz#3794f378c58b342ea7dbbb23095109c4b3b62291"

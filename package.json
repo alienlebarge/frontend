@@ -56,7 +56,5 @@
   "devDependencies": {
     "stylelint": "^8.1.1"
   },
-  "optionalDependencies": {
-    "frontend-fonts": "https://github.com/alienlebarge/frontend-fonts.git"
-  }
+  "optionalDependencies": {}
 }
