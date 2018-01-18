@@ -73,6 +73,69 @@
                 "text": "Quaternary base",
                 "styleModifier": "u-background-color--quaternary-base"
             }
+        },
+        {
+            "name": "text-base",
+            "context": {
+                "text": "Text base",
+                "styleModifier": "u-background-color--text-base"
+            }
+        },
+        {
+            "name": "text-inverse",
+            "context": {
+                "text": "Text inverse",
+                "styleModifier": "u-background-color--text-inverse"
+            }
+        },
+        {
+            "name": "neutral-base",
+            "context": {
+                "text": "Neutral Base",
+                "styleModifier": "u-background-color--neutral-base"
+            }
+        },
+        {
+            "name": "neutral-lighter",
+            "context": {
+                "text": "Neutral Lighter",
+                "styleModifier": "u-background-color--neutral-lighter"
+            }
+        },
+        {
+            "name": "neutral-light",
+            "context": {
+                "text": "Neutral light",
+                "styleModifier": "u-background-color--neutral-light"
+            }
+        },
+        {
+            "name": "neutral-dark",
+            "context": {
+                "text": "Neutral dark",
+                "styleModifier": "u-background-color--neutral-dark"
+            }
+        },
+        {
+            "name": "neutral-darker",
+            "context": {
+                "text": "",
+                "styleModifier": "u-background-color--neutral-darker"
+            }
+        },
+        {
+            "name": "special-states-focus",
+            "context": {
+                "text": "Special-states focus",
+                "styleModifier": "u-background-color--special-states-focus"
+            }
+        },
+        {
+            "name": "spcial-states-visited",
+            "context": {
+                "text": "Special-states visited",
+                "styleModifier": "u-background-color--special-states-visited"
+            }
         }
     ]
 }
