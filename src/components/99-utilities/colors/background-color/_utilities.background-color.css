@@ -55,4 +55,49 @@
             background-color: map(colors, quaternary, base);
         }
     }
+
+    &--text {
+
+        &-base {
+            background-color: map(colors, text, base);
+        }
+
+        &-inverse {
+            background-color: map(colors, text, inverse);
+        }
+    }
+
+    &--neutral {
+
+        &-base {
+            background-color: map(colors, neutral, base);
+        }
+
+        &-light {
+            background-color: map(colors, neutral, light);
+        }
+
+        &-lighter {
+            background-color: map(colors, neutral, lighter);
+        }
+
+        &-dark {
+            background-color: map(colors, neutral, dark);
+        }
+
+        &-darker {
+            background-color: map(colors, neutral, darker);
+        }
+    }
+
+    &--special-states {
+
+        &-focus {
+            background-color: map(colors, special-states, focus);
+        }
+
+        &-visited {
+            background-color: map(colors, special-states, visited);
+        }
+    }
 }
