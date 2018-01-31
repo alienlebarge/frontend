@@ -21,7 +21,7 @@
 html {
 
     &.js-fonts-loaded__TrenchSlab--subset {
-        --heading-font-family: TrenchSlabSubset;
+        --heading-font-family: map(fonts, headingSubset, family);
     }
 
     &.js-fonts-loaded__TrenchSlab,
@@ -30,7 +30,7 @@ html {
     }
 
     &.js-fonts-loaded__SkemaProOmni--subset {
-        --base-font-family: SkemaProOmniSubset;
+        --base-font-family: map(fonts, baseSubset, family);
     }
 
     &.js-fonts-loaded__SkemaProOmni,
