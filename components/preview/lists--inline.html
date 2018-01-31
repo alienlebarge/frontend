@@ -23,16 +23,34 @@
             }
 
             // font-loading code
+            var trenchSlabSubset = new FontFaceObserver('TrenchSlabSubset');
             var trenchSlab = new FontFaceObserver('TrenchSlab');
+            var skemaProOmniSubset = new FontFaceObserver('SkemaProOmniSubset');
             var skemaProOmni = new FontFaceObserver('SkemaProOmni');
             var html = document.documentElement;
 
-            // add a class if TrenSlab is loaded
+            // add a class if TrenchSlabSubset is loaded
+            Promise.race([
+                trenchSlabSubset.load(),
+                timeout(1000)
+            ]).then(function () {
+                html.classList.add('js-fonts-loaded__TrenchSlab--subset');
+            });
+
+            // add a class if TrenchSlab is loaded
             Promise.race([
                 trenchSlab.load(),
                 timeout(1000)
             ]).then(function () {
-                html.classList.add('js-fonts-loaded--TrenchSlab');
+                html.classList.add('js-fonts-loaded__TrenchSlab');
+            });
+
+            // add a class if SkemaProOmniSubset is loaded
+            Promise.race([
+                skemaProOmniSubset.load(),
+                timeout(1000)
+            ]).then(function () {
+                html.classList.add('js-fonts-loaded__SkemaProOmni--subset');
             });
 
             // add a class if SkemaProOmni is loaded
@@ -40,7 +58,7 @@
                 skemaProOmni.load(),
                 timeout(1000)
             ]).then(function () {
-                html.classList.add('js-fonts-loaded--SkemaProOmni');
+                html.classList.add('js-fonts-loaded__SkemaProOmni');
             });
         };
         document.head.appendChild(script);
@@ -48,7 +66,7 @@
 </head>
 <body>
 
-<ul class="o-list-inline"><li class="o-list-inline__item">Sed dolores voluptatem id mollitia consequatur eos hic sed.</li><li class="o-list-inline__item">Assumenda deleniti beatae provident.</li><li class="o-list-inline__item">Tempore ad ut.</li><li class="o-list-inline__item">Cum ut ipsam ut veniam ut maxime maxime.</li><li class="o-list-inline__item">Aut et recusandae dolorem in nesciunt.</li></ul>
+<ul class="o-list-inline"><li class="o-list-inline__item">Perspiciatis culpa perferendis sunt ab voluptatem aut.</li><li class="o-list-inline__item">Fuga et labore eligendi impedit quia exercitationem esse.</li><li class="o-list-inline__item">Esse ipsam vel.</li><li class="o-list-inline__item">Aut qui non voluptas ut aut totam nesciunt odio dolor.</li><li class="o-list-inline__item">Ea expedita totam qui incidunt et.</li></ul>
 
 
 </body>
