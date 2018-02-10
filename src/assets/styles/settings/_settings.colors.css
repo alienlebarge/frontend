@@ -3,6 +3,6 @@
    ======================================================================== */
 
 :root {
-    --color-text: map(colors, text, inverse);
-    --color-background: map(colors, neutral, darker);
+    --color-text: map(colors, text, base);
+    --color-background: map(colors, neutral, lighter);
 }
