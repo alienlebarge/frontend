@@ -35,7 +35,7 @@
     "@alienlebarge/stylelint-config": "^3.1.1",
     "@frctl/fractal": "^1.1.4",
     "@frctl/nunjucks": "^1.0.3",
-    "autoprefixer": "^7.1.4",
+    "autoprefixer": "^8.0.0",
     "cssnano": "^3.8.2",
     "del": "^3.0.0",
     "faker": "^4.1.0",
