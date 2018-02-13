@@ -1,0 +1,41 @@
+{
+  "collated": true,
+  "variants": [
+    {
+      "name": "h1",
+      "context": {
+        "styleModifier": "u-h1"
+      }
+    },
+    {
+      "name": "h2",
+      "context": {
+        "styleModifier": "u-h2"
+      }
+    },
+    {
+      "name": "h3",
+      "context": {
+        "styleModifier": "u-h3"
+      }
+    },
+    {
+      "name": "h4",
+      "context": {
+        "styleModifier": "u-h4"
+      }
+    },
+    {
+      "name": "h5",
+      "context": {
+        "styleModifier": "u-h5"
+      }
+    },
+    {
+      "name": "h6",
+      "context": {
+        "styleModifier": "u-h6"
+      }
+    }
+  ]
+}
