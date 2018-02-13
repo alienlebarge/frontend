@@ -1,6 +1,7 @@
 {
     "title": "Headings",
     "default": "h1",
+    "collated": true,
     "variants": [
         {
             "name": "h1",
