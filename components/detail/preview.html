@@ -176,24 +176,16 @@
                 });
             }
             <span class="hljs-comment">// font-loading code</span>
-            <span class="hljs-keyword">var</span> trenchSlabSubset = <span class="hljs-keyword">new</span> FontFaceObserver(<span class="hljs-string">'TrenchSlabSubset'</span>);
-            <span class="hljs-keyword">var</span> trenchSlab = <span class="hljs-keyword">new</span> FontFaceObserver(<span class="hljs-string">'TrenchSlab'</span>);
+            <span class="hljs-keyword">var</span> Nort = <span class="hljs-keyword">new</span> FontFaceObserver(<span class="hljs-string">'Nort'</span>);
             <span class="hljs-keyword">var</span> skemaProOmniSubset = <span class="hljs-keyword">new</span> FontFaceObserver(<span class="hljs-string">'SkemaProOmniSubset'</span>);
             <span class="hljs-keyword">var</span> skemaProOmni = <span class="hljs-keyword">new</span> FontFaceObserver(<span class="hljs-string">'SkemaProOmni'</span>);
             <span class="hljs-keyword">var</span> html = <span class="hljs-built_in">document</span>.documentElement;
-            <span class="hljs-comment">// add a class if TrenchSlabSubset is loaded</span>
+            <span class="hljs-comment">// add a class if Nort is loaded</span>
             <span class="hljs-built_in">Promise</span>.race([
-                trenchSlabSubset.load(),
+                Nort.load(),
                 timeout(<span class="hljs-number">1000</span>)
             ]).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
-                html.classList.add(<span class="hljs-string">'js-fonts-loaded__TrenchSlab--subset'</span>);
-            });
-            <span class="hljs-comment">// add a class if TrenchSlab is loaded</span>
-            <span class="hljs-built_in">Promise</span>.race([
-                trenchSlab.load(),
-                timeout(<span class="hljs-number">1000</span>)
-            ]).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
-                html.classList.add(<span class="hljs-string">'js-fonts-loaded__TrenchSlab'</span>);
+                html.classList.add(<span class="hljs-string">'js-fonts-loaded__Nort'</span>);
             });
             <span class="hljs-comment">// add a class if SkemaProOmniSubset is loaded</span>
             <span class="hljs-built_in">Promise</span>.race([
@@ -249,26 +241,17 @@
             }
 
             <span class="hljs-comment">// font-loading code</span>
-            <span class="hljs-keyword">var</span> trenchSlabSubset = <span class="hljs-keyword">new</span> FontFaceObserver(<span class="hljs-string">'TrenchSlabSubset'</span>);
-            <span class="hljs-keyword">var</span> trenchSlab = <span class="hljs-keyword">new</span> FontFaceObserver(<span class="hljs-string">'TrenchSlab'</span>);
+            <span class="hljs-keyword">var</span> Nort = <span class="hljs-keyword">new</span> FontFaceObserver(<span class="hljs-string">'Nort'</span>);
             <span class="hljs-keyword">var</span> skemaProOmniSubset = <span class="hljs-keyword">new</span> FontFaceObserver(<span class="hljs-string">'SkemaProOmniSubset'</span>);
             <span class="hljs-keyword">var</span> skemaProOmni = <span class="hljs-keyword">new</span> FontFaceObserver(<span class="hljs-string">'SkemaProOmni'</span>);
             <span class="hljs-keyword">var</span> html = <span class="hljs-built_in">document</span>.documentElement;
 
-            <span class="hljs-comment">// add a class if TrenchSlabSubset is loaded</span>
+            <span class="hljs-comment">// add a class if Nort is loaded</span>
             <span class="hljs-built_in">Promise</span>.race([
-                trenchSlabSubset.load(),
+                Nort.load(),
                 timeout(<span class="hljs-number">1000</span>)
             ]).then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
-                html.classList.add(<span class="hljs-string">'js-fonts-loaded__TrenchSlab--subset'</span>);
-            });
-
-            <span class="hljs-comment">// add a class if TrenchSlab is loaded</span>
-            <span class="hljs-built_in">Promise</span>.race([
-                trenchSlab.load(),
-                timeout(<span class="hljs-number">1000</span>)
-            ]).then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
-                html.classList.add(<span class="hljs-string">'js-fonts-loaded__TrenchSlab'</span>);
+                html.classList.add(<span class="hljs-string">'js-fonts-loaded__Nort'</span>);
             });
 
             <span class="hljs-comment">// add a class if SkemaProOmniSubset is loaded</span>

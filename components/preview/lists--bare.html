@@ -23,26 +23,17 @@
             }
 
             // font-loading code
-            var trenchSlabSubset = new FontFaceObserver('TrenchSlabSubset');
-            var trenchSlab = new FontFaceObserver('TrenchSlab');
+            var Nort = new FontFaceObserver('Nort');
             var skemaProOmniSubset = new FontFaceObserver('SkemaProOmniSubset');
             var skemaProOmni = new FontFaceObserver('SkemaProOmni');
             var html = document.documentElement;
 
-            // add a class if TrenchSlabSubset is loaded
+            // add a class if Nort is loaded
             Promise.race([
-                trenchSlabSubset.load(),
+                Nort.load(),
                 timeout(1000)
             ]).then(function () {
-                html.classList.add('js-fonts-loaded__TrenchSlab--subset');
-            });
-
-            // add a class if TrenchSlab is loaded
-            Promise.race([
-                trenchSlab.load(),
-                timeout(1000)
-            ]).then(function () {
-                html.classList.add('js-fonts-loaded__TrenchSlab');
+                html.classList.add('js-fonts-loaded__Nort');
             });
 
             // add a class if SkemaProOmniSubset is loaded
@@ -66,7 +57,7 @@
 </head>
 <body>
 
-<ul class="o-list-bare"><li class="o-list-bare__item">Similique voluptatum quia delectus natus expedita atque sunt qui.</li><li class="o-list-bare__item">Quae dicta nisi fugiat nostrum.</li><li class="o-list-bare__item">Aut non voluptatum non facere animi labore perferendis.</li><li class="o-list-bare__item">Et aliquid consequatur veritatis molestiae qui fuga assumenda.</li><li class="o-list-bare__item">Autem quisquam tenetur ipsa nihil et qui est provident.</li></ul>
+<ul class="o-list-bare"><li class="o-list-bare__item">Iste qui laborum nisi consequatur tempore aut explicabo eum.</li><li class="o-list-bare__item">Est ea ipsam modi neque quia consequatur nostrum nam eum.</li><li class="o-list-bare__item">Quis eos quasi modi quod.</li><li class="o-list-bare__item">Ea qui voluptatem numquam ex.</li><li class="o-list-bare__item">Ut aliquam nemo ducimus consequuntur exercitationem et veniam ut.</li></ul>
 
 
 </body>
