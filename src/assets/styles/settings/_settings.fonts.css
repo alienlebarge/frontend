@@ -20,12 +20,7 @@
 
 html {
 
-    &.js-fonts-loaded__TrenchSlab--subset {
-        --heading-font-family: map(fonts, headingSubset, family);
-    }
-
-    &.js-fonts-loaded__TrenchSlab,
-    &.js-fonts-loaded__TrenchSlab.js-fonts-loaded__TrenchSlab--subset {
+    &.js-fonts-loaded__Nort {
         --heading-font-family: map(fonts, heading, family);
     }
 
@@ -39,16 +34,14 @@ html {
     }
 }
 
+/**
+ * SkemaPro Omni
+ */
+
 @font-face {
     font-family: SkemaProOmniSubset;
     src: url("../fonts/SkemaProOmni/SkemaProOmni-Regular--subset-latin1.woff2") format("woff2"),
          url("../fonts/SkemaProOmni/SkemaProOmni-Regular--subset-latin1.woff") format("woff");
-}
-
-@font-face {
-    font-family: TrenchSlabSubset;
-    src: url("../fonts/TrenchSlab/TrenchSlab-Regular--subset-latin1.woff2") format("woff2"),
-         url("../fonts/TrenchSlab/TrenchSlab-Regular--subset-latin1.woff") format("woff");
 }
 
 @font-face {
@@ -79,17 +72,21 @@ html {
          url("../fonts/SkemaProOmni/SkemaProOmni-BoldItalic.woff") format("woff");
 }
 
+/**
+ * FF Nort
+ */
+
 @font-face {
-    font-family: TrenchSlab;
-    src: url("../fonts/TrenchSlab/TrenchSlab-Regular.woff2") format("woff2"),
-         url("../fonts/TrenchSlab/TrenchSlab-Regular.woff")  format("woff");
+    font-family: Nort;
+    src: url("../fonts/FFNORT/Nort-latin1-Regular.woff2") format("woff2"),
+         url("../fonts/FFNORT/Nort-latin1-Regular.woff")  format("woff");
 }
 
 @font-face {
     font-weight: 700;
-    font-family: TrenchSlab;
-    src: url("../fonts/TrenchSlab/TrenchSlab-Bold.woff2") format("woff2"),
-         url("../fonts/TrenchSlab/TrenchSlab-Bold.woff")  format("woff");
+    font-family: Nort;
+    src: url("../fonts/FFNORT/Nort-latin1-Bold.woff2") format("woff2"),
+         url("../fonts/FFNORT/Nort-latin1-Bold.woff")  format("woff");
 }
 
 

@@ -21,26 +21,17 @@
             }
 
             // font-loading code
-            var trenchSlabSubset = new FontFaceObserver('TrenchSlabSubset');
-            var trenchSlab = new FontFaceObserver('TrenchSlab');
+            var Nort = new FontFaceObserver('Nort');
             var skemaProOmniSubset = new FontFaceObserver('SkemaProOmniSubset');
             var skemaProOmni = new FontFaceObserver('SkemaProOmni');
             var html = document.documentElement;
 
-            // add a class if TrenchSlabSubset is loaded
+            // add a class if Nort is loaded
             Promise.race([
-                trenchSlabSubset.load(),
+                Nort.load(),
                 timeout(1000)
             ]).then(function () {
-                html.classList.add('js-fonts-loaded__TrenchSlab--subset');
-            });
-
-            // add a class if TrenchSlab is loaded
-            Promise.race([
-                trenchSlab.load(),
-                timeout(1000)
-            ]).then(function () {
-                html.classList.add('js-fonts-loaded__TrenchSlab');
+                html.classList.add('js-fonts-loaded__Nort');
             });
 
             // add a class if SkemaProOmniSubset is loaded

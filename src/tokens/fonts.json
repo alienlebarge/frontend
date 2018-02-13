@@ -1,11 +1,8 @@
 {
   "heading": {
-    "family": "'TrenchSlab'",
+    "family": "'Nort'",
     "normal": "400",
     "bold": "700"
-  },
-  "headingSubset": {
-    "family": "'TrenchSlabSubset'"
   },
   "base": {
     "family": "'SkemaProOmni'",
