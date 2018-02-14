@@ -21,14 +21,23 @@
             }
 
             // font-loading code
-            var Nort = new FontFaceObserver('Nort');
+            var nort = new FontFaceObserver('Nort');
+            var nortSubset = new FontFaceObserver('NortSubset');
             var skemaProOmniSubset = new FontFaceObserver('SkemaProOmniSubset');
             var skemaProOmni = new FontFaceObserver('SkemaProOmni');
             var html = document.documentElement;
 
+            // add a class if NortSubset is loaded
+            Promise.race([
+                nortSubset.load(),
+                timeout(1000)
+            ]).then(function () {
+                html.classList.add('js-fonts-loaded__Nort--subset');
+            });
+
             // add a class if Nort is loaded
             Promise.race([
-                Nort.load(),
+                nort.load(),
                 timeout(1000)
             ]).then(function () {
                 html.classList.add('js-fonts-loaded__Nort');

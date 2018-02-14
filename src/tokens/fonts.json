@@ -4,6 +4,9 @@
     "normal": "400",
     "bold": "700"
   },
+  "headingSubset": {
+    "family": "'NortSubset'"
+  },
   "base": {
     "family": "'SkemaProOmni'",
     "normal": "400",
