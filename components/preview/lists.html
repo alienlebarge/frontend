@@ -23,14 +23,23 @@
             }
 
             // font-loading code
-            var Nort = new FontFaceObserver('Nort');
+            var nort = new FontFaceObserver('Nort');
+            var nortSubset = new FontFaceObserver('NortSubset');
             var skemaProOmniSubset = new FontFaceObserver('SkemaProOmniSubset');
             var skemaProOmni = new FontFaceObserver('SkemaProOmni');
             var html = document.documentElement;
 
+            // add a class if NortSubset is loaded
+            Promise.race([
+                nortSubset.load(),
+                timeout(1000)
+            ]).then(function () {
+                html.classList.add('js-fonts-loaded__Nort--subset');
+            });
+
             // add a class if Nort is loaded
             Promise.race([
-                Nort.load(),
+                nort.load(),
                 timeout(1000)
             ]).then(function () {
                 html.classList.add('js-fonts-loaded__Nort');
@@ -57,7 +66,7 @@
 </head>
 <body>
 
-<ul><li>Aspernatur ipsa molestiae quidem reiciendis culpa vel sit.</li><li>Odit molestiae ea corporis similique quidem magnam soluta voluptatem ipsam.</li><li>Laborum unde voluptatem.</li><li>Praesentium quia nihil qui.</li><li>Vel est suscipit dignissimos at cum et omnis non dolores.</li></ul>
+<ul><li>Deleniti et dolorem molestiae fugiat dignissimos perferendis consequuntur soluta.</li><li>Omnis mollitia ipsum accusantium eum quod eum eveniet.</li><li>Illo incidunt ut qui facere placeat sed.</li><li>Atque placeat quas aut laudantium sed reprehenderit qui porro error.</li><li>Molestias alias cupiditate delectus nostrum consectetur est qui a perferendis.</li></ul>
 
 
 </body>

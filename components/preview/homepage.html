@@ -23,14 +23,23 @@
             }
 
             // font-loading code
-            var Nort = new FontFaceObserver('Nort');
+            var nort = new FontFaceObserver('Nort');
+            var nortSubset = new FontFaceObserver('NortSubset');
             var skemaProOmniSubset = new FontFaceObserver('SkemaProOmniSubset');
             var skemaProOmni = new FontFaceObserver('SkemaProOmni');
             var html = document.documentElement;
 
+            // add a class if NortSubset is loaded
+            Promise.race([
+                nortSubset.load(),
+                timeout(1000)
+            ]).then(function () {
+                html.classList.add('js-fonts-loaded__Nort--subset');
+            });
+
             // add a class if Nort is loaded
             Promise.race([
-                Nort.load(),
+                nort.load(),
                 timeout(1000)
             ]).then(function () {
                 html.classList.add('js-fonts-loaded__Nort');
@@ -67,11 +76,13 @@
                accesskey="h"
                title="Homepage">alienlebarge.ch</a>
         </li>
-        <li class="o-list-bare__item u-fixed-bottom u-fixed-bottom--right">
+        <li class="o-list-bare__item">
             <a href="#nav"
-                class="c-btn c-btn--primary"
+                class="u-h3"
                 accesskey="n"
-                title="Navigation">Nav<span class="u-visually-hidden">igation</span></a>
+                title="Navigation">
+            Nav<span class="u-visually-hidden">igation</span><span aria-hidden="true">&#8595;</span>
+            </a>
         </li>
         <li class="o-list-bare__item u-visually-hidden">
             <a href="#main"
