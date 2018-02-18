@@ -54,7 +54,7 @@
     "postcss-nested": "^3.0.0"
   },
   "devDependencies": {
-    "stylelint": "^8.1.1"
+    "stylelint": "^9.0.0"
   },
   "optionalDependencies": {}
 }
