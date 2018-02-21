@@ -1,0 +1,10 @@
+<nav id="nav" class="u-background-color--primary-base c-main-nav">
+    <h2>{{ title }}</h2>
+    <ol class="o-list-bare c-main-nav__list">
+    {% for item in items %}
+        <li class="o-list-bare__item">
+            <a href="{{ item.url }}" class="u-h3 u-margin-right">{{ item.name }}</a>
+        </li>
+    {% endfor %}
+    </ol>
+</nav>
