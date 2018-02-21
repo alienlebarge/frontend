@@ -26,7 +26,7 @@ html {
 
     &.js-fonts-loaded__Nort,
     &.js-fonts-loaded__Nort.js-fonts-loaded__Nort--subset {
-        --base-font-family: map(fonts, heading, family);
+        --heading-font-family: map(fonts, heading, family);
     }
 
     &.js-fonts-loaded__SkemaProOmni--subset {
