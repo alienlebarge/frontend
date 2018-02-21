@@ -67,34 +67,35 @@
 <body>
 
 <header class="u-background-color--quaternary-base u-text-color--text-inverse
-    u-padding">
+        u-padding c-header">
     <h2 class="u-visually-hidden">Skip links</h2>
-    <ul class="o-list-bare">
-        <li class="o-list-bare__item">
-            <a href="#"
-               class="u-h3"
-               accesskey="h"
-               title="Homepage">alienlebarge.ch</a>
-        </li>
-        <li class="o-list-bare__item">
-            <a href="#nav"
-                class="u-h3"
-                accesskey="n"
-                title="Navigation">
-            Nav<span class="u-visually-hidden">igation</span><span aria-hidden="true">&#8595;</span>
-            </a>
-        </li>
-        <li class="o-list-bare__item u-visually-hidden">
-            <a href="#main"
-                accesskey="m"
-                title="Main content">Main content</a>
-        </li>
-        <li class="o-list-bare__item u-visually-hidden">
-            <a href="#footer"
-                accesskey="f"
-                title="Footer">Footer</a>
-        </li>
-    </ul>
+<ul class="o-list-bare c-skip-links">
+  <li class="o-list-bare__item">
+    <a href="#"
+       class="u-h3"
+       accesskey="h"
+       title="Homepage">alienlebarge.ch</a>
+  </li>
+  <li class="o-list-bare__item">
+    <a href="#nav"
+       class="u-h3"
+       accesskey="n"
+       title="Navigation">
+      Nav<span class="u-visually-hidden">igation</span><span aria-hidden="true">&#8595;</span>
+    </a>
+  </li>
+  <li class="o-list-bare__item u-visually-hidden">
+    <a href="#main"
+       accesskey="m"
+       title="Main content">Main content</a>
+  </li>
+  <li class="o-list-bare__item u-visually-hidden">
+    <a href="#footer"
+       accesskey="f"
+       title="Footer">Footer</a>
+  </li>
+</ul>
+
 </header>
 
 <main id="main">
@@ -104,15 +105,21 @@
 
     
 </main>
-<nav id="nav" class="u-background-color--primary-base">
+<nav id="nav" class="u-background-color--primary-base c-main-nav">
     <h2>Navigation</h2>
-    <ol>
+    <ol class="o-list-bare c-main-nav__list">
     
-        <li><a href="homepage">Homepage</a></li>
+        <li class="o-list-bare__item">
+            <a href="homepage" class="u-h3 u-margin-right">Homepage</a>
+        </li>
     
-        <li><a href="articles">Articles</a></li>
+        <li class="o-list-bare__item">
+            <a href="articles" class="u-h3 u-margin-right">Articles</a>
+        </li>
     
-        <li><a href="resume">Resume</a></li>
+        <li class="o-list-bare__item">
+            <a href="resume" class="u-h3 u-margin-right">Resume</a>
+        </li>
     
     </ol>
 </nav>
