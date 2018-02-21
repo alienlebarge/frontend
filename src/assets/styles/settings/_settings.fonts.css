@@ -103,15 +103,15 @@ html {
 @font-face {
     font-weight: 700;
     font-family: Nort;
-    src: url("../fonts/FFNORT/Nort-latin1-Bold.woff2") format("woff2"),
-         url("../fonts/FFNORT/Nort-latin1-Bold.woff")  format("woff");
+    src: url("../fonts/FFNORT/Nort-full-Bold.woff2") format("woff2"),
+         url("../fonts/FFNORT/Nort-full-Bold.woff")  format("woff");
 }
 
 @font-face {
-    font-family: Nort;
     font-style: italic;
-    src: url("../fonts/FFNORT/Nort-latin1-Italic.woff2") format("woff2"),
-         url("../fonts/FFNORT/Nort-latin1-Italic.woff")  format("woff");
+    font-family: Nort;
+    src: url("../fonts/FFNORT/Nort-full-Italic.woff2") format("woff2"),
+         url("../fonts/FFNORT/Nort-full-Italic.woff")  format("woff");
 }
 
 @font-face {
