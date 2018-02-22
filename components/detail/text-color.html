@@ -237,6 +237,11 @@
    #TEXT-COLOR
    ========================================================================== */
 
+/**
+ * Force color of text
+ *
+ * 1. Override visited color for a11y purpose
+ */
 .u-text-color {
 
     &amp;--text-base {
@@ -251,7 +256,12 @@
 
         &amp;,
         a {
-            color: map(colors, text, inverse);
+            --a__color-text: map(colors, text, inverse);
+
+            &amp;:visited,
+            &amp;.is-visited {
+                --a__color-underline: var(--a__color-text); /* [1] */
+            }
         }
     }
 }
@@ -272,7 +282,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">412 Bytes</span>
+                    <span class="Meta-value">637 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -2390,8 +2400,32 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="font-style" data-pjax>
-                <span>Font Style</span>
+            <a class="Tree-entityLink" href="font-styles" data-pjax>
+                <span>Font Styles</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="headings" data-pjax>
+                <span>Headings</span>
                 
 
 <div class="Status Status--unlabelled">

@@ -221,31 +221,32 @@
  */
 
 a {
-    --color-background: transparent;
-    --color-underline: var(--color-text);
+    --a__color-text: var(--color-text);
+    --a__color-underline: var(--a__color-text);
+    --a__color-background: transparent;
 
-    color: var(--color-text);
+    color: var(--a__color-text);
 
     text-decoration: none; /* [2] */
 
-    background-color: var(--color-background);
-    border-bottom: 1px solid var(--color-underline); /* [2] */
+    background-color: var(--a__color-background);
+    border-bottom: 1px solid var(--a__color-underline); /* [2] */
 
-    outline: map(borders, width, thicker) solid var(--color-background);
+    outline: map(borders, width, thicker) solid var(--a__color-background);
 
     &amp;:hover,
     &amp;.is-hover {
-        --color-background: map(colors, primary, base);
+        --a__color-background: map(colors, primary, base);
     }
 
     &amp;:visited,
     &amp;.is-visited {
-        --color-underline: map(colors, special-states, visited);
+        --a__color-underline: map(colors, special-states, visited);
     }
 
     &amp;:focus,
     &amp;.is-focus {
-        --color-background: map(colors, special-states, focus);
+        --a__color-background: map(colors, special-states, focus);
     }
 
     @media print {
@@ -261,7 +262,7 @@ a {
     a {
         border-bottom: 0; /* [2] */
 
-        text-decoration-color: var(--color-underline); /* [2] */
+        text-decoration-color: var(--a__color-underline); /* [2] */
         text-decoration-line: underline; /* [2] */
         text-decoration-skip-ink: initial; /* [2] */
         text-decoration-style: solid; /* [2] */
@@ -2404,8 +2405,32 @@ a {
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="font-style" data-pjax>
-                <span>Font Style</span>
+            <a class="Tree-entityLink" href="font-styles" data-pjax>
+                <span>Font Styles</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="headings" data-pjax>
+                <span>Headings</span>
                 
 
 <div class="Status Status--unlabelled">

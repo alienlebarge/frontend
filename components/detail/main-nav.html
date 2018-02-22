@@ -159,20 +159,20 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-323ca5916b6ff5f1c693532a232db558-panel-html">
     <code class="Code Code--lang-html">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"nav"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-background-color--primary-base c-main-nav"</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"nav"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-main-nav"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Navigation<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">ol</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"o-list-bare c-main-nav__list"</span>&gt;</span>
 
         <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"o-list-bare__item"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"homepage"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-h3 u-margin-right"</span>&gt;</span>Homepage<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"homepage"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-font-family-heading u-margin-right"</span>&gt;</span>Homepage<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
         <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"o-list-bare__item"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"articles"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-h3 u-margin-right"</span>&gt;</span>Articles<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"articles"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-font-family-heading u-margin-right"</span>&gt;</span>Articles<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
         <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"o-list-bare__item"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"resume"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-h3 u-margin-right"</span>&gt;</span>Resume<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"resume"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-font-family-heading u-margin-right"</span>&gt;</span>Resume<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 
     <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
@@ -184,12 +184,12 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-323ca5916b6ff5f1c693532a232db558-panel-view">
     <code class="Code Code--lang-html">
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"nav"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-background-color--primary-base c-main-nav"</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"nav"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-main-nav"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>{{ title }}<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">ol</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"o-list-bare c-main-nav__list"</span>&gt;</span>
     {% for item in items %}
         <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"o-list-bare__item"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"{{ item.url }}"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-h3 u-margin-right"</span>&gt;</span>{{ item.name }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"{{ item.url }}"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-font-family-heading u-margin-right"</span>&gt;</span>{{ item.name }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
     {% endfor %}
     <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
@@ -2379,8 +2379,32 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="font-style" data-pjax>
-                <span>Font Style</span>
+            <a class="Tree-entityLink" href="font-styles" data-pjax>
+                <span>Font Styles</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="headings" data-pjax>
+                <span>Headings</span>
                 
 
 <div class="Status Status--unlabelled">
