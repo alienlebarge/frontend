@@ -15,10 +15,12 @@
 a.c-btn { /* [1] */
     --c-btn__text-color: var(--e-anchors__color);
     --c-btn__bg-color: none;
+    --c-btn__font-family: var(--heading-font-family);
 
     display: inline-block; /* [2] */
 
-    font: inherit; /* [3] */
+    font: var(--c-btn__font-family); /* [3] */
+    font-family: var(--c-btn__font-family);
     color: var(--c-btn__text-color);
     text-align: center; /* [4] */
     text-decoration: none; /* [4] */

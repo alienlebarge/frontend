@@ -226,10 +226,12 @@
 a.c-btn { /* [1] */
     --c-btn__text-color: var(--e-anchors__color);
     --c-btn__bg-color: none;
+    --c-btn__font-family: var(--heading-font-family);
 
     display: inline-block; /* [2] */
 
-    font: inherit; /* [3] */
+    font: var(--c-btn__font-family); /* [3] */
+    font-family: var(--c-btn__font-family);
     color: var(--c-btn__text-color);
     text-align: center; /* [4] */
     text-decoration: none; /* [4] */
@@ -308,7 +310,7 @@ a.c-btn--block {
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">2 KB</span>
+                    <span class="Meta-value">2.1 KB</span>
                 </li>
             </ul>
         </div>
@@ -1184,6 +1186,30 @@ a.c-btn--block {
     
 
             </ul>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="links" data-pjax>
+                <span>Links</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
         </li>
         
     
