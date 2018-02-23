@@ -1,0 +1,11 @@
+/* ==========================================================================
+   #LINKS
+   ========================================================================== */
+
+.c-link {
+    --c-link__font-family: var(--heading-font-family);
+    --c-link__font-size: var(--typography-scale-1);
+
+    font-size: var(--c-link__font-size);
+    font-family: var(--c-link__font-family);
+}

@@ -1,9 +1,10 @@
-<nav id="nav" class="c-main-nav">
-    <h2>{{ title }}</h2>
-    <ol class="o-list-bare c-main-nav__list">
+<nav id="nav" class="u-background-color--primary-light
+    u-padding-vertical">
+    <h2 class="u-margin-top">{{ title }}</h2>
+    <ol class="o-list-inline">
     {% for item in items %}
-        <li class="o-list-bare__item">
-            <a href="{{ item.url }}" class="u-font-family-heading u-margin-right">{{ item.name }}</a>
+        <li class="o-list-inline__item">
+            <a href="{{ item.url }}" class="c-link u-margin-right">{{ item.name }}</a>
         </li>
     {% endfor %}
     </ol>
