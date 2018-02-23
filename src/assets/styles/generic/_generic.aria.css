@@ -21,7 +21,9 @@
  * Visually hidden content should reman accessible
  */
 [aria-hidden="false"][hidden]:not(:focus) {
-    clip: rect(0, 0, 0, 0);
-    display: inherit;
+
     position: absolute;
+
+    display: inherit;
+    clip: rect(0, 0, 0, 0);
 }
