@@ -46,7 +46,7 @@
     "gulp-gh-pages": "^0.5.4",
     "gulp-postcss": "^7.0.0",
     "gulp-sourcemaps": "^2.6.1",
-    "gulp-stylelint": "^6.0.0",
+    "gulp-stylelint": "^7.0.0",
     "normalize.css": "^8.0.0",
     "postcss-color-function": "^4.0.0",
     "postcss-custom-media": "^6.0.0",
