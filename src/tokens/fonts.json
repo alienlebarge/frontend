@@ -1,21 +1,13 @@
 {
-  "heading": {
-    "family": "'Nort'",
-    "normal": "400",
-    "bold": "700"
-  },
-  "headingSubset": {
-    "family": "'NortSubset'"
-  },
   "base": {
-    "family": "'SkemaProOmni'",
+    "family": "'Nort'",
     "normal": "400",
     "bold": "700",
     "font-size": "1rem",
     "line-height": "1.5"
   },
   "baseSubset": {
-    "family": "'SkemaProOmniSubset'"
+    "family": "'NortSubset'"
   },
   "monospace": {
     "family": "'Source Code Pro', monospace"

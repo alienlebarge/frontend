@@ -13,8 +13,8 @@
 .u-h4,
 .u-h5,
 .u-h6 {
-    font-weight: var(--heading-font-weight--bold);
-    font-family: var(--heading-font-family);
+    font-weight: var(--base-font-weight--bold);
+    font-family: var(--base-font-family);
     font-kerning: normal; /* [1] */
     line-height: 1.2;
 
