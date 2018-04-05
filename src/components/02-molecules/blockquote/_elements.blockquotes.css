@@ -11,13 +11,10 @@ blockquote,
 
     padding-left: var(--space-medium); /* [1] */
 
-    footer {
+    cite {
+
         max-width: var(--max-paragraph-length);
 
-        text-align: right;
-    }
-
-    cite {
         font-size: map(fonts, small, font-size);
 
         &::before {
