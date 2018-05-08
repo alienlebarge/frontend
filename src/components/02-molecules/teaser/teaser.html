@@ -1,6 +1,8 @@
 <article>
     <header>
-        {%- render '@headings--h3', title, true -%}
+        <a href="{{ link.href }}" title="Read {{ title.text}}">
+            {%- render '@headings--h3', title, true -%}
+        </a>
         <p>{% render '@time' %}</p>
     </header>
     {% render '@paragraph', excerpt, true -%}

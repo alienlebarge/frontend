@@ -6,6 +6,9 @@
         "date": "One month ago",
         "excerpt": {
             "text": "This is the text"
+        },
+        "link": {
+            "href": "#"
         }
     }
 }
