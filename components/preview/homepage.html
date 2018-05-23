@@ -9,59 +9,66 @@
     <link media="all" rel="stylesheet" href="../../assets/styles/style.css">
 
     <script>
-        var script = document.createElement('script');
-        script.src = '../../assets/scripts/fontfaceobserver.js';
-        script.async = true;
+        var html = document.documentElement;
 
-        script.onload = function () {
+        if (sessionStorage.fontsNortLoaded) {
+            html.classList.add('js-fonts-loaded_Nort');
+        } else {
+            var script = document.createElement('script');
+            script.src = '../../assets/scripts/fontfaceobserver.js';
+            script.async = true;
 
-            // Timeout function
-            function timeout(time) {
-                return new Promise(function (resolve, reject) {
-                    setTimeout(reject, time);
+            script.onload = function () {
+
+                // Timeout function
+                function timeout(time) {
+                    return new Promise(function (resolve, reject) {
+                        setTimeout(reject, time);
+                    });
+                }
+
+                // font-loading code
+                var nort = new FontFaceObserver('Nort');
+                var nortSubset = new FontFaceObserver('NortSubset');
+                var skemaProOmniSubset = new FontFaceObserver('SkemaProOmniSubset');
+                var skemaProOmni = new FontFaceObserver('SkemaProOmni');
+                var html = document.documentElement;
+
+                // add a class if NortSubset is loaded
+                Promise.race([
+                    nortSubset.load(),
+                    timeout(1000)
+                ]).then(function () {
+                    html.classList.add('js-fonts-loaded__Nort--subset');
                 });
-            }
 
-            // font-loading code
-            var nort = new FontFaceObserver('Nort');
-            var nortSubset = new FontFaceObserver('NortSubset');
-            var skemaProOmniSubset = new FontFaceObserver('SkemaProOmniSubset');
-            var skemaProOmni = new FontFaceObserver('SkemaProOmni');
-            var html = document.documentElement;
+                // add a class if Nort is loaded
+                Promise.race([
+                    nort.load(),
+                    timeout(1000)
+                ]).then(function () {
+                    html.classList.add('js-fonts-loaded__Nort');
+                    sessionStorage.fontsNortLoaded = true
+                });
 
-            // add a class if NortSubset is loaded
-            Promise.race([
-                nortSubset.load(),
-                timeout(1000)
-            ]).then(function () {
-                html.classList.add('js-fonts-loaded__Nort--subset');
-            });
+                // add a class if SkemaProOmniSubset is loaded
+                Promise.race([
+                    skemaProOmniSubset.load(),
+                    timeout(1000)
+                ]).then(function () {
+                    html.classList.add('js-fonts-loaded__SkemaProOmni--subset');
+                });
 
-            // add a class if Nort is loaded
-            Promise.race([
-                nort.load(),
-                timeout(1000)
-            ]).then(function () {
-                html.classList.add('js-fonts-loaded__Nort');
-            });
-
-            // add a class if SkemaProOmniSubset is loaded
-            Promise.race([
-                skemaProOmniSubset.load(),
-                timeout(1000)
-            ]).then(function () {
-                html.classList.add('js-fonts-loaded__SkemaProOmni--subset');
-            });
-
-            // add a class if SkemaProOmni is loaded
-            Promise.race([
-                skemaProOmni.load(),
-                timeout(1000)
-            ]).then(function () {
-                html.classList.add('js-fonts-loaded__SkemaProOmni');
-            });
-        };
-        document.head.appendChild(script);
+                // add a class if SkemaProOmni is loaded
+                Promise.race([
+                    skemaProOmni.load(),
+                    timeout(1000)
+                ]).then(function () {
+                    html.classList.add('js-fonts-loaded__SkemaProOmni');
+                });
+            };
+            document.head.appendChild(script);
+        }
     </script>
 </head>
 <body>
@@ -104,46 +111,48 @@
 
 
     <h2>Derniers articles</h2>
+
     <ul class="o-list-bare">
-        <li class="o-list-bare__item">
-            <article>
-                <header>
-                    <h3>Heading</h3>
-                    <p>Posted: <time>23 juillet 2018</time></p>
-                </header>
-                <p>Pellentesque habitant morbi tristique senectus et netus et
-                malesuada fames ac turpis egestas. Vestibulum tortor quam,
-                feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu
-                libero sit amet quam egestas semper. Aenean ultricies mi vitae
-                est. Mauris placerat eleifend leo.</p>
-            </article>
-        </li>
-        <li class="o-list-bare__item">
-            <article>
-                <header>
-                    <h3>Heading</h3>
-                    <p>Posted: <time>23 juillet 2018</time></p>
-                </header>
-                <p>Pellentesque habitant morbi tristique senectus et netus et
-                malesuada fames ac turpis egestas. Vestibulum tortor quam,
-                feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu
-                libero sit amet quam egestas semper. Aenean ultricies mi vitae
-                est. Mauris placerat eleifend leo.</p>
-            </article>
-        </li>
-        <li class="o-list-bare__item">
-            <article>
-                <header>
-                    <h3>Heading</h3>
-                    <p>Posted: <time>23 juillet 2018</time></p>
-                </header>
-                <p>Pellentesque habitant morbi tristique senectus et netus et
-                malesuada fames ac turpis egestas. Vestibulum tortor quam,
-                feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu
-                libero sit amet quam egestas semper. Aenean ultricies mi vitae
-                est. Mauris placerat eleifend leo.</p>
-            </article>
-        </li>
+        
+            <li class="o-list-bare__item">
+                <article>
+    <header>
+        <a href="#" title="Read Article title 1"><h3>Article title 1</h3>
+</a>
+        <p><time datetime="2001-05-15T19:00">May 15</time>
+</p>
+    </header>
+    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+</article>
+
+            </li>
+        
+            <li class="o-list-bare__item">
+                <article>
+    <header>
+        <a href="#" title="Read Article title 2"><h3>Article title 2</h3>
+</a>
+        <p><time datetime="2001-05-15T19:00">May 15</time>
+</p>
+    </header>
+    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+</article>
+
+            </li>
+        
+            <li class="o-list-bare__item">
+                <article>
+    <header>
+        <a href="#" title="Read Article title 3"><h3>Article title 3</h3>
+</a>
+        <p><time datetime="2001-05-15T19:00">May 15</time>
+</p>
+    </header>
+    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+</article>
+
+            </li>
+        
     </ul>
 
     <p>See also <a href="articles">the whole list of publications.</a></p>
