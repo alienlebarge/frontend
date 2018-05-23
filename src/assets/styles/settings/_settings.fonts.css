@@ -18,12 +18,12 @@
 html {
 
     &.js-fonts-loaded__Nort--subset {
-        --heading-font-family: map(fonts, baseSubset, family);
+        --base-font-family: map(fonts, baseSubset, family);
     }
 
     &.js-fonts-loaded__Nort,
     &.js-fonts-loaded__Nort.js-fonts-loaded__Nort--subset {
-        --heading-font-family: map(fonts, base, family);
+        --base-font-family: map(fonts, base, family);
     }
 }
 
