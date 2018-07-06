@@ -28,8 +28,7 @@
   },
   "homepage": "http://www.alienlebarge.ch/alb-frontend",
   "browserslist": [
-    "> 5% in CH",
-    "last 2 versions"
+    "defaults"
   ],
   "dependencies": {
     "@alienlebarge/stylelint-config": "^3.1.1",
