@@ -43,7 +43,7 @@
     "fontfaceobserver": "^2.0.13",
     "gulp": "v4.0.0",
     "gulp-gh-pages": "^0.5.4",
-    "gulp-postcss": "^7.0.0",
+    "gulp-postcss": "^8.0.0",
     "gulp-sourcemaps": "^2.6.1",
     "gulp-stylelint": "^7.0.0",
     "normalize.css": "^8.0.0",
