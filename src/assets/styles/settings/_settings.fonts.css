@@ -8,9 +8,10 @@
  * 1. Use enhance fonts when loaded
  */
 :root {
-    --base-font-family: map(fonts, base, family);
-    --base-font-weight--normal: map(fonts, base, normal);
-    --base-font-weight--bold: map(fonts, base, bold);
+    --text-font-family: map(fonts, base, family);
+    --text-font-weight--normal: map(fonts, base, normal);
+    --text-font-weight--bold: map(fonts, base, bold);
+    --text-italic: 0;
     --small-font-size: map(fonts, small, font-size);
     --monospace-font-family: map(fonts, monospace, family);
 }
@@ -62,11 +63,11 @@
 }
 
 :root {
-    --typography-scale-3: 2.2rem; /* 33px */
-    --typography-scale-2: 1.5625rem; /* 25px */
-    --typography-scale-1: 1.3125rem; /* 21px */
-    --typography-scale-base: 1rem; /* 16px */
-    --typography-scale-small: .875rem; /* 14px */
+    --typography-scale-base: map(fonts, base, font-size); /* 20px */
+    --typography-scale-3: calc(var(--typography-scale-base) * 1.75); /* 33px */
+    --typography-scale-2: calc(var(--typography-scale-base) * 1.5); /* 25px */
+    --typography-scale-1: calc(var(--typography-scale-base) * 1.2); /* 21px */
+    --typography-scale-small: calc(var(--typography-scale-base) * .875rem); /* 14px */
 
     @media (--desktop-and-up) {
         --typography-scale-3: 3.1875rem; /* 51px */

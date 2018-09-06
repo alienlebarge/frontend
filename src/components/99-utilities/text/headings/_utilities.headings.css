@@ -13,10 +13,10 @@
 .u-h4,
 .u-h5,
 .u-h6 {
-    --base-font-family: map(fonts, heading, family);
+    --text-font-family: map(fonts, heading, family);
 
-    font-weight: var(--base-font-weight--bold);
-    font-family: var(--base-font-family);
+    font-weight: var(--text-font-weight--bold);
+    font-family: var(--text-font-family);
     font-kerning: normal; /* [1] */
     line-height: map(fonts, heading, line-height);
 

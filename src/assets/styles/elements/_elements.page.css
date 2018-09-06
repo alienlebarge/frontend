@@ -22,8 +22,8 @@ html {
 
     font-size: var(--typography-scale-base); /* [2] */
 
-    font-weight: var(--base-font-weight--normal);
-    font-family: var(--base-font-family); /* [2] */
+    font-weight: var(--text-font-weight--normal);
+    font-family: var(--text-font-family); /* [2] */
 
     font-kerning: normal; /* [4] */
     line-height: map(fonts, base, line-height); /* [4] */
