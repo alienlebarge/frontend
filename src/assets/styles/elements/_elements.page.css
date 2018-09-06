@@ -21,11 +21,10 @@ html {
     min-height: 100%; /* [1] */
 
     font-size: var(--typography-scale-base); /* [2] */
-
-    font-weight: var(--text-font-weight--normal);
+    font-weight: var(--text-font-weight);
     font-family: var(--text-font-family); /* [2] */
-
     font-kerning: normal; /* [4] */
+
     line-height: map(fonts, base, line-height); /* [4] */
 
     color: var(--color-text);
@@ -41,6 +40,10 @@ html {
     font-smoothing: antialiased; /* [5] */
     font-variant-ligatures: common-ligatures, contextual; /* [4] */
     font-variant-numeric: oldstyle-nums, proportional-nums; /* [4] */
+
+    font-variation-settings:
+        "wght" var(--text-font-weight),
+        "ital" var(--text-italic);
 
     overflow-y: scroll; /* [3] */
     text-rendering: optimizeLegibility; /* [5] */
