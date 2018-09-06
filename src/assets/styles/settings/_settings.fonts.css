@@ -58,7 +58,7 @@
     --text-line-height: map(fonts, base, line-height);
     --typography-scale-base: map(fonts, base, font-size);
     --typography-scale-3: calc(var(--typography-scale-base) * 1.75);
-    --typography-scale-2: calc(var(--typography-scale-base) * 1.5);
+    --typography-scale-2: calc(var(--typography-scale-base) * 1.4);
     --typography-scale-1: calc(var(--typography-scale-base) * 1.2);
     --typography-scale-small: calc(var(--typography-scale-base) * .8);
 }
