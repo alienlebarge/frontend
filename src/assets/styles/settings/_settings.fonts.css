@@ -50,6 +50,17 @@
          url("../fonts/FFNORT/Nort-full-Bold-Italic.woff")  format("woff");
 }
 
+/**
+ * FF Meta Variable Font
+ */
+@font-face {
+    font-weight: 100 900;
+    font-style: normal italic;
+    font-family: "FF Meta VF";
+    font-display: swap;
+    src: url("../fonts/FFMetaVF/MetaVariable.woff2") format("woff2");
+}
+
 :root {
     --typography-scale-3: 2.2rem; /* 33px */
     --typography-scale-2: 1.5625rem; /* 25px */

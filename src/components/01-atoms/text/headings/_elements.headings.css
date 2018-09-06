@@ -13,6 +13,8 @@ h3,
 h4,
 h5,
 h6 {
+    --base-font-family: map(fonts, heading, family);
+
     font-weight: var(--base-font-weight--bold);
     font-family: var(--base-font-family);
     font-kerning: normal; /* [1] */
