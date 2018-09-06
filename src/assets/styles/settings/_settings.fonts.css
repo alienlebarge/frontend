@@ -8,44 +8,19 @@
  * 1. Use enhance fonts when loaded
  */
 :root {
-    --base-font-family: map(fonts, system, family);
+    --base-font-family: map(fonts, base, family);
     --base-font-weight--normal: map(fonts, base, normal);
     --base-font-weight--bold: map(fonts, base, bold);
     --small-font-size: map(fonts, small, font-size);
     --monospace-font-family: map(fonts, monospace, family);
 }
 
-html {
-
-    &.js-fonts-loaded__Nort--subset {
-        --base-font-family: map(fonts, baseSubset, family);
-    }
-
-    &.js-fonts-loaded__Nort,
-    &.js-fonts-loaded__Nort.js-fonts-loaded__Nort--subset {
-        --base-font-family: map(fonts, base, family);
-    }
-}
-
 /**
  * FF Nort
  */
-
-@font-face {
-    font-family: NortSubset;
-    src: url("../fonts/FFNORT/Nort-latin1-Regular.woff2") format("woff2"),
-         url("../fonts/FFNORT/Nort-latin1-Regular.woff")  format("woff");
-}
-
-@font-face {
-    font-weight: 700;
-    font-family: NortSubset;
-    src: url("../fonts/FFNORT/Nort-latin1-Bold.woff2") format("woff2"),
-         url("../fonts/FFNORT/Nort-latin1-Bold.woff")  format("woff");
-}
-
 @font-face {
     font-family: Nort;
+    font-display: swap;
     src: url("../fonts/FFNORT/Nort-full-Regular.woff2") format("woff2"),
          url("../fonts/FFNORT/Nort-full-Regular.woff")  format("woff");
 }
@@ -53,6 +28,7 @@ html {
 @font-face {
     font-weight: 700;
     font-family: Nort;
+    font-display: swap;
     src: url("../fonts/FFNORT/Nort-full-Bold.woff2") format("woff2"),
          url("../fonts/FFNORT/Nort-full-Bold.woff")  format("woff");
 }
@@ -60,6 +36,7 @@ html {
 @font-face {
     font-style: italic;
     font-family: Nort;
+    font-display: swap;
     src: url("../fonts/FFNORT/Nort-full-Italic.woff2") format("woff2"),
          url("../fonts/FFNORT/Nort-full-Italic.woff")  format("woff");
 }
@@ -68,6 +45,7 @@ html {
     font-weight: 700;
     font-style: italic;
     font-family: Nort;
+    font-display: swap;
     src: url("../fonts/FFNORT/Nort-full-Bold-Italic.woff2") format("woff2"),
          url("../fonts/FFNORT/Nort-full-Bold-Italic.woff")  format("woff");
 }
