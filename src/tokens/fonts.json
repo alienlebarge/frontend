@@ -13,9 +13,6 @@
     "font-size": "1rem",
     "line-height": "1.1"
   },
-  "headingSubset": {
-    "family": "'NortSubset'"
-  },
   "monospace": {
     "family": "'Operator Mono', 'Source Code Pro', monospace"
   },
