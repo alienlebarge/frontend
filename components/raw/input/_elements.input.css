@@ -1,7 +1,0 @@
-input {
-    width: 100%;
-    height: calc(1em * map(fonts, base, line-heights) + (2 * var(--space-small)));
-
-    border: 3px solid var(--color-text);
-    padding: var(--space-small);
-}

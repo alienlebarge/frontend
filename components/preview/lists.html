@@ -7,73 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Preview Layout</title>
     <link media="all" rel="stylesheet" href="../../assets/styles/style.css">
-
-    <script>
-        var html = document.documentElement;
-
-        if (sessionStorage.fontsNortLoaded) {
-            html.classList.add('js-fonts-loaded_Nort');
-        } else {
-            var script = document.createElement('script');
-            script.src = '../../assets/scripts/fontfaceobserver.js';
-            script.async = true;
-
-            script.onload = function () {
-
-                // Timeout function
-                function timeout(time) {
-                    return new Promise(function (resolve, reject) {
-                        setTimeout(reject, time);
-                    });
-                }
-
-                // font-loading code
-                var nort = new FontFaceObserver('Nort');
-                var nortSubset = new FontFaceObserver('NortSubset');
-                var skemaProOmniSubset = new FontFaceObserver('SkemaProOmniSubset');
-                var skemaProOmni = new FontFaceObserver('SkemaProOmni');
-                var html = document.documentElement;
-
-                // add a class if NortSubset is loaded
-                Promise.race([
-                    nortSubset.load(),
-                    timeout(1000)
-                ]).then(function () {
-                    html.classList.add('js-fonts-loaded__Nort--subset');
-                });
-
-                // add a class if Nort is loaded
-                Promise.race([
-                    nort.load(),
-                    timeout(1000)
-                ]).then(function () {
-                    html.classList.add('js-fonts-loaded__Nort');
-                    sessionStorage.fontsNortLoaded = true
-                });
-
-                // add a class if SkemaProOmniSubset is loaded
-                Promise.race([
-                    skemaProOmniSubset.load(),
-                    timeout(1000)
-                ]).then(function () {
-                    html.classList.add('js-fonts-loaded__SkemaProOmni--subset');
-                });
-
-                // add a class if SkemaProOmni is loaded
-                Promise.race([
-                    skemaProOmni.load(),
-                    timeout(1000)
-                ]).then(function () {
-                    html.classList.add('js-fonts-loaded__SkemaProOmni');
-                });
-            };
-            document.head.appendChild(script);
-        }
-    </script>
 </head>
 <body>
 
-<ul><li>Est beatae placeat officia.</li><li>Velit ex aspernatur nisi id consequuntur magni aut id minima.</li><li>Vel officia nostrum nesciunt optio.</li><li>Excepturi praesentium suscipit animi qui officiis eum at quis cupiditate.</li><li>Ut eum accusantium.</li></ul>
+<ul><li>Ut quia ducimus blanditiis.</li><li>Ab modi vel assumenda est omnis eum.</li><li>Aut ut non officiis assumenda eum accusantium.</li><li>Dolor quae ratione consectetur et eum mollitia eius harum.</li><li>Sequi autem qui et dignissimos ea aliquid nemo sed quia.</li></ul>
 
 
 </body>

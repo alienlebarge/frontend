@@ -13,10 +13,10 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: var(--base-font-weight--bold);
-    font-family: var(--base-font-family);
+    font-weight: map(fonts, heading, bold);
+    font-family: map(fonts, heading, family);
     font-kerning: normal; /* [1] */
-    line-height: 1.2;
+    line-height: map(fonts, heading, line-height);
 
     margin-top: 1.5em;
     margin-bottom: .5em;

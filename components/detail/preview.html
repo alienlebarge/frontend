@@ -163,61 +163,6 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Preview Layout<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">media</span>=<span class="hljs-string">"all"</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../assets/styles/style.css"</span>&gt;</span>
-
-    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
-        <span class="hljs-keyword">var</span> html = <span class="hljs-built_in">document</span>.documentElement;
-        <span class="hljs-keyword">if</span> (sessionStorage.fontsNortLoaded) {
-            html.classList.add(<span class="hljs-string">'js-fonts-loaded_Nort'</span>);
-        } <span class="hljs-keyword">else</span> {
-            <span class="hljs-keyword">var</span> script = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'script'</span>);
-            script.src = <span class="hljs-string">'../../assets/scripts/fontfaceobserver.js'</span>;
-            script.async = <span class="hljs-literal">true</span>;
-            script.onload = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
-                <span class="hljs-comment">// Timeout function</span>
-                <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">timeout</span>(<span class="hljs-params">time</span>) </span>{
-                    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">resolve, reject</span>) </span>{
-                        setTimeout(reject, time);
-                    });
-                }
-                <span class="hljs-comment">// font-loading code</span>
-                <span class="hljs-keyword">var</span> nort = <span class="hljs-keyword">new</span> FontFaceObserver(<span class="hljs-string">'Nort'</span>);
-                <span class="hljs-keyword">var</span> nortSubset = <span class="hljs-keyword">new</span> FontFaceObserver(<span class="hljs-string">'NortSubset'</span>);
-                <span class="hljs-keyword">var</span> skemaProOmniSubset = <span class="hljs-keyword">new</span> FontFaceObserver(<span class="hljs-string">'SkemaProOmniSubset'</span>);
-                <span class="hljs-keyword">var</span> skemaProOmni = <span class="hljs-keyword">new</span> FontFaceObserver(<span class="hljs-string">'SkemaProOmni'</span>);
-                <span class="hljs-keyword">var</span> html = <span class="hljs-built_in">document</span>.documentElement;
-                <span class="hljs-comment">// add a class if NortSubset is loaded</span>
-                <span class="hljs-built_in">Promise</span>.race([
-                    nortSubset.load(),
-                    timeout(<span class="hljs-number">1000</span>)
-                ]).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
-                    html.classList.add(<span class="hljs-string">'js-fonts-loaded__Nort--subset'</span>);
-                });
-                <span class="hljs-comment">// add a class if Nort is loaded</span>
-                <span class="hljs-built_in">Promise</span>.race([
-                    nort.load(),
-                    timeout(<span class="hljs-number">1000</span>)
-                ]).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
-                    html.classList.add(<span class="hljs-string">'js-fonts-loaded__Nort'</span>);
-                    sessionStorage.fontsNortLoaded = <span class="hljs-literal">true</span>
-                });
-                <span class="hljs-comment">// add a class if SkemaProOmniSubset is loaded</span>
-                <span class="hljs-built_in">Promise</span>.race([
-                    skemaProOmniSubset.load(),
-                    timeout(<span class="hljs-number">1000</span>)
-                ]).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
-                    html.classList.add(<span class="hljs-string">'js-fonts-loaded__SkemaProOmni--subset'</span>);
-                });
-                <span class="hljs-comment">// add a class if SkemaProOmni is loaded</span>
-                <span class="hljs-built_in">Promise</span>.race([
-                    skemaProOmni.load(),
-                    timeout(<span class="hljs-number">1000</span>)
-                ]).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
-                    html.classList.add(<span class="hljs-string">'js-fonts-loaded__SkemaProOmni'</span>);
-                });
-            };
-            <span class="hljs-built_in">document</span>.head.appendChild(script);
-        }
-    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
@@ -239,69 +184,6 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Preview Layout<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">media</span>=<span class="hljs-string">"all"</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"{{ '/assets/styles/style.css' | path }}"</span>&gt;</span>
-
-    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
-        <span class="hljs-keyword">var</span> html = <span class="hljs-built_in">document</span>.documentElement;
-
-        <span class="hljs-keyword">if</span> (sessionStorage.fontsNortLoaded) {
-            html.classList.add(<span class="hljs-string">'js-fonts-loaded_Nort'</span>);
-        } <span class="hljs-keyword">else</span> {
-            <span class="hljs-keyword">var</span> script = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'script'</span>);
-            script.src = <span class="hljs-string">'../../assets/scripts/fontfaceobserver.js'</span>;
-            script.async = <span class="hljs-literal">true</span>;
-
-            script.onload = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
-
-                <span class="hljs-comment">// Timeout function</span>
-                <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">timeout</span>(<span class="hljs-params">time</span>) </span>{
-                    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">resolve, reject</span>) </span>{
-                        setTimeout(reject, time);
-                    });
-                }
-
-                <span class="hljs-comment">// font-loading code</span>
-                <span class="hljs-keyword">var</span> nort = <span class="hljs-keyword">new</span> FontFaceObserver(<span class="hljs-string">'Nort'</span>);
-                <span class="hljs-keyword">var</span> nortSubset = <span class="hljs-keyword">new</span> FontFaceObserver(<span class="hljs-string">'NortSubset'</span>);
-                <span class="hljs-keyword">var</span> skemaProOmniSubset = <span class="hljs-keyword">new</span> FontFaceObserver(<span class="hljs-string">'SkemaProOmniSubset'</span>);
-                <span class="hljs-keyword">var</span> skemaProOmni = <span class="hljs-keyword">new</span> FontFaceObserver(<span class="hljs-string">'SkemaProOmni'</span>);
-                <span class="hljs-keyword">var</span> html = <span class="hljs-built_in">document</span>.documentElement;
-
-                <span class="hljs-comment">// add a class if NortSubset is loaded</span>
-                <span class="hljs-built_in">Promise</span>.race([
-                    nortSubset.load(),
-                    timeout(<span class="hljs-number">1000</span>)
-                ]).then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
-                    html.classList.add(<span class="hljs-string">'js-fonts-loaded__Nort--subset'</span>);
-                });
-
-                <span class="hljs-comment">// add a class if Nort is loaded</span>
-                <span class="hljs-built_in">Promise</span>.race([
-                    nort.load(),
-                    timeout(<span class="hljs-number">1000</span>)
-                ]).then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
-                    html.classList.add(<span class="hljs-string">'js-fonts-loaded__Nort'</span>);
-                    sessionStorage.fontsNortLoaded = <span class="hljs-literal">true</span>
-                });
-
-                <span class="hljs-comment">// add a class if SkemaProOmniSubset is loaded</span>
-                <span class="hljs-built_in">Promise</span>.race([
-                    skemaProOmniSubset.load(),
-                    timeout(<span class="hljs-number">1000</span>)
-                ]).then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
-                    html.classList.add(<span class="hljs-string">'js-fonts-loaded__SkemaProOmni--subset'</span>);
-                });
-
-                <span class="hljs-comment">// add a class if SkemaProOmni is loaded</span>
-                <span class="hljs-built_in">Promise</span>.race([
-                    skemaProOmni.load(),
-                    timeout(<span class="hljs-number">1000</span>)
-                ]).then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
-                    html.classList.add(<span class="hljs-string">'js-fonts-loaded__SkemaProOmni'</span>);
-                });
-            };
-            <span class="hljs-built_in">document</span>.head.appendChild(script);
-        }
-    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
 
