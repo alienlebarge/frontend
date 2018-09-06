@@ -18,7 +18,7 @@
     font-weight: var(--base-font-weight--bold);
     font-family: var(--base-font-family);
     font-kerning: normal; /* [1] */
-    line-height: 1.2;
+    line-height: map(fonts, heading, line-height);
 
     margin-top: 1.5em;
     margin-bottom: .5em;
