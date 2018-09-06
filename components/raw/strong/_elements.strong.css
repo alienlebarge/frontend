@@ -1,0 +1,12 @@
+/* ==========================================================================
+   #STRONG
+   ========================================================================== */
+
+strong {
+    --text-font-weight: map(fonts, base, bold);
+
+    font-weight: var(--text-font-weight);
+    font-variation-settings:
+        "wght" var(--text-font-weight),
+        "ital" var(--text-italic);
+}
