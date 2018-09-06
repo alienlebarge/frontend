@@ -11,7 +11,7 @@
     "normal": "400",
     "bold": "700",
     "font-size": "1rem",
-    "line-height": "1.5"
+    "line-height": "1.1"
   },
   "headingSubset": {
     "family": "'NortSubset'"
