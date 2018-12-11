@@ -4467,9 +4467,9 @@ postcss-load-config@^2.0.0:
     cosmiconfig "^4.0.0"
     import-cwd "^2.0.0"
 
-postcss-map@^0.10.0:
-  version "0.10.0"
-  resolved "https://registry.yarnpkg.com/postcss-map/-/postcss-map-0.10.0.tgz#832aaafb474e6c479609460aad12cb428d4af871"
+postcss-map@^0.11.0:
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/postcss-map/-/postcss-map-0.11.0.tgz#2820e4f3c555cc4e9081f6b9faafdcc5b325eaf6"
   dependencies:
     js-yaml "^3.12.0"
     postcss "^7.0.2"
