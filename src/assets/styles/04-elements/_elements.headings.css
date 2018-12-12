@@ -7,12 +7,7 @@
  *    see http://practice.typekit.com/lesson/caring-about-opentype-features/
  */
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+%heading {
     font-weight: map(fonts, heading, bold);
     font-family: map(fonts, heading, family);
     font-kerning: normal; /* [1] */
@@ -26,26 +21,43 @@ h6 {
         discretionary-ligatures; /* [1] */
 }
 
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @extend %heading;
+}
+
+%heading--h1,
 h1 {
     font-size: var(--typography-scale-3);
 }
 
+%heading--h2,
 h2 {
     font-size: var(--typography-scale-2);
 }
 
+%heading--h3,
 h3 {
     font-size: var(--typography-scale-1);
 }
 
+%heading--h4,
 h4 {
     font-size: var(--typography-scale-base);
 }
 
+%heading--h5,
 h5 {
     font-size: var(--typography-scale-small);
 }
 
+%heading--h6,
 h6 {
     font-size: var(--typography-scale-small);
 }
