@@ -4,7 +4,8 @@
   "description": "Frontend of www.alienlebarge.ch",
   "main": "index.js",
   "scripts": {
-    "start": "yarn && gulp dev",
+    "prestart": "yarn",
+    "start": "gulp dev",
     "test": "npm run build",
     "build": "yarn && gulp build",
     "publish": "yarn && gulp publish"
