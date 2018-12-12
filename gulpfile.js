@@ -128,6 +128,7 @@ function styles() {
         require('postcss-media-minmax'),
         require('postcss-custom-media'),
         require('postcss-nested'),
+        require('postcss-extend-rule'),
         require('autoprefixer'),
         require('cssnano')
     ];

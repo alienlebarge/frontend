@@ -51,6 +51,7 @@
     "postcss-color-function": "^4.0.0",
     "postcss-custom-media": "^7.0.0",
     "postcss-easy-import": "^3.0.0",
+    "postcss-extend-rule": "^2.0.0",
     "postcss-map": "^0.11.0",
     "postcss-media-minmax": "^4.0.0",
     "postcss-nested": "^4.0.0",
