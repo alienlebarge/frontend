@@ -14,14 +14,12 @@
     line-height: map(fonts, heading, line-height);
 
     margin-top: var(--space-medium);
-    margin-bottom: var(--space-large);
+    margin-bottom: var(--space-medium);
 
     font-feature-settings: "kern", "liga", "clig", "calt", "dlig"; /* [1] */
     font-variant-ligatures: common-ligatures, contextual,
         discretionary-ligatures; /* [1] */
 }
-
-
 
 h1,
 h2,
@@ -31,6 +29,8 @@ h5,
 h6 {
     @extend %heading;
 }
+
+
 
 %heading--h1 {
     font-size: var(--typography-scale-3);
