@@ -3,5 +3,5 @@
    ======================================================================== */
 
 .u-visually-hidden {
-    @extend %t-visually-hidden;
+    @extend %visually-hidden;
 }
