@@ -13,8 +13,8 @@
     font-kerning: normal; /* [1] */
     line-height: map(fonts, heading, line-height);
 
-    margin-top: 1.5em;
-    margin-bottom: .5em;
+    margin-top: var(--space-medium);
+    margin-bottom: var(--space-large);
 
     font-feature-settings: "kern", "liga", "clig", "calt", "dlig"; /* [1] */
     font-variant-ligatures: common-ligatures, contextual,
@@ -32,33 +32,50 @@ h6 {
     @extend %heading;
 }
 
-%heading--h1,
-h1 {
+%heading--h1 {
     font-size: var(--typography-scale-3);
 }
 
-%heading--h2,
-h2 {
+%heading--h2 {
     font-size: var(--typography-scale-2);
 }
 
-%heading--h3,
-h3 {
+%heading--h3 {
     font-size: var(--typography-scale-1);
 }
 
-%heading--h4,
-h4 {
+%heading--h4 {
     font-size: var(--typography-scale-base);
 }
 
-%heading--h5,
+%heading--h5 {
+    font-size: var(--typography-scale-small);
+}
+
+%heading--h6 {
+    font-size: var(--typography-scale-small);
+}
+
+h1 {
+    @extend %heading--h1;
+}
+
+h2 {
+    @extend %heading--h2;
+}
+
+h3 {
+    @extend %heading--h3;
+}
+
+h4 {
+    @extend %heading--h4;
+}
+
 h5 {
-    font-size: var(--typography-scale-small);
+    @extend %heading--h5;
 }
 
-%heading--h6,
 h6 {
-    font-size: var(--typography-scale-small);
+    @extend %heading--h6;
 }
-
