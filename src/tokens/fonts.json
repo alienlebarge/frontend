@@ -3,8 +3,8 @@
     "family": "'FF Meta VF', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
     "normal": "400",
     "bold": "700",
-    "font-size": "1.25rem",
-    "line-height": "1.3"
+    "font-size": "calc(1rem + 0.375vmin)",
+    "line-height": "calc(1.4em + 0.25vw)"
   },
   "heading": {
     "family": "'Nort', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",

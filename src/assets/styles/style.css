@@ -30,23 +30,21 @@
  */
 
 @import "**/_elements.*.css";
-@import "../../components/**/_elements.*.css";
 
 /**
  * OBJECTS
  */
 
-@import "../../components/**/_objects.*.css";
+@import "**/_objects.*.css";
 
 /**
  * COMPONENTS
  */
 
-@import "../../components/**/_components.*.css";
+@import "**/_components.*.css";
 
 /**
  * UTILITIES
  */
 
 @import "**/_utilities.*.css";
-@import "../../components/**/_utilities.*.css";

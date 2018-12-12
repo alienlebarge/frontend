@@ -2,5 +2,5 @@
    Fractal UI styles
    ===================================================== */
 
-@import "settings/_settings.breakpoints.css";
+@import "**/_settings.breakpoints.css";
 @import "docs/styleguide.css";
