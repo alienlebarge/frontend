@@ -3,80 +3,43 @@
    ========================================================================== */
 
 /**
- * FF Nort
- */
-@font-face {
-    font-family: Nort;
-    font-display: swap;
-    src: url("../fonts/FFNORT/Nort-full-Regular.woff2") format("woff2"),
-         url("../fonts/FFNORT/Nort-full-Regular.woff")  format("woff");
-}
-
-@font-face {
-    font-weight: 500;
-    font-family: Nort;
-    font-display: swap;
-    src: url("../fonts/FFNORT/Nort-full-Medium.woff2") format("woff2"),
-         url("../fonts/FFNORT/Nort-full-Medium.woff")  format("woff");
-}
-
-@font-face {
-    font-weight: 700;
-    font-family: Nort;
-    font-display: swap;
-    src: url("../fonts/FFNORT/Nort-full-Bold.woff2") format("woff2"),
-         url("../fonts/FFNORT/Nort-full-Bold.woff")  format("woff");
-}
-
-@font-face {
-    font-style: italic;
-    font-family: Nort;
-    font-display: swap;
-    src: url("../fonts/FFNORT/Nort-full-Italic.woff2") format("woff2"),
-         url("../fonts/FFNORT/Nort-full-Italic.woff")  format("woff");
-}
-
-@font-face {
-    font-weight: 500;
-    font-style: italic;
-    font-family: Nort;
-    font-display: swap;
-    src: url("../fonts/FFNORT/Nort-full-Medium-Italic.woff2") format("woff2"),
-         url("../fonts/FFNORT/Nort-full-Medium-Italic.woff")  format("woff");
-}
-
-@font-face {
-    font-weight: 700;
-    font-style: italic;
-    font-family: Nort;
-    font-display: swap;
-    src: url("../fonts/FFNORT/Nort-full-Bold-Italic.woff2") format("woff2"),
-         url("../fonts/FFNORT/Nort-full-Bold-Italic.woff")  format("woff");
-}
-
-/**
- * FF Meta Variable Font
- */
-@font-face {
-    font-weight: 100 900;
-    font-style: normal italic;
-    font-family: "FF Meta VF";
-    font-display: swap;
-    src: url("../fonts/FFMetaVF/MetaVariable.woff2") format("woff2");
-}
-
-/**
  * Set fonts variables
  */
 :root {
-    --text-font-family: map(fonts, base, family);
-    --text-font-weight: map(fonts, base, normal);
-    --text-italic: 0;
-    --text-line-height: map(fonts, base, line-height);
-    --typography-scale-base: map(fonts, base, font-size);
+    /* Typography scales */
+    --typography-scale-base: calc(1rem + .375vmin);
     --typography-scale-3: calc(var(--typography-scale-base) * 1.75);
     --typography-scale-2: calc(var(--typography-scale-base) * 1.4);
     --typography-scale-1: calc(var(--typography-scale-base) * 1.2);
-    --typography-scale-small: calc(var(--typography-scale-base) * .8);
+    --typography-scale-s: calc( (var(--typography-scale-base) * .875) + .25vmin);
+    --typography-scale-xs: calc( (var(--typography-scale-base) * .75) + .125vmin);
+
+    /* Families */
+    --font-family-sans: Nort, sans-serif;
+    --font-family-system: system-ui;
+    --font-family-monospace: "Operator Mono", "Source Code Pro", monospace;
+
+    /* Sizes */
+    --font-size-title: var(--typography-scale-3);
+    --font-size-lede: var(--typography-scale-3);
+    --font-size-heading: var(--typography-scale-2);
+    --font-size-subhead: var(--typography-scale-1);
+    --font-size-body: var(--typography-scale-base);
+    --font-size-reference: var(--typography-scale-s);
+    --font-size-caption: var(--typography-scale-xs);
+    --font-size-default: 1rem;
+
+    /* Font weight */
+    --font-weight-heading: 500;
+    --font-weight-body: 400;
+
+    /* Line height */
+    --line-height-solid: 1em;
+    --line-height-tight: calc(1.25em + .25vw);
+    --line-height-loose: calc(1.4em + .25vw);
+
+    /* Other stuff */
+    --line-measure: 42.5rem;
+    --word-spacing: 0;
 }
 

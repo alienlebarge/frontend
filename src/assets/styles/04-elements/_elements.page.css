@@ -20,12 +20,12 @@
 html {
     min-height: 100%; /* [1] */
 
-    font-size: var(--typography-scale-base); /* [2] */
-    font-weight: var(--text-font-weight);
-    font-family: var(--text-font-family); /* [2] */
+    font-size: var(--font-size-body); /* [2] */
+    font-weight: var(--font-weight-body);
+    font-family: var(--font-family-sans); /* [2] */
     font-kerning: normal; /* [4] */
 
-    line-height: map(fonts, base, line-height); /* [4] */
+    line-height: var(--line-height-loose); /* [4] */
 
     color: var(--color-text);
 
@@ -33,19 +33,12 @@ html {
     font-feature-settings: "kern", "liga", "clig", "calt", "onum",
         "pnum"; /* [2] */
 
-    font-range: map(fonts, base, lower-typography-range)
-        map(fonts, base, upper-typography-range);
     -moz-osx-font-smoothing: grayscale; /* [5] */
     -webkit-font-smoothing: antialiased; /* [5] */
     font-smoothing: antialiased; /* [5] */
     font-variant-ligatures: common-ligatures, contextual; /* [4] */
     font-variant-numeric: oldstyle-nums, proportional-nums; /* [4] */
 
-    font-variation-settings:
-        "wght" var(--text-font-weight),
-        "ital" var(--text-italic);
-
     overflow-y: scroll; /* [3] */
     text-rendering: optimizeLegibility; /* [5] */
-    text-shadow: rgba(0, 0, 0, .01) 0 0 1px; /* [5] */
 }

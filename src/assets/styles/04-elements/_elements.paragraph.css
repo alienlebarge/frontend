@@ -13,7 +13,7 @@
  */
 
 :root {
-    --max-paragraph-length: 38em;
+    --max-paragraph-length: var(--line-measure);
 }
 
 p {
