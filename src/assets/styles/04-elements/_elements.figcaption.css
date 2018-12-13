@@ -3,6 +3,6 @@
    ========================================================================== */
 
 figcaption {
-    font-size: .8em;
+    font-size: var(--font-size-caption);
     font-style: italic;
 }
