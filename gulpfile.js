@@ -124,7 +124,7 @@ function styles() {
                 paths.src + '/tokens/animations.json'
             ],
         }),
-        require("postcss-color-function"),
+        require("postcss-color-mod-function"),
         require('postcss-media-minmax'),
         require('postcss-custom-media'),
         require('postcss-nested'),

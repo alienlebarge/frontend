@@ -49,6 +49,7 @@
     "gulp-stylelint": "^8.0.0",
     "normalize.css": "^8.0.0",
     "postcss-color-function": "^4.0.0",
+    "postcss-color-mod-function": "^3.0.3",
     "postcss-custom-media": "^7.0.0",
     "postcss-easy-import": "^3.0.0",
     "postcss-extend-rule": "^2.0.0",
