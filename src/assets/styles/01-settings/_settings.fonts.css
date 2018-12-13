@@ -13,6 +13,14 @@
 }
 
 @font-face {
+    font-weight: 500;
+    font-family: Nort;
+    font-display: swap;
+    src: url("../fonts/FFNORT/Nort-full-Medium.woff2") format("woff2"),
+         url("../fonts/FFNORT/Nort-full-Medium.woff")  format("woff");
+}
+
+@font-face {
     font-weight: 700;
     font-family: Nort;
     font-display: swap;
@@ -26,6 +34,15 @@
     font-display: swap;
     src: url("../fonts/FFNORT/Nort-full-Italic.woff2") format("woff2"),
          url("../fonts/FFNORT/Nort-full-Italic.woff")  format("woff");
+}
+
+@font-face {
+    font-weight: 500;
+    font-style: italic;
+    font-family: Nort;
+    font-display: swap;
+    src: url("../fonts/FFNORT/Nort-full-Medium-Italic.woff2") format("woff2"),
+         url("../fonts/FFNORT/Nort-full-Medium-Italic.woff")  format("woff");
 }
 
 @font-face {
