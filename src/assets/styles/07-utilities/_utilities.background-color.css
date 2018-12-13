@@ -2,102 +2,30 @@
    #BACKGROUND-COLOR
    ========================================================================== */
 
-.u-background-color {
+.u-background-color-neutral--darkest {
+    background-color: var(--color-neutral--darkest) !important;
+}
 
-    &--primary {
+.u-background-color-neutral--darker {
+    background-color: var(--color-neutral--darker) !important;
+}
 
-        &-base {
-            background-color: map(colors, primary, base);
-        }
+.u-background-color-neutral--dark {
+    background-color: var(--color-neutral--dark) !important;
+}
 
-        &-light {
-            background-color: map(colors, primary, light);
-        }
+.u-background-color-neutral {
+    background-color: var(--color-neutral) !important;
+}
 
-        &-dark {
-            background-color: map(colors, primary, dark);
-        }
-    }
+.u-background-color-neutral--light {
+    background-color: var(--color-neutral--light) !important;
+}
 
-    &--secondary {
+.u-background-color-neutral--lighter {
+    background-color: var(--color-neutral--lighter) !important;
+}
 
-        &-base {
-            background-color: map(colors, secondary, base);
-        }
-
-        &-light {
-            background-color: map(colors, secondary, light);
-        }
-
-        &-dark {
-            background-color: map(colors, secondary, dark);
-        }
-    }
-
-    &--tertiary {
-
-        &-base {
-            background-color: map(colors, tertiary, base);
-        }
-
-        &-light {
-            background-color: map(colors, tertiary, light);
-        }
-
-        &-dark {
-            background-color: map(colors, tertiary, dark);
-        }
-    }
-
-    &--quaternary {
-
-        &-base {
-            background-color: map(colors, quaternary, base);
-        }
-    }
-
-    &--text {
-
-        &-base {
-            background-color: map(colors, text, base);
-        }
-
-        &-inverse {
-            background-color: map(colors, text, inverse);
-        }
-    }
-
-    &--neutral {
-
-        &-base {
-            background-color: map(colors, neutral, base);
-        }
-
-        &-light {
-            background-color: map(colors, neutral, light);
-        }
-
-        &-lighter {
-            background-color: map(colors, neutral, lighter);
-        }
-
-        &-dark {
-            background-color: map(colors, neutral, dark);
-        }
-
-        &-darker {
-            background-color: map(colors, neutral, darker);
-        }
-    }
-
-    &--special-states {
-
-        &-focus {
-            background-color: map(colors, special-states, focus);
-        }
-
-        &-visited {
-            background-color: map(colors, special-states, visited);
-        }
-    }
+.u-background-color-neutral--lightest {
+    background-color: var(--color-neutral--lightest) !important;
 }

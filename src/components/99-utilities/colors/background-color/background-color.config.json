@@ -1,141 +1,57 @@
 {
-    "collated": true,
-    "context": {
-        "text": "background color"
+  "collated": true,
+  "context": {
+    "text": "background color"
+  },
+  "variants": [
+    {
+      "name": "u-background-color-neutral--darkest",
+      "context": {
+        "text": "Neutral darkest",
+        "styleModifier": "u-background-color-neutral--darkest"
+      }
     },
-    "variants": [
-        {
-            "name": "primary-base",
-            "context": {
-                "text": "Primary base",
-                "styleModifier": "u-background-color--primary-base"
-            }
-        },
-        {
-            "name": "primary-light",
-            "context": {
-                "text": "Primary light",
-                "styleModifier": "u-background-color--primary-light"
-            }
-        },
-        {
-            "name": "primary-light",
-            "context": {
-                "text": "Primary dark",
-                "styleModifier": "u-background-color--primary-dark"
-            }
-        },
-        {
-            "name": "secondary-base",
-            "context": {
-                "text": "Secondary base",
-                "styleModifier": "u-background-color--secondary-base"
-            }
-        },
-        {
-            "name": "secondary-light",
-            "context": {
-                "text": "Secondary light",
-                "styleModifier": "u-background-color--secondary-light"
-            }
-        },
-        {
-            "name": "secondary-dark",
-            "context": {
-                "text": "Secondary dark",
-                "styleModifier": "u-background-color--secondary-dark"
-            }
-        },
-        {
-            "name": "tertiary-base",
-            "context": {
-                "text": "Tertiary base",
-                "styleModifier": "u-background-color--tertiary-base"
-            }
-        },
-        {
-            "name": "tertiary-light",
-            "context": {
-                "text": "Tertiary light",
-                "styleModifier": "u-background-color--tertiary-light"
-            }
-        },
-        {
-            "name": "tertiary-dark",
-            "context": {
-                "text": "Tertiary dark",
-                "styleModifier": "u-background-color--tertiary-dark"
-            }
-        },
-        {
-            "name": "quaternary-base",
-            "context": {
-                "text": "Quaternary base",
-                "styleModifier": "u-background-color--quaternary-base"
-            }
-        },
-        {
-            "name": "text-base",
-            "context": {
-                "text": "Text base",
-                "styleModifier": "u-background-color--text-base"
-            }
-        },
-        {
-            "name": "text-inverse",
-            "context": {
-                "text": "Text inverse",
-                "styleModifier": "u-background-color--text-inverse"
-            }
-        },
-        {
-            "name": "neutral-base",
-            "context": {
-                "text": "Neutral Base",
-                "styleModifier": "u-background-color--neutral-base"
-            }
-        },
-        {
-            "name": "neutral-lighter",
-            "context": {
-                "text": "Neutral Lighter",
-                "styleModifier": "u-background-color--neutral-lighter"
-            }
-        },
-        {
-            "name": "neutral-light",
-            "context": {
-                "text": "Neutral light",
-                "styleModifier": "u-background-color--neutral-light"
-            }
-        },
-        {
-            "name": "neutral-dark",
-            "context": {
-                "text": "Neutral dark",
-                "styleModifier": "u-background-color--neutral-dark"
-            }
-        },
-        {
-            "name": "neutral-darker",
-            "context": {
-                "text": "",
-                "styleModifier": "u-background-color--neutral-darker"
-            }
-        },
-        {
-            "name": "special-states-focus",
-            "context": {
-                "text": "Special-states focus",
-                "styleModifier": "u-background-color--special-states-focus"
-            }
-        },
-        {
-            "name": "spcial-states-visited",
-            "context": {
-                "text": "Special-states visited",
-                "styleModifier": "u-background-color--special-states-visited"
-            }
-        }
-    ]
+    {
+      "name": "u-background-color-neutral--darker",
+      "context": {
+        "text": "Neutral darker",
+        "styleModifier": "u-background-color-neutral--darker"
+      }
+    },
+    {
+      "name": "u-background-color-neutral--dark",
+      "context": {
+        "text": "Neutral dark",
+        "styleModifier": "u-background-color-neutral--dark"
+      }
+    },
+    {
+      "name": "u-background-color-neutral",
+      "context": {
+        "text": "Neutral",
+        "styleModifier": "u-background-color-neutral"
+      }
+    },
+    {
+      "name": "u-background-color-neutral--light",
+      "context": {
+        "text": "Neutral light",
+        "styleModifier": "u-background-color-neutral--light"
+      }
+    },
+    {
+      "name": "u-background-color-neutral--lighter",
+      "context": {
+        "text": "Neutral lighter",
+        "styleModifier": "u-background-color-neutral--lighter"
+      }
+    },
+    {
+      "name": "u-background-color-neutral--lightest",
+      "context": {
+        "text": "Neutral lightest",
+        "styleModifier": "u-background-color-neutral--lightest"
+      }
+    }
+  ]
 }
