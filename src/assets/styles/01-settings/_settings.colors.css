@@ -21,7 +21,7 @@
     /* Color assignements */
     --color-accent: hsla(0, 100%, 71%, 1);
     --color-background: hsla(0, 0%, 100%, 1);
-    --color-text: var(--color-neutral-darkest);
+    --color-text: var(--color-neutral--darkest);
     --color-link: var(--color-accent);
     --color-link-underline: var(--color-alpha-high);
     --color-rule: var(--color-alpha-highest);
