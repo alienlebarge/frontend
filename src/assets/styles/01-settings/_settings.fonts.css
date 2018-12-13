@@ -11,8 +11,14 @@
     --typography-scale-3: calc(var(--typography-scale-base) * 1.75);
     --typography-scale-2: calc(var(--typography-scale-base) * 1.4);
     --typography-scale-1: calc(var(--typography-scale-base) * 1.2);
-    --typography-scale-s: calc( (var(--typography-scale-base) * .875) + .25vmin);
-    --typography-scale-xs: calc( (var(--typography-scale-base) * .75) + .125vmin);
+    --typography-scale-s:   calc(
+                                (var(--typography-scale-base) * .875)
+                                + .25vmin
+                            );
+    --typography-scale-xs:  calc(
+                                (var(--typography-scale-base) * .75)
+                                + .125vmin
+                            );
 
     /* Families */
     --font-family-sans: Nort, sans-serif;
