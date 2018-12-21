@@ -1,7 +1,7 @@
 The fonts use the website are:
 
--   FF Meta Serif Web Pro Book for long text
--   Reklame Script for headings
+- FF Meta Serif Web Pro Book for long text
+- Reklame Script for headings
 
 Include the following code to use these fonts:
 

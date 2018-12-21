@@ -16,7 +16,7 @@ const mandelbrot = require('@frctl/mandelbrot')({
 });
 
 /* Create a new Fractal instance and export it for use elsewhere if required */
-const fractal = module.exports = require('@frctl/fractal').create();
+const fractal = (module.exports = require('@frctl/fractal').create());
 
 /* Set the title of the project */
 fractal.set('project.title', 'alb frontend');
