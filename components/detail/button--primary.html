@@ -131,12 +131,6 @@
         
         
         
-        <li class="Browser-tab Browser-tab--resources" data-role="tab">
-            <a href="#browser-b468a62432545d91000f6da65ba7f9fb-panel-assets">Assets</a>
-        </li>
-        
-        
-        
         
         
         <li class="Browser-tab Browser-tab--info" data-role="tab">
@@ -187,138 +181,6 @@
 
     
     
-
-
-<div class="Browser-panel Browser-resources" data-role="tab-panel" id="browser-b468a62432545d91000f6da65ba7f9fb-panel-assets">
-    <div class="FileBrowser">
-
-        <div class="FileBrowser-selectWrapper">
-            <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
-            <select class="FileBrowser-select" id="filebrowser-select">
-                
-                <option value="file-f0f0bddc12c4368a0b4897a36d39919c">_components.buttons.css</option>
-                
-            </select>
-        </div>
-
-        
-        <div class="FileBrowser-item is-active" id="file-f0f0bddc12c4368a0b4897a36d39919c" data-role="resource-preview">
-            <ul class="Meta">
-                <li class="Meta-item">
-                    <strong class="Meta-key">Content:</strong>
-                    <span class="Meta-value">
-                        <div class="FileBrowser-itemPreview">
-                            
-                            <code class="Code Code--lang-CSS FileBrowser-code">
-                                <pre>/* ==========================================================================
-   #BUTTONS
-   ========================================================================== */
-
-/**
- * 1. Add specificity to override `a::visited` style.
- * 2. Allow us to style box model properties.
- * 3. Make buttons inherit font styles (often necessary when styling `input`s as
- *    buttons).
- * 4. Reset/normalize some styles.
- * 5. Force all button-styled elements to appear clickable.
- * 6. Line different sized buttons up a little nicer.
- */
-
-a.c-btn { /* [1] */
-    --c-btn__text-color: var(--e-anchors__color);
-    --c-btn__bg-color: none;
-    --c-btn__font-family: var(--heading-font-family);
-
-    display: inline-block; /* [2] */
-
-    font: var(--c-btn__font-family); /* [3] */
-    font-family: var(--c-btn__font-family);
-    color: var(--c-btn__text-color);
-    text-align: center; /* [4] */
-    text-decoration: none; /* [4] */
-
-    background-color: var(--c-btn__bg-color);
-    border-bottom: none;
-    margin: 0; /* [4] */
-    padding: var(--space-small) var(--space-medium);
-    border-radius: map(borders, radius, default);
-    cursor: pointer; /* [5] */
-    transition: map(animations, transition, default);
-    vertical-align: middle; /* [6] */
-
-    &amp;:hover,
-    &amp;:active,
-    &amp;:focus,
-    &amp;:visited {
-        --c-btn__text-color: map(colors, text, inverse);
-        --c-btn__bg-color: var(--e-anchors__color);
-    }
-}
-
-
-
-
-
-/* Style variants
-   ========================================================================== */
-
-a.c-btn--primary { /* [1] */
-    --c-btn__bg-color: map(colors, primary, base);
-    --c-btn__text-color: map(colors, text, inverse);
-
-    &amp;:hover,
-    &amp;:active,
-    &amp;:focus {
-        --c-btn__bg-color: map(colors, primary, dark);
-    }
-}
-
-
-
-a.c-btn--secondary { /* [1] */
-    --c-btn__bg-color: map(colors, secondary, base);
-    --c-btn__text-color: map(colors, text, inverse);
-
-    &amp;:hover,
-    &amp;:active,
-    &amp;:focus {
-        --c-btn__bg-color: map(colors, secondary, dark);
-    }
-}
-
-
-
-
-
-/* Size variants
-   ========================================================================== */
-a.c-btn--block {
-    width: 100%;
-}
-</pre>
-                            </code>
-                            
-                        </div>
-                    </span>
-                </li>
-                <li class="Meta-item">
-                    <strong class="Meta-key">URL:</strong>
-                    <span class="Meta-value"><a data-no-pjax href="../raw/button/_components.buttons.css"><span>/components/raw/button/_components.buttons.css</span></a></span>
-                </li>
-                <li class="Meta-item">
-                    <strong class="Meta-key">Filesystem Path:</strong>
-                    <span class="Meta-value">src/components/01-atoms/button/_components.buttons.css</span>
-                </li>
-                <li class="Meta-item">
-                    <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">2.1 KB</span>
-                </li>
-            </ul>
-        </div>
-        
-    </div>
-</div>
-
 
 
     
@@ -2140,8 +2002,8 @@ a.c-btn--block {
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="typography" data-pjax>
-                <span>Typography</span>
+            <a class="Tree-entityLink" href="prose" data-pjax>
+                <span>Prose</span>
                 
 
 <div class="Status Status--unlabelled">

@@ -131,12 +131,6 @@
         
         
         
-        <li class="Browser-tab Browser-tab--resources" data-role="tab">
-            <a href="#browser-5b4c0c1382c185b4c614c8e883297ee4-panel-assets">Assets</a>
-        </li>
-        
-        
-        
         
         
         <li class="Browser-tab Browser-tab--info" data-role="tab">
@@ -187,113 +181,6 @@
 
     
     
-
-
-<div class="Browser-panel Browser-resources" data-role="tab-panel" id="browser-5b4c0c1382c185b4c614c8e883297ee4-panel-assets">
-    <div class="FileBrowser">
-
-        <div class="FileBrowser-selectWrapper">
-            <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
-            <select class="FileBrowser-select" id="filebrowser-select">
-                
-                <option value="file-b290284298d0cfa234d78d8bc2c237bd">_elements.anchors.css</option>
-                
-            </select>
-        </div>
-
-        
-        <div class="FileBrowser-item is-active" id="file-b290284298d0cfa234d78d8bc2c237bd" data-role="resource-preview">
-            <ul class="Meta">
-                <li class="Meta-item">
-                    <strong class="Meta-key">Content:</strong>
-                    <span class="Meta-value">
-                        <div class="FileBrowser-itemPreview">
-                            
-                            <code class="Code Code--lang-CSS FileBrowser-code">
-                                <pre>/* ==========================================================================
-   #ANCHORS
-   ========================================================================== */
-
-/**
- * Anchors
- *
- * 1. When the website is printed, the url is visible
- * 2. Make better underline
- */
-
-a {
-    --a__color-text: var(--color-text);
-    --a__color-underline: var(--a__color-text);
-    --a__color-background: transparent;
-
-    color: var(--a__color-text);
-
-    text-decoration: none; /* [2] */
-
-    background-color: var(--a__color-background);
-    border-bottom: .1em solid var(--a__color-underline); /* [2] */
-
-    outline: map(borders, width, thicker) solid var(--a__color-background);
-
-    &amp;:hover,
-    &amp;.is-hover {
-        --a__color-background: map(colors, primary, base);
-    }
-
-    &amp;:visited,
-    &amp;.is-visited {
-        --a__color-underline: map(colors, special-states, visited);
-    }
-
-    &amp;:focus,
-    &amp;.is-focus {
-        --a__color-background: map(colors, special-states, focus);
-    }
-
-    @media print {
-
-        &amp;::after {
-            content: "("attr(href) ")"; /* [1] */
-        }
-    }
-}
-
-@supports (text-decoration-skip: ink) or (text-decoration-skip-ink: initial) {
-
-    a {
-        border-bottom: 0; /* [2] */
-
-        text-decoration-color: var(--a__color-underline); /* [2] */
-        text-decoration-line: underline; /* [2] */
-        text-decoration-skip-ink: initial; /* [2] */
-        text-decoration-style: solid; /* [2] */
-    }
-}
-
-</pre>
-                            </code>
-                            
-                        </div>
-                    </span>
-                </li>
-                <li class="Meta-item">
-                    <strong class="Meta-key">URL:</strong>
-                    <span class="Meta-value"><a data-no-pjax href="../raw/anchor/_elements.anchors.css"><span>/components/raw/anchor/_elements.anchors.css</span></a></span>
-                </li>
-                <li class="Meta-item">
-                    <strong class="Meta-key">Filesystem Path:</strong>
-                    <span class="Meta-value">src/components/01-atoms/text/inline-elements/anchor/_elements.anchors.css</span>
-                </li>
-                <li class="Meta-item">
-                    <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.4 KB</span>
-                </li>
-            </ul>
-        </div>
-        
-    </div>
-</div>
-
 
 
     
@@ -2119,8 +2006,8 @@ a {
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="typography" data-pjax>
-                <span>Typography</span>
+            <a class="Tree-entityLink" href="prose" data-pjax>
+                <span>Prose</span>
                 
 
 <div class="Status Status--unlabelled">
