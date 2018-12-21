@@ -8,8 +8,7 @@
     "start": "gulp dev",
     "test": "npm run build",
     "build": "yarn && gulp build",
-    "deploy": "yarn && gulp deploy",
-    "prettier": "node_modules/.bin/prettier --write '{,src/**/}*.{json,md}'"
+    "deploy": "yarn && gulp deploy"
   },
   "repository": {
     "type": "git",
@@ -43,8 +42,9 @@
     "del": "^3.0.0",
     "faker": "^4.1.0",
     "fontfaceobserver": "^2.0.13",
-    "gulp": "v4.0.0",
+    "gulp": "^4.0.0",
     "gulp-gh-pages": "^0.5.4",
+    "gulp-plugin-prettier": "^1.1.0",
     "gulp-postcss": "^8.0.0",
     "gulp-sourcemaps": "^2.6.1",
     "gulp-stylelint": "^8.0.0",
@@ -57,7 +57,7 @@
     "postcss-map": "^0.11.0",
     "postcss-media-minmax": "^4.0.0",
     "postcss-nested": "^4.0.0",
-    "prettier": "1.15.3",
+    "prettier": "^1.15.3",
     "stylelint": "^9.3.0"
   }
 }
