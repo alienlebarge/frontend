@@ -1,7 +1,15 @@
 {
-    "context": {
-        "properties": ["-margin", "-padding"],
-        "directions": ["", "-top", "-right", "-bottom", "-left", "-vertical", "-horizontal"],
-        "sizes": ["--none", "--xsmall", "--small", "", "--large", "--xlarge"]
-    }
+  "context": {
+    "properties": ["-margin", "-padding"],
+    "directions": [
+      "",
+      "-top",
+      "-right",
+      "-bottom",
+      "-left",
+      "-vertical",
+      "-horizontal"
+    ],
+    "sizes": ["--none", "--xsmall", "--small", "", "--large", "--xlarge"]
+  }
 }

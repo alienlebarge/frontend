@@ -1,15 +1,15 @@
 {
-    "collated": true,
-    "context": {
-        "text": "text-color",
-        "styleModifier": "u-text-color--primary-base"
-    },
-    "variants": [
-        {
-            "name": "inverse",
-            "context": {
-                "styleModifier": "u-text-color--text-inverse"
-            }
-        }
-    ]
+  "collated": true,
+  "context": {
+    "text": "text-color",
+    "styleModifier": "u-text-color--primary-base"
+  },
+  "variants": [
+    {
+      "name": "inverse",
+      "context": {
+        "styleModifier": "u-text-color--text-inverse"
+      }
+    }
+  ]
 }

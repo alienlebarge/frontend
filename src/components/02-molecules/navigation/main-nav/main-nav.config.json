@@ -1,15 +1,19 @@
 {
-    "context": {
-        "title": "Navigation",
-        "items": [{
-            "name": "Homepage",
-            "url": "homepage"
-        },{
-            "name": "Articles",
-            "url": "articles"
-        },{
-            "name": "Resume",
-            "url": "resume"
-        }]
-    }
+  "context": {
+    "title": "Navigation",
+    "items": [
+      {
+        "name": "Homepage",
+        "url": "homepage"
+      },
+      {
+        "name": "Articles",
+        "url": "articles"
+      },
+      {
+        "name": "Resume",
+        "url": "resume"
+      }
+    ]
+  }
 }

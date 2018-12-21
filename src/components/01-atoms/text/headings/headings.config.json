@@ -1,49 +1,49 @@
 {
-    "title": "Headings",
-    "default": "h1",
-    "collated": true,
-    "variants": [
-        {
-            "name": "h1",
-            "label": "Heading level 1",
-            "context": {
-                "text": "Heading level 1"
-            }
-        },
-        {
-            "name": "h2",
-            "label": "Heading level 2",
-            "context": {
-                "text": "Heading level 2"
-            }
-        },
-        {
-            "name": "h3",
-            "label": "Heading level 3",
-            "context": {
-                "text": "Heading level 3"
-            }
-        },
-        {
-            "name": "h4",
-            "label": "Heading level 4",
-            "context": {
-                "text": "Heading level 4"
-            }
-        },
-        {
-            "name": "h5",
-            "label": "Heading level 5",
-            "context": {
-                "text": "Heading level 5"
-            }
-        },
-        {
-            "name": "h6",
-            "label": "Heading level 6",
-            "context": {
-                "text": "Heading level 6"
-            }
-        }
-    ]
+  "title": "Headings",
+  "default": "h1",
+  "collated": true,
+  "variants": [
+    {
+      "name": "h1",
+      "label": "Heading level 1",
+      "context": {
+        "text": "Heading level 1"
+      }
+    },
+    {
+      "name": "h2",
+      "label": "Heading level 2",
+      "context": {
+        "text": "Heading level 2"
+      }
+    },
+    {
+      "name": "h3",
+      "label": "Heading level 3",
+      "context": {
+        "text": "Heading level 3"
+      }
+    },
+    {
+      "name": "h4",
+      "label": "Heading level 4",
+      "context": {
+        "text": "Heading level 4"
+      }
+    },
+    {
+      "name": "h5",
+      "label": "Heading level 5",
+      "context": {
+        "text": "Heading level 5"
+      }
+    },
+    {
+      "name": "h6",
+      "label": "Heading level 6",
+      "context": {
+        "text": "Heading level 6"
+      }
+    }
+  ]
 }
