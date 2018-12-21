@@ -9,6 +9,7 @@
     "test": "npm run build",
     "build": "yarn && gulp build",
     "deploy": "yarn && gulp deploy",
+    "prettier": "node_modules/.bin/prettier --write '{,src/**/}*.{json,md}'"
   },
   "repository": {
     "type": "git",
