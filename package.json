@@ -8,7 +8,7 @@
     "start": "gulp dev",
     "test": "npm run build",
     "build": "yarn && gulp build",
-    "publish": "yarn && gulp publish"
+    "deploy": "yarn && gulp deploy",
   },
   "repository": {
     "type": "git",

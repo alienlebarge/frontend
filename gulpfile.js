@@ -169,4 +169,4 @@ const compile = gulp.series(clean, gulp.parallel(fonts, scripts, lintstyles, sty
 
 gulp.task('build', gulp.series(compile, build));
 gulp.task('dev', gulp.series(compile, watch));
-gulp.task('publish', gulp.series(build, deploy));
+gulp.task('deploy', gulp.series(build, deploy));
