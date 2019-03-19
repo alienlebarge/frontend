@@ -122,7 +122,7 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
-"@frctl/fractal@^1.0.0", "@frctl/fractal@^1.0.0-rc.1", "@frctl/fractal@^1.1.0-alpha.0", "@frctl/fractal@^1.1.4":
+"@frctl/fractal@^1.0.0", "@frctl/fractal@^1.1.0-alpha.0", "@frctl/fractal@^1.1.4":
   version "1.1.7"
   resolved "https://registry.yarnpkg.com/@frctl/fractal/-/fractal-1.1.7.tgz#7f2e0874ef88b0f611a8d594965e3510f8c9ada3"
   dependencies:
@@ -184,14 +184,14 @@
     js-beautify "^1.6.2"
     lodash "^4.12.0"
 
-"@frctl/nunjucks@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@frctl/nunjucks/-/nunjucks-1.0.3.tgz#baf5e74944417b22085c616e92d07594d6523d2d"
+"@frctl/nunjucks@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@frctl/nunjucks/-/nunjucks-2.0.0.tgz#071c1b50fa4c20a9372a59513ec2612bba946727"
+  integrity sha512-piyk+AHJS7jkJzYRg+18KO8ch3sTw0QQAbyH5bqtlM7FEjxdZDU/X954vUXm+TZOI1aw2RijxwBn6g86NGrTeg==
   dependencies:
-    "@frctl/fractal" "^1.0.0-rc.1"
     bluebird "^3.3.4"
     lodash "^4.0.0"
-    nunjucks "^2.4.2"
+    nunjucks "^3.1.7"
 
 "@gulp-sourcemaps/identity-map@1.X":
   version "1.0.2"
@@ -235,6 +235,11 @@
 "@types/semver@^5.4.0":
   version "5.5.0"
   resolved "https://registry.yarnpkg.com/@types/semver/-/semver-5.5.0.tgz#146c2a29ee7d3bae4bf2fcb274636e264c813c45"
+
+a-sync-waterfall@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/a-sync-waterfall/-/a-sync-waterfall-1.0.1.tgz#75b6b6aa72598b497a125e7a2770f14f4c8a1fa7"
+  integrity sha512-RYTOHHdWipFUliRFMCS4X2Yn2X8M87V/OpSqWzKKOGhzqyUxzyVmhHDH9sAvG+ZuQf/TAOFsLCpMw09I1ufUnA==
 
 abbrev@1:
   version "1.1.1"
@@ -4149,6 +4154,17 @@ nunjucks@^2.4.2:
     asap "^2.0.3"
     chokidar "^1.6.0"
     yargs "^3.32.0"
+
+nunjucks@^3.1.7:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/nunjucks/-/nunjucks-3.2.0.tgz#53e95f43c9555e822e8950008a201b1002d49933"
+  integrity sha512-YS/qEQ6N7qCnUdm6EoYRBfJUdWNT0PpKbbRnogV2XyXbBm2STIP1O6yrdZHgwMVK7fIYUx7i8+yatEixnXSB1w==
+  dependencies:
+    a-sync-waterfall "^1.0.0"
+    asap "^2.0.3"
+    yargs "^3.32.0"
+  optionalDependencies:
+    chokidar "^2.0.0"
 
 object-assign@4.X, object-assign@^4.0.0, object-assign@^4.0.1, object-assign@^4.1.0:
   version "4.1.1"
