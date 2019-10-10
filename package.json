@@ -58,6 +58,6 @@
     "postcss-media-minmax": "^4.0.0",
     "postcss-nested": "^4.0.0",
     "prettier": "^1.15.3",
-    "stylelint": "^10.0.0"
+    "stylelint": "^11.1.0"
   }
 }
