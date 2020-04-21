@@ -57,7 +57,7 @@
     "postcss-map": "^0.11.0",
     "postcss-media-minmax": "^4.0.0",
     "postcss-nested": "^4.0.0",
-    "prettier": "^1.15.3",
+    "prettier": "^2.0.5",
     "stylelint": "^10.0.0"
   }
 }
