@@ -32,32 +32,32 @@
     "defaults"
   ],
   "dependencies": {
-    "@alienlebarge/stylelint-config": "^3.1.1",
-    "@frctl/fractal": "^1.1.4",
-    "@frctl/nunjucks": "^1.0.3"
+    "@alienlebarge/stylelint-config": "^3.1.2",
+    "@frctl/fractal": "^1.3.0",
+    "@frctl/nunjucks": "^2.0.2"
   },
   "devDependencies": {
-    "autoprefixer": "^9.0.0",
-    "cssnano": "^4.0.0",
-    "del": "^4.1.1",
+    "autoprefixer": "^9.8.5",
+    "cssnano": "^4.1.10",
+    "del": "^5.1.0",
     "faker": "^4.1.0",
-    "fontfaceobserver": "^2.0.13",
-    "gulp": "^4.0.0",
+    "fontfaceobserver": "^2.1.0",
+    "gulp": "^4.0.2",
     "gulp-gh-pages": "^0.5.4",
-    "gulp-plugin-prettier": "^1.1.0",
+    "gulp-plugin-prettier": "^2.0.1",
     "gulp-postcss": "^8.0.0",
-    "gulp-sourcemaps": "^2.6.1",
-    "gulp-stylelint": "^9.0.0",
-    "normalize.css": "^8.0.0",
-    "postcss-color-function": "^4.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-stylelint": "^13.0.0",
+    "normalize.css": "^8.0.1",
+    "postcss-color-function": "^4.1.0",
     "postcss-color-mod-function": "^3.0.3",
-    "postcss-custom-media": "^7.0.0",
+    "postcss-custom-media": "^7.0.8",
     "postcss-easy-import": "^3.0.0",
-    "postcss-extend-rule": "^2.0.0",
+    "postcss-extend-rule": "^3.0.0",
     "postcss-map": "^0.11.0",
     "postcss-media-minmax": "^4.0.0",
-    "postcss-nested": "^4.0.0",
-    "prettier": "^1.15.3",
-    "stylelint": "^10.0.0"
+    "postcss-nested": "^4.2.3",
+    "prettier": "^2.0.5",
+    "stylelint": "^13.6.1"
   }
 }
